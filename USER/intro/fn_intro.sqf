@@ -1,12 +1,12 @@
-params ["_heli", "_duration"];
+params ["_duration"];
 
-if (isNull _heli || didJIP) exitWith {
+if (didJIP) exitWith {
     "introBlackLoading" cutText ["", "BLACK IN", 5];
 };
 diwako_dui_main_toggled_off = true;
-0 fadeSound 0; 
+0 fadeSound 1; 
 
-playMusic "Track_P_15";
+private _music = playSound ["The_Exodus_Song", 2];
 
 
 showCinemaBorder true;
@@ -14,10 +14,32 @@ showCinemaBorder true;
 private _camera = "camera" camCreate [0, 0, 3];
 _camera cameraEffect ["internal","back"];
 _camera camCommand "inertia on";
-_camera attachTo [vehicle player, [0,50,5]];
+_camera camPreparePos [8168.87,5484.04,2];
 _camera camSetTarget convoy_lastcar;
+_camera camSetTarget objNull;
 _camera camSetFOV 0.25;
-_camera camCommit 0;
+_camera camCommitPrepared 0;
+private _vectorDir = vectorDir _camera;
+_camera setVectorDirAndUp [_vectorDir, [1,0,0]];
+
+_camera camPreparePos [8168.87,5484.04,4];
+private _newVector = [_vectorDir,[0,0,1]];
+private _time = 20;
+_camera camCommitPrepared _time;
+[_camera, _newVector, _time] spawn {
+    params ["_cam","_newVector","_commitTime"];
+    private _oldVectorDir = vectorDir _cam;
+    private _oldVectorUp =  vectorUp _cam;
+    _newVector params ["_newVectorDir","_newVectorUp"];
+    private _oldTime = diag_tickTime;
+	systemchat str (camCommitted _cam);
+    while {!(camCommitted _cam)} do {
+		systemchat ("rotating cam..");
+        private _progress = (diag_tickTime - _oldTime) / _commitTime;
+        _cam setVectorDir vectorLinearConversion [0, 1, _progress, _oldVectorDir, _newVectorDir];
+        _cam setVectorUp vectorLinearConversion [0, 1, _progress, _oldVectorUp, _newVectorUp];
+    };
+};
 
 private _ppGrain = ppEffectCreate ["filmGrain", 2005];
 _ppGrain ppEffectAdjust [
@@ -42,8 +64,8 @@ _ppBW ppEffectAdjust
 ];
 
 
-_camera camsetPos [8673.23,4777.76,0];
-_camera camCommit _duration;
+
+
 
 [{
     params ["_camera"];
