@@ -8,15 +8,6 @@
 
 
 
-class The_Exodus_Song
-{
-    // how the sound is referred to in the editor (e.g. trigger effects)
-    name = "The_Exodus_Song";
-    // filename, volume, pitch, distance (optional)
-    sound[] = { "USER\sounds\The_Exodus_Song.ogg", VOLUME, 1, DISTANCE };
-    // subtitle delay in seconds, subtitle text
-    titles[] = {  };
-};
 
 class rocksFalling_1
 {

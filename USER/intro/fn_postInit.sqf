@@ -2,6 +2,7 @@ introDisabled = false;
 
 if (isServer) then {
     if (!isMultiplayer && introDisabled) exitWith {};
+    
     [{
         
         [] call grad_intro_fnc_introServer;
@@ -14,4 +15,5 @@ if (isServer) then {
 if (hasInterface && !didJIP) then {
     if (!isMultiplayer && introDisabled) exitWith {};
     "introBlackLoading" cutText ["", "BLACK FADED", 999999];
+    0 fadeSound 0;
 };
