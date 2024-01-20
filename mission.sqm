@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3842;
+		nextID=3845;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8150.1475,21.872286,5484.793};
-		dir[]={0.8158977,-0.57151037,-0.087675385};
-		up[]={0.56823897,0.82059485,-0.06106228};
-		aside[]={-0.1068437,-3.7252903e-009,-0.99427593};
+		pos[]={8143.1841,34.119884,5490.335};
+		dir[]={0.66515052,-0.73166937,-0.14912911};
+		up[]={0.71394575,0.68165648,-0.16006912};
+		aside[]={-0.21877287,6.3533662e-008,-0.97577804};
 	};
 };
 binarizationWanted=0;
@@ -4670,7 +4670,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=154;
+		items=155;
 		class Item0
 		{
 			dataType="Layer";
@@ -9530,20 +9530,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8619.0059,15.023051,5434.5796};
-				angles[]={6.2751913,2.2870619,6.2651906};
+				position[]={8632.5986,15.20275,5424.3286};
+				angles[]={0.037978366,2.2870619,0.010000736};
 			};
 			side="Civilian";
 			flags=6;
 			class Attributes
 			{
-				init="if (isServer) then { this limitspeed 8; [this] call GRAD_AMBIENT_fnc_suicideCarCalculatePath; };";
+				init="if (isServer) then { [this] call GRAD_AMBIENT_fnc_suicideCarCalculatePath; };";
 				name="intro_tractor";
 				textures="Red";
 			};
 			id=3750;
 			type="UK3CB_ADC_C_Tractor_Old";
-			atlOffset=-0.0069990158;
+			atlOffset=-0.0051746368;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9645,7 +9645,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8184.5825,9.6266432,5481.8164};
-						angles[]={6.2751913,2.2870619,6.2651906};
+						angles[]={0.037978366,2.2870619,0.010000736};
 					};
 					side="Civilian";
 					flags=7;
@@ -9858,7 +9858,7 @@ class Mission
 				};
 			};
 			id=3752;
-			atlOffset=-0.0069990158;
+			atlOffset=-0.0051746368;
 		};
 		class Item140
 		{
@@ -9893,7 +9893,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8162.7759,12.245615,5482.311};
+				position[]={8171.4434,12.925084,5480.0161};
 			};
 			side="Empty";
 			flags=1;
@@ -9903,14 +9903,14 @@ class Mission
 			};
 			id=3805;
 			type="VR_3DSelector_01_exit_F";
-			atlOffset=0.75167465;
+			atlOffset=1.8117485;
 		};
 		class Item143
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8157.7734,14.641933,5487.6089};
+				position[]={8153.0142,14.944143,5489.9009};
 			};
 			side="Empty";
 			flags=1;
@@ -9920,7 +9920,7 @@ class Mission
 			};
 			id=3806;
 			type="VR_3DSelector_01_exit_F";
-			atlOffset=2.698;
+			atlOffset=2.6980171;
 		};
 		class Item144
 		{
@@ -11087,6 +11087,23 @@ class Mission
 			};
 			id=3841;
 			atlOffset=0.90709877;
+		};
+		class Item154
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8162.3433,12.404063,5480.1123};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				name="introMarker_1_5";
+			};
+			id=3842;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=1.0038013;
 		};
 	};
 	class Connections
