@@ -6,8 +6,8 @@ if (didJIP) exitWith {
     "introBlackLoading" cutText ["", "BLACK IN", 5];
     [{
         private _music = playMusic "The_Exodus_Song";
-    }, [], 1] call CBA_fnc_waitAndeXecute;
-}, [], 1] call CBA_fnc_waitAndeXecute;
+    }, [], 0] call CBA_fnc_waitAndeXecute;
+}, [], 0] call CBA_fnc_waitAndeXecute;
 
 
 
@@ -25,8 +25,10 @@ _camera camPreparePos (getPos introMarker_1);
 _camera camSetFOV 0.25;
 _camera camCommitPrepared 0;
 
-private _vectorDir = (getPos introMarker_1) vectorFromTo (getpos introMarkerTarget_1);
-_camera setVectorDirAndUp [_vectorDir, [0,1,0]];
+// private _vectorDir = (getPos introMarker_1) vectorFromTo (getpos introMarkerTarget_1);
+private _vectorDir = vectorDir introMarker_1;
+private _vectorUp = vectorUp introMarker_1;
+_camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
 private _ppGrain = ppEffectCreate ["filmGrain", 2000];
 _ppGrain ppEffectEnable true;
@@ -58,15 +60,15 @@ _ppBW ppEffectCommit 0;
 
 missionNameSpace setVariable ["intro_fx_ppBW", _ppBW];
 
-_camera camPreparePos (getPos introMarker_1_5);
-_camera camSetFOV 0.25;
-_camera camCommitPrepared 15;
+// _camera camPreparePos (getPos introMarker_1_5);
+// _camera camSetFOV 0.25;
+// _camera camCommitPrepared 6;
 
 // intro 1
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_1;
-}, [_camera], 20] call CBA_fnc_waitAndExecute;
+}, [_camera], 0] call CBA_fnc_waitAndExecute;
 
 
 /*

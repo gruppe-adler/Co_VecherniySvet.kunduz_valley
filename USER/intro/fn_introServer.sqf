@@ -20,9 +20,22 @@ introMarkerTarget_4 hideObjectGlobal true;
 
 [{
 	setTimeMultiplier 120;
-}, [], 35] call CBA_Fnc_waitAndExecute;
+}, [], 33] call CBA_Fnc_waitAndExecute;
+
+// tractor
+[{
+	private _path = [];
+	for "_i" from 1 to 14 do {
+		private _marker = call(compile format ["GRAD_intro_path_%1", _i]);
+		// private _speed = _marker getVariable ["VLF_speed", 9];
+		// private _entry = (getPos _marker) + [_speed];
+		private _entry = getPos _marker;
+		_path pushBack _entry;
+	};
+	intro_tractor setDriveOnPath _path;
+}, [], 40] call CBA_Fnc_waitAndExecute;
 
 [{
 	setTimeMultiplier 1;
-}, [], 55] call CBA_Fnc_waitAndExecute;
+}, [], 53] call CBA_Fnc_waitAndExecute;
 
