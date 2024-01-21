@@ -18,12 +18,12 @@ private _duration = 18;
 private _delay = 1;
 _camera camCommitPrepared (_duration + _delay);
 
-[_camera, _newVector, _duration-1, 3] call GRAD_INTRO_fnc_camTilt;
+[_camera, _newVector, _duration-2, 3] call GRAD_INTRO_fnc_camTilt;
 
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_2;
-}, [_camera], _duration-1] call CBA_fnc_waitAndExecute;
+}, [_camera], _duration-2] call CBA_fnc_waitAndExecute;
 
 
 // tilting cam

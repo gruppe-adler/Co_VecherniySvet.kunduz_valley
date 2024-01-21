@@ -22,7 +22,7 @@ _camera camPreparePos (getPos introMarker_5);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_5, vectorUp introMarker_5], _duration] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_5, vectorUp introMarker_5], _duration, 5] call GRAD_INTRO_fnc_camTilt;
 
 
 // intro_fx_ppBW_color = 0;
