@@ -25,7 +25,7 @@ _camera camCommitPrepared _duration;
 
 [_camera, [vectorDir introMarker_4, vectorUp introMarker_4], _duration-1] call GRAD_INTRO_fnc_camTilt;
 
-[getpos intro_tractor, getPos introMarker_6] call grad_intro_fnc_butterfly;
+[getpos intro_tractor, getPos introMarker_6, 20] call grad_intro_fnc_butterfly;
 
 [{
     params ["_camera"];
