@@ -35,13 +35,8 @@ grad_intro_debugCamera = {
              [_handle] call CBA_fnc_removePerFrameHandler;
         };
         
-        _camera camSetPos (getPos _butterfly);
+        _camera camSetRelPos [0, -1, 1];
         _camera camCommit 0;
-
-        private _vectorDir = vectorDir _butterfly;
-        private _vectorUp = vectorUp _butterfly;
-        private _newVector = [_vectorDir, _vectorUp];
-        [_camera, _newVector, 0, 0] call GRAD_INTRO_fnc_camTilt;
         
 
     }, 0, [_butterfly, _startTime, _camera, _duration]] call CBA_fnc_addPerFrameHandler;
@@ -53,13 +48,13 @@ if (isNull _camera) then {
     _camera camCommand "inertia on";
     _camera camSetFOV 0.55; // 0.25
     _camera camSetTarget _butterfly;
-    _camera camSetRelPos [0, 1, 1];
+    _camera camSetRelPos [0, -1, 1];
     _camera camCommitPrepared 0;
     
 };
 
 private _startTime = diag_tickTime;
-// [_butterfly, _startTime, _camera, _duration] call grad_intro_debugCamera;
+[_butterfly, _startTime, _camera, _duration] call grad_intro_debugCamera;
 
 
 grad_intro_butterflyScatterPos = {
@@ -72,11 +67,11 @@ grad_intro_butterflyScatterPos = {
 
     // systemchat (str _randomX + " " + str _randomY + " " + str _randomZ);
 
-    private _posX = _randomX + _position#0;
-    private _posY = _randomY + _position#1;
-    private _posZ = _randomZ + _position#2;
+    private _endPosX = _randomX + _posX;
+    private _endPosY = _randomY + _posY;
+    private _endPosZ = _randomZ + _posZ;
 
-    [_posX, _posY, _posZ]
+    [_endPosX, _endPosY, _endPosZ]
 };
 
 player setVariable ["grad_butterfly_path_index", 0]; // reset for testing
