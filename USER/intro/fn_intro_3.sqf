@@ -25,7 +25,7 @@ _camera camPreparePos (getPos introMarker_6);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_6, vectorUp introMarker_6], _duration] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_6, vectorUp introMarker_6], _duration, 2] call GRAD_INTRO_fnc_camTilt;
 
 
 intro_fx_ppBW_color = 0;
@@ -54,7 +54,9 @@ intro_fx_ppBW_color = 0;
 
 }, 0, []] call CBA_fnc_addPerFrameHandler;
 
-
+// preload next pos but dont commit yet!
+_camera camPreparePos (getPos introMarker_3);
+_camera camPreload 14;
 
 [{
     params ["_camera"];

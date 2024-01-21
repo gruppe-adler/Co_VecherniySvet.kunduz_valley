@@ -1,4 +1,4 @@
-params ["_camera", "_newVector", "_duration"];
+params ["_camera", "_newVector", "_duration", ["_strength", 2]];
 
 private _oldVectorDir = vectorDir _camera;
 private _oldVectorUp =  vectorUp _camera;
@@ -14,7 +14,8 @@ private _tiltPFH = [{
 		"_newVectorUp", 
 		"_initTime", 
 		"_duration", 
-		"_camera"
+		"_camera",
+		"_strength"
 	];
 
 	if (diag_tickTime > _initTime + _duration) exitWith {
@@ -25,8 +26,8 @@ private _tiltPFH = [{
 	// systemchat ("rotating cam.." + str _oldVectorDir + " " + str _oldVectorUp + str _newVectorDir + " " + str _newVectorUp);
 
 	private _progress = (diag_tickTime - _initTime) / _duration;
-	private _vectorDirActual = [_oldVectorDir, _newVectorDir, _progress, 2] call BIS_fnc_easeInOutVector;
-	private _vectorUpActual = [_oldVectorUp, _newVectorUp, _progress, 2] call BIS_fnc_easeInOutVector;
+	private _vectorDirActual = [_oldVectorDir, _newVectorDir, _progress, _strength] call BIS_fnc_easeInOutVector;
+	private _vectorUpActual = [_oldVectorUp, _newVectorUp, _progress, _strength] call BIS_fnc_easeInOutVector;
 	
 	
 	// systemchat ("rotating cam.." + str _oldVectorDir + " " + str _oldVectorUp + " " + str _newVectorDir + " " + str _newVectorUp + " " + str _progress);
@@ -34,4 +35,4 @@ private _tiltPFH = [{
 	_camera setVectorDir _vectorDirActual;
 	_camera setVectorUp _vectorUpActual;
 
-}, 0, [_oldVectorDir, _oldVectorUp, _newVectorDir, _newVectorUp, _initTime, _duration, _camera]] call CBA_fnc_addPerFrameHandler;
+}, 0, [_oldVectorDir, _oldVectorUp, _newVectorDir, _newVectorUp, _initTime, _duration, _camera, _strength]] call CBA_fnc_addPerFrameHandler;

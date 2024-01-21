@@ -33,7 +33,7 @@ introMarkerTarget_4 hideObjectGlobal true;
 		_path pushBack _entry;
 	};
 	intro_tractor setDriveOnPath _path;
-}, [], 60] call CBA_Fnc_waitAndExecute;
+}, [], 57] call CBA_Fnc_waitAndExecute;
 
 [{
 	setTimeMultiplier 1;
