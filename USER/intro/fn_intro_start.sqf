@@ -22,7 +22,7 @@ private _camera = "camera" camCreate [0, 0, 3];
 _camera cameraEffect ["internal","back"];
 _camera camCommand "inertia on";
 _camera camPreparePos (getPos introMarker_1);
-_camera camSetFOV 0.25;
+_camera camSetFOV 0.55; // 0.25
 _camera camCommitPrepared 0;
 
 // private _vectorDir = (getPos introMarker_1) vectorFromTo (getpos introMarkerTarget_1);

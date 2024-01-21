@@ -1,14 +1,32 @@
-_camera camPreparePos (getPos introMarker_3);
-// _camera camPrepareTarget (intro_tractor);
-private _vectorDir = vectorDir introMarker_3;
-private _vectorUp = vectorUp introMarker_3;
+
+/*
+
+    SCENE 3 - country horizon pan
+
+    and when the morning sun - golden sun / colors
+
+	0:42 - And when the morning sun
+	0:48 - Reveals her hills and plains
+	0:54
+
+*/
+
+
+params ["_camera"];
+
+_camera camPreparePos (getPos introMarker_5);
 _camera camCommitPrepared 0;
+private _vectorDir = vectorDir introMarker_5;
+private _vectorUp = vectorUp introMarker_5;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
-_camera camPreparePos (getPos introMarker_4);
+private _duration = 14;
+_camera camPreparePos (getPos introMarker_6);
 // _camera camPrepareTarget (intro_tractor);
-_camera camCommitPrepared 25;
-[_camera, [vectorDir introMarker_4, vectorUp introMarker_4], 24] call GRAD_INTRO_fnc_camTilt;
+_camera camCommitPrepared _duration;
+
+[_camera, [vectorDir introMarker_6, vectorUp introMarker_6], _duration] call GRAD_INTRO_fnc_camTilt;
+
 
 intro_fx_ppBW_color = 0;
 
@@ -40,5 +58,6 @@ intro_fx_ppBW_color = 0;
 
 [{
     params ["_camera"];
-    [_camera] call grad_intro_fnc_intro_99;
-}, [_camera], 20] call CBA_fnc_waitAndExecute;
+    [_camera] call grad_intro_fnc_intro_4;
+}, [_camera], _duration] call CBA_fnc_waitAndExecute;
+

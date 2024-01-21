@@ -1,18 +1,29 @@
+/*
+
+    SCENE 2 - destroyed mosque - country horizon
+
+    0:18 - This land is mine
+    0:24 - God gave this land to me
+    0:31 - This brave and ancient land to me
+
+*/
+
 params ["_camera"];
 
-_camera camPreparePos (getPos introMarker_5);
-_camera camCommitPrepared 0;
-_camera camSetFOV 0.75;
-private _vectorDir = vectorDir introMarker_5;
-private _vectorUp = vectorUp introMarker_5;
-_camera setVectorDirAndUp [_vectorDir, _vectorUp];
+// _camera camPreparePos (getPos introMarker_1_5);
+// _camera camCommitPrepared 0;
+// _camera camSetFOV 0.75;
+// private _vectorDir = vectorDir introMarker_5;
+// private _vectorUp = vectorUp introMarker_5;
+// _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
-private _duration = 26;
-_camera camPreparePos (getPos introMarker_6);
+private _duration = 24;
+_camera camPreparePos (getPos introMarker_5);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_6, vectorUp introMarker_6], _duration-1] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_5, vectorUp introMarker_5], _duration] call GRAD_INTRO_fnc_camTilt;
+
 
 // intro_fx_ppBW_color = 0;
 
@@ -45,4 +56,4 @@ _camera camCommitPrepared _duration;
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_3;
-}, [_camera], _duration-1] call CBA_fnc_waitAndExecute;
+}, [_camera], _duration] call CBA_fnc_waitAndExecute;
