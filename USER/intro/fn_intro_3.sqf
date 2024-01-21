@@ -14,18 +14,18 @@
 
 params ["_camera"];
 
-_camera camPreparePos (getPos introMarker_5);
+_camera camPreparePos (getPos introMarker_2_1);
 _camera camCommitPrepared 0;
-private _vectorDir = vectorDir introMarker_5;
-private _vectorUp = vectorUp introMarker_5;
+private _vectorDir = vectorDir introMarker_2_1;
+private _vectorUp = vectorUp introMarker_2_1;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
 private _duration = 14;
-_camera camPreparePos (getPos introMarker_6);
+_camera camPreparePos (getPos introMarker_2_2);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_6, vectorUp introMarker_6], _duration, 2] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_2_2, vectorUp introMarker_2_2], _duration, 2] call GRAD_INTRO_fnc_camTilt;
 
 
 intro_fx_ppBW_color = 0;
@@ -54,9 +54,7 @@ intro_fx_ppBW_color = 0;
 
 }, 0, []] call CBA_fnc_addPerFrameHandler;
 
-// preload next pos but dont commit yet!
-_camera camPreparePos (getPos introMarker_3);
-_camera camPreload 14;
+
 
 [{
     params ["_camera"];

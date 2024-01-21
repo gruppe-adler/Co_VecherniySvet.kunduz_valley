@@ -7,23 +7,21 @@
 */
 
 
-_camera camPreparePos (getPos introMarker_1_5);
+_camera camPreparePos (getPos introMarker_1_2);
 
-// _camera camPrepareTarget (introMarkerTarget_2);
-// private _vectorDir = (getPos introMarker_1) vectorFromTo (getpos introMarkerTarget_2);
-private _vectorDir = vectorDir introMarker_1_5;
-private _vectorUp = vectorUp introMarker_1_5;
+private _vectorDir = vectorDir introMarker_1_2;
+private _vectorUp = vectorUp introMarker_1_2;
 private _newVector = [_vectorDir, _vectorUp];
 private _duration = 18;
 private _delay = 1;
 _camera camCommitPrepared (_duration + _delay);
 
-[_camera, _newVector, _duration-2, 3] call GRAD_INTRO_fnc_camTilt;
+[_camera, _newVector, _duration, 3] call GRAD_INTRO_fnc_camTilt;
 
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_2;
-}, [_camera], _duration-2] call CBA_fnc_waitAndExecute;
+}, [_camera], _duration] call CBA_fnc_waitAndExecute;
 
 
 // tilting cam

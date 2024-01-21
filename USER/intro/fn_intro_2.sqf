@@ -18,11 +18,11 @@ params ["_camera"];
 // _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
 private _duration = 24;
-_camera camPreparePos (getPos introMarker_5);
+_camera camPreparePos (getPos introMarker_2_1);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_5, vectorUp introMarker_5], _duration, 5] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_2_1, vectorUp introMarker_2_1], _duration, 1.5] call GRAD_INTRO_fnc_camTilt;
 
 
 // intro_fx_ppBW_color = 0;

@@ -21,13 +21,20 @@ showCinemaBorder true;
 private _camera = "camera" camCreate [0, 0, 3];
 _camera cameraEffect ["internal","back"];
 _camera camCommand "inertia on";
-_camera camPreparePos (getPos introMarker_1);
+_camera camPreparePos (getPos introMarker_1_1);
 _camera camSetFOV 0.55; // 0.25
 _camera camCommitPrepared 0;
 
+// preload next pos but dont commit yet!
+[] spawn {
+	systemchat "start preload";
+	waitUntil {preloadCamera getPos introMarker_3_1};
+	systemchat "preload done";
+};
+
 // private _vectorDir = (getPos introMarker_1) vectorFromTo (getpos introMarkerTarget_1);
-private _vectorDir = vectorDir introMarker_1;
-private _vectorUp = vectorUp introMarker_1;
+private _vectorDir = vectorDir introMarker_1_1;
+private _vectorUp = vectorUp introMarker_1_1;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
 private _ppGrain = ppEffectCreate ["filmGrain", 2000];

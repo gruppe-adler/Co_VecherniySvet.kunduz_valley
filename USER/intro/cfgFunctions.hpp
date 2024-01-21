@@ -7,6 +7,9 @@ class grad_intro {
         class intro_3;
         class intro_4;
         class intro_5;
+        class intro_6;
+        class intro_7;
+        class intro_8;
         class intro_99;
         class intro_end;
         class intro_start;

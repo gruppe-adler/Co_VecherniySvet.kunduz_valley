@@ -11,21 +11,21 @@
 
 params ["_camera"];
 
-_camera camPreparePos (getPos introMarker_3);
+_camera camPreparePos (getPos introMarker_3_1);
 _camera camCommitPrepared 0;
 // _camera camSetFOV 0.75;
-private _vectorDir = vectorDir introMarker_3;
-private _vectorUp = vectorUp introMarker_3;
+private _vectorDir = vectorDir introMarker_3_1;
+private _vectorUp = vectorUp introMarker_3_1;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
-private _duration = 10;
-_camera camPreparePos (getPos introMarker_4);
+private _duration = 17;
+_camera camPreparePos (getPos introMarker_3_2);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_4, vectorUp introMarker_4], _duration-1] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_3_2, vectorUp introMarker_3_2], _duration-1] call GRAD_INTRO_fnc_camTilt;
 
-[getpos intro_tractor, getPos introMarker_6, 20] call grad_intro_fnc_butterfly;
+[getpos introButterfly_1, getPos introButterfly_2, 17] call grad_intro_fnc_butterfly;
 
 [{
     params ["_camera"];
