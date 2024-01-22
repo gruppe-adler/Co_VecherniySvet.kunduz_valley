@@ -17,7 +17,7 @@ for "_i" from 1 to _duration do
 {
     
     private _positionPath = (_position getPos [_step*_i, _butterfly getDir _destination]);
-    _positionPath set [2, 1.5];
+    _positionPath set [2, _position#2 + 1.5];
     _path pushback _positionPath;
 
     // systemchat str _position;
