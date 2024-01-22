@@ -23,7 +23,7 @@ skiptime -1.5;
 		_path pushBack _entry;
 	};
 	intro_tractor setDriveOnPath _path;
-}, [], 47] call CBA_Fnc_waitAndExecute;
+}, [], 50] call CBA_Fnc_waitAndExecute;
 
 [{
 	setTimeMultiplier 1;

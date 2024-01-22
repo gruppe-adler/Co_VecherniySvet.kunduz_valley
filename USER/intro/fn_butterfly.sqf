@@ -73,19 +73,24 @@ grad_intro_butterflyScatterPos = {
     _nextRandom
 };
 
-player setVariable ["grad_butterfly_path_index", 0]; // reset for testing
+// player setVariable ["grad_butterfly_path_index", 0]; // reset for testing
 
 [{
     params ["_args", "_handle"];
     _args params ["_butterfly", "_flyDir", "_path", "_destination", "_duration", "_startTime"];
 
     if (diag_tickTime > _startTime + _duration) exitWith {
+        player setVariable ["grad_butterfly_path_index" + str(_handle), 0];
         [_handle] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _index = player getVariable ["grad_butterfly_path_index", 0];
+    private _index = player getVariable ["grad_butterfly_path_index" + str(_handle), 0];
 
-    if (_index > (count _path - 1)) exitWith { systemchat "too long array"; [_handle] call CBA_fnc_removePerFrameHandler; };
+    if (_index > (count _path - 1)) exitWith {
+        systemchat "too long array";
+        player setVariable ["grad_butterfly_path_index" + str(_handle), 0];
+        [_handle] call CBA_fnc_removePerFrameHandler;        
+    };
     private _position = (_path select _index);
     private _scatteredPosition = [_flyDir, _position] call grad_intro_butterflyScatterPos;
     _butterfly camSetPos _scatteredPosition;
@@ -96,7 +101,7 @@ player setVariable ["grad_butterfly_path_index", 0]; // reset for testing
     // _butterfly switchMove (selectRandom ["Open", "Fly"]);
 
     _index = _index + 1;
-    player setVariable ["grad_butterfly_path_index", _index];
+    player setVariable ["grad_butterfly_path_index" + str(_handle), _index];
 
     /*
     private _markerstr = createMarkerLocal [format ["marker%1%2", _scatteredPosition#0, _scatteredPosition#1], [_scatteredPosition#0, _scatteredPosition#1]];

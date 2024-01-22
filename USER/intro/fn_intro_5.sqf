@@ -17,7 +17,7 @@ private _vectorDir = vectorDir introMarker_3_3;
 private _vectorUp = vectorUp introMarker_3_3;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
-private _duration = 10;
+private _duration = 20;
 _camera camPreparePos (getPos introMarker_3_4);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
@@ -26,7 +26,7 @@ _camera camCommitPrepared _duration;
 
 [{
     params ["_camera"];
-    [_camera] call grad_intro_fnc_intro_7;
+    [_camera] call grad_intro_fnc_intro_6;
 }, [_camera], _duration] call CBA_fnc_waitAndExecute;
 
 

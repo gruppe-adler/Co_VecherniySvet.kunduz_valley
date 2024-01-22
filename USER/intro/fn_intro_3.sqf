@@ -20,7 +20,7 @@ private _vectorDir = vectorDir introMarker_2_1;
 private _vectorUp = vectorUp introMarker_2_1;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
-private _duration = 14;
+private _duration = 15;
 _camera camPreparePos (getPos introMarker_2_2);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
