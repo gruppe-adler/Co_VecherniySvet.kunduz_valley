@@ -4,7 +4,7 @@ params ["_position", "_destination", "_duration", ["_camera", objNull]];
 private _butterfly = "Butterfly_random" camCreate _position;
 _butterfly setVariable ["BIS_fnc_animalBehaviour_disable", true];
 
-grad_debugMarker = "Sign_Arrow_Blue_F" createVehicle _position;
+// grad_debugMarker = "Sign_Arrow_Blue_F" createVehicle _position;
 
 private _speed = .5;
 private _startTime = diag_tickTime;
@@ -15,13 +15,9 @@ private _path = [];
 
 for "_i" from 1 to _duration do
 {
-    
     private _positionPath = (_position getPos [_step*_i, _butterfly getDir _destination]);
-    _positionPath set [2, _position#2 + 1.5];
+    _positionPath set [2, _position#2 + .5];
     _path pushback _positionPath;
-
-    // systemchat str _position;
-
 };
 
 
