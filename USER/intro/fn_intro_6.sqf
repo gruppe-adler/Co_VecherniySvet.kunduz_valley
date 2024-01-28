@@ -14,8 +14,8 @@ _camera camCommitPrepared _duration;
 
 [_camera, [vectorDir introMarker_4_2, vectorUp introMarker_4_2], _duration-1, 2] call GRAD_INTRO_fnc_camTilt;
 
-[getPos introButterfly_3, getPos introButterfly_4, _duration] call grad_intro_fnc_butterfly;
-[getPos introButterfly_5_1, getPos introButterfly_5_2, _duration] call grad_intro_fnc_butterfly;
+["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, _duration] call grad_intro_fnc_butterfly;
+["GRAD_butterfly", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration] call grad_intro_fnc_butterfly;
 
 [{
     params ["_camera"];

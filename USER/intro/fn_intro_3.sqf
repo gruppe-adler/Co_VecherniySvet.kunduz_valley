@@ -27,7 +27,6 @@ _camera camCommitPrepared _duration;
 
 [_camera, [vectorDir introMarker_2_2, vectorUp introMarker_2_2], _duration, 2] call GRAD_INTRO_fnc_camTilt;
 
-
 intro_fx_ppBW_color = 0;
 
 [{

@@ -18,6 +18,8 @@ _camera camCommitPrepared (_duration + _delay);
 
 [_camera, _newVector, _duration, 3] call GRAD_INTRO_fnc_camTilt;
 
+
+
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_2;
