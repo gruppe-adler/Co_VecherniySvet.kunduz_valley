@@ -20,7 +20,7 @@
               _x setSkill ["commanding", 1];
               _x setSkill ["general", 1];
 
-              _x addGoggles "CUP_Beard_Black";
+              _x addGoggles "fsob_Beard01_Dark";
           } forEach units _group;
 
           ["GRAD_missionControl_setServerAsOwner", [_group]] call CBA_fnc_serverEvent;

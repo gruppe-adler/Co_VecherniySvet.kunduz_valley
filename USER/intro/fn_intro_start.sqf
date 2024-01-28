@@ -27,9 +27,9 @@ _camera camCommitPrepared 0;
 
 // preload next pos but dont commit yet!
 [] spawn {
-	systemchat "start preload";
+	// systemchat "start preload";
 	waitUntil {preloadCamera getPos introMarker_3_1};
-	systemchat "preload done";
+	// systemchat "preload done";
 };
 
 // private _vectorDir = (getPos introMarker_1) vectorFromTo (getpos introMarkerTarget_1);

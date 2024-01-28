@@ -82,7 +82,7 @@ if (isServer) then {
             ];
             // dont add beards to women
             if (!(typeOf _unit in _array)) then {
-                _unit addGoggles "CUP_Beard_Black";
+                _unit addGoggles "fsob_Beard01_Dark";
             };
         };
 

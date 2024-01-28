@@ -66,6 +66,8 @@ grad_intro_butterflyScatterPos = {
     private _nextRandom = _position getPos [_random, _flyDir + random [-30, 0, 30]];
     _nextRandom set [2, _posZ + _randomZ];
 
+    diag_log format ["z position is %1, _nextrandom is %2", _posZ, _nextRandom#2];
+
     _nextRandom
 };
 

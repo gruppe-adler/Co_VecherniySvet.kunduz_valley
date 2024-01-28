@@ -27,7 +27,7 @@ if (!isServer) exitWith {};
 
             // add beard for taliban
             if (side _x == east) then {
-                _x addGoggles "CUP_Beard_Black";
+                _x addGoggles "fsob_Beard01_Dark";
             };
         } forEach units _group;
     }, [_group], 3] call CBA_fnc_waitAndExecute;
