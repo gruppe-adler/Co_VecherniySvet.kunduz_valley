@@ -1,4 +1,4 @@
-params [["_type", "GRAD_butterfly"], "_position", "_destination", "_duration", ["_camera", objNull]];
+params [["_type", "GRAD_butterfly"], "_position", "_destination", "_duration", ["_killSwitchDuration", 9999999]];
 
 diag_log format ["startpos %1 - destination %2", _position, _destination];
 
@@ -18,7 +18,7 @@ diag_log format ["_path %1", _path];
 
 [{
     params ["_args", "_handle"];
-    _args params ["_butterfly", "_path", "_destination", "_duration", "_startTime"];
+    _args params ["_butterfly", "_path", "_destination", "_duration", "_startTime", "_killSwitchDuration"];
 
     private _varAlias = "grad_butterfly_path_index" + str(_handle);
 
@@ -28,6 +28,10 @@ diag_log format ["_path %1", _path];
         // [_handle] call CBA_fnc_removePerFrameHandler;
         _butterfly camSetPos (_path select ((count _path) - 1));
         _butterfly camCommit 1;
+    };
+
+    if (diag_tickTime > _startTime + _killSwitchDuration) exitWith {
+        [_handle] call CBA_fnc_removePerFrameHandler;
     };
 
     private _index = player getVariable [_varAlias, 0];
@@ -50,4 +54,6 @@ diag_log format ["_path %1", _path];
 
     player setVariable [_varAlias, _index];
 
-}, 1, [_butterfly, _path, _destination, _duration, _startTime]] call CBA_fnc_addPerFrameHandler;
+}, 1, [_butterfly, _path, _destination, _duration, _startTime, _killSwitchDuration]] call CBA_fnc_addPerFrameHandler;
+
+_butterfly

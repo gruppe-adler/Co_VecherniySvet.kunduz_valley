@@ -24,8 +24,6 @@ _camera camCommitPrepared _duration;
 
 [_camera, [vectorDir introMarker_2_1, vectorUp introMarker_2_1], _duration, 1.5] call GRAD_INTRO_fnc_camTilt;
 
-["GRAD_FireFly", getpos introMarker_1_2, getPos introMarker_2_1, 30] call grad_intro_fnc_butterfly;
-
 // intro_fx_ppBW_color = 0;
 
 // [{

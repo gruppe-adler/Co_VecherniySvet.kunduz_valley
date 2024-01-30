@@ -13,11 +13,24 @@ private _vectorDir = vectorDir introMarker_1_2;
 private _vectorUp = vectorUp introMarker_1_2;
 private _newVector = [_vectorDir, _vectorUp];
 private _duration = 18;
+private _durationFirefly = 16;
+
 private _delay = 1;
 _camera camCommitPrepared (_duration + _delay);
 
 [_camera, _newVector, _duration, 3] call GRAD_INTRO_fnc_camTilt;
 
+// firefly circles at first, raises after _durationFirefly
+private _firefly = ["GRAD_FireFly", getpos introMarker_1_1, getPos introMarker_1_1, 1, _durationFirefly] call grad_intro_fnc_butterfly;
+
+
+[{
+    params ["_firefly"];
+    
+    _firefly camSetPos (getPos introMarker_2_1);
+    _firefly camCommit 12;
+
+}, [_firefly], (_durationFirefly + 1)] call CBA_fnc_waitAndExecute;
 
 
 [{

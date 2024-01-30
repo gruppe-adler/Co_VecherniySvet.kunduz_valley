@@ -10,6 +10,7 @@ class grad_intro {
         class intro_6;
         class intro_7;
         class intro_8;
+        class intro_9;
         class intro_99;
         class intro_end;
         class intro_start;
@@ -17,6 +18,7 @@ class grad_intro {
         class postInit { postInit = 1; };
         class introServer;
         class camTilt;
+        class camTiltDynamic;
 
     };
 };
