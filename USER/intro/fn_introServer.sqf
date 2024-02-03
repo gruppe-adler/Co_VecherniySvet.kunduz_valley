@@ -51,13 +51,13 @@ skiptime -1.5;
 	private _data_1 = call compile loadFile ("USER\intro\fn_mi24_data_1.sqf");
 	[_mi24_1, _data_1] spawn BIS_fnc_unitPlay;
 
-	_mi24_1 addEventHandler ["AnimChanged", {
-		params ["_unit", "_anim"];
 
-		if (_anim == "wheel_1_1_source") then {
-			_unit action ['LandGearUp', _unit];
+	[] spawn {
+		while {!isNull grad_intro_mi24_1} do {
+			grad_intro_mi24_1 action ['LandGearUp', grad_intro_mi24_1];
+			sleep 0.1;
 		};
-	}]; 
+	};
 
 
 	private _result = [[9220.49,-43.9566,160.978], _dir, "UK3CB_CW_SOV_O_LATE_Mi_24P", east] call BIS_fnc_spawnVehicle;

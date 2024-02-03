@@ -16,20 +16,21 @@ private _roll = 0;
 private _vectorDir = [sin _yaw * cos _pitch, cos _yaw * cos _pitch, sin _pitch];
 private _vectorUp = [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] call BIS_fnc_rotateVector2D;
 
+
+
+// [_camera, _mi24, _duration-1, 2, true] call GRAD_INTRO_fnc_camTilt;
+[_camera, [_vectorDir, _vectorUp], _duration, 2] call GRAD_INTRO_fnc_camTilt;
+
 [_butterfly] spawn {
     params ["_butterfly"];
 
     for "_i" from 1 to 7 do {
-        _butterfly camSetPos (getPos grad_intro_mi24_1);
+        _butterfly camSetPos (getPos introButterfly_5_1);
         _butterfly camCommit 5;
         sleep 1;
     };
     deleteVehicle _butterfly;
 };
-
-
-// [_camera, _mi24, _duration-1, 2, true] call GRAD_INTRO_fnc_camTilt;
-[_camera, [_vectorDir, _vectorUp], _duration, 2] call GRAD_INTRO_fnc_camTilt;
 
 
 [{
@@ -40,6 +41,6 @@ private _vectorUp = [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] ca
 
 
 [{
-    params ["_camera"];
+    params ["_camera", "_yaw"];
     [_camera, _yaw-180] call grad_intro_fnc_intro_8;
-}, [_camera], _duration] call CBA_fnc_waitAndExecute;
+}, [_camera, _yaw], _duration] call CBA_fnc_waitAndExecute;

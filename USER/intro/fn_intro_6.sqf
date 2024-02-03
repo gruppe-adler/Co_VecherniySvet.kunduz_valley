@@ -11,7 +11,7 @@ params ["_camera"];
 
 private _duration = 20;
 ["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, 3] call grad_intro_fnc_butterfly;
-private _butterfly = ["GRAD_butterfly", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration, _duration] call grad_intro_fnc_butterfly;
+private _butterfly = ["GRAD_butterfly", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration-5, _duration-5] call grad_intro_fnc_butterfly;
 
 20 fadeSound 1;
 
@@ -29,6 +29,8 @@ _camera camPreparePos (_northOfButterfly);
 _camera camCommitPrepared _duration;
 
 [_camera, [vectorDir introMarker_4_2, vectorUp introMarker_4_2], _duration-1, 2] call GRAD_INTRO_fnc_camTilt;
+
+
 
 
 [{

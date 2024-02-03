@@ -25,7 +25,7 @@ _camera setVectorDirAndUp [vectorDir introMarker_5_1, vectorUp introMarker_5_1];
 	/* Lifetime */			60,
 	/* Position */			_spawnPos,
 	/* MoveVelocity */		[0,0,-0.25],
-	/* Simulation */		1, 1.31, 1, 0, // rotationVel, weight, volume, rubbing
+	/* Simulation */		1, 1.5, 1, 0, // rotationVel, weight, volume, rubbing
 	/* Scale */				[1],
 	/* Color */				[[1,1,1,1], [1,1,1,1]],
 	/* AnimSpeed */			[1.5, 0.5],
@@ -40,7 +40,7 @@ _camera setVectorDirAndUp [vectorDir introMarker_5_1, vectorUp introMarker_5_1];
 	/* emissiveColor */		[[0,0,0,0]]
 	];
 
-}, [], 6] call CBA_fnc_waitAndExecute;
+}, [], 4] call CBA_fnc_waitAndExecute;
 
 
 [{
