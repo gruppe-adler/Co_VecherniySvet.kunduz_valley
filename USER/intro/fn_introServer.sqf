@@ -38,6 +38,10 @@ skiptime -1.5;
 		["exhaust_hide",1]
 	] call BIS_fnc_initVehicle;
 	_mi24_1 allowDamage false;
+	_mi24_1 disableAI "ANIM";
+	_mi24_1 flyInHeightASL [20,20,20];
+	_mi24_1 setBehaviour "CARELESS";
+	_mi24_1 setCombatMode "BLUE";
 
 	(creategroup east) createVehicleCrew _mi24_1;
 
@@ -46,6 +50,14 @@ skiptime -1.5;
 
 	private _data_1 = call compile loadFile ("USER\intro\fn_mi24_data_1.sqf");
 	[_mi24_1, _data_1] spawn BIS_fnc_unitPlay;
+
+	_mi24_1 addEventHandler ["AnimChanged", {
+		params ["_unit", "_anim"];
+
+		if (_anim == "wheel_1_1_source") then {
+			_unit action ['LandGearUp', _unit];
+		};
+	}]; 
 
 
 	private _result = [[9220.49,-43.9566,160.978], _dir, "UK3CB_CW_SOV_O_LATE_Mi_24P", east] call BIS_fnc_spawnVehicle;
@@ -64,7 +76,7 @@ skiptime -1.5;
 	private _data_2 = call compile loadFile ("USER\intro\fn_mi24_data_2.sqf");
 	[_mi24_2, _data_2] spawn BIS_fnc_unitPlay;
 
-}, [], 45] call CBA_fnc_waitAndExecute;
+}, [], 31] call CBA_fnc_waitAndExecute;
 
 
 [{

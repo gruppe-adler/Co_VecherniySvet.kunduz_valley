@@ -1,9 +1,19 @@
+
+/*
+
+    SCENE 6 - upwards tower to the sun
+
+    
+
+*/
+
 params ["_camera"];
 
 private _duration = 20;
 ["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, 3] call grad_intro_fnc_butterfly;
-private _butterfly = ["GRAD_butterfly", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration] call grad_intro_fnc_butterfly;
+private _butterfly = ["GRAD_butterfly", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration, _duration] call grad_intro_fnc_butterfly;
 
+20 fadeSound 1;
 
 _camera camPreparePos (getPos introMarker_4_1);
 _camera camCommitPrepared 0;

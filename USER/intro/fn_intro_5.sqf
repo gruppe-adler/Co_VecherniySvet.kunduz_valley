@@ -17,6 +17,8 @@ private _vectorDir = vectorDir introMarker_3_3;
 private _vectorUp = vectorUp introMarker_3_3;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
+// [_camera, 0.009, 20] spawn grad_intro_fnc_camShake; // does not work
+
 private _duration = 20;
 _camera camPreparePos (getPos introMarker_3_4);
 // _camera camPrepareTarget (intro_tractor);

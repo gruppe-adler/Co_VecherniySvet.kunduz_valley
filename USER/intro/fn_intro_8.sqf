@@ -1,33 +1,24 @@
-params ["_camera"];
+/*
 
-private _duration = 7;
-private _startTime = diag_tickTime;
+    SCENE 8 - tilt on flyby
 
-private _butterflyWindscreen = createSimpleObject ["GRAD_butterfly", [0,0,0], true];
+    
 
-[{
-    params ["_args", "_handle"];
-    _args params ["_camera", "_butterflyWindscreen", "_duration", "_startTime"];
+*/
 
-    if (diag_tickTime > _startTime + _duration) exitWith {
-        [_handle] call CBA_fnc_removePerFrameHandler;
-    };
+params ["_camera", "_yaw"];
 
-    _butterflyWindscreen setPosASL (grad_intro_mi24_1 modelToWorldVisualWorld [0.597656,7.99014,-1.55084]);
-    _butterflyWindscreen setVectorDirAndUp [vectorDir grad_intro_mi24_1, vectorUp grad_intro_mi24_1];
+private _duration = 1;
 
-    private _actualPos = (visiblePositionASL grad_intro_mi24_1);
-    private _actualPosAGL = ASLToAGL _actualPos;
-    private _relPos = (_actualPosAGL) getPos [6, getDir grad_intro_mi24_1];
-    _relPos set [2, _actualPosAGL#2];
-
-    _camera camSetPos _relPos;
-    _camera camSetTarget _actualPosAGL;
-    _camera camCommit 0;
+private _pitch = 180; 
+private _roll = 180;
+private _vectorDir = [sin _yaw * cos _pitch, cos _yaw * cos _pitch, sin _pitch];
+private _vectorUp = [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] call BIS_fnc_rotateVector2D;
 
 
-}, 0, [_camera, _butterflyWindscreen, _duration, _startTime]] call CBA_fnc_addPerFrameHandler;
+// [_camera, 0.01, 2] spawn grad_intro_fnc_camShake; // does not work
 
+[_camera, [_vectorDir, _vectorUp], _duration, _duration] call GRAD_INTRO_fnc_camTilt;
 
 [{
     params ["_camera"];
