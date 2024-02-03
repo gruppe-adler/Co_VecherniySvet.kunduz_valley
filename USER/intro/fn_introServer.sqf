@@ -37,6 +37,7 @@ skiptime -1.5;
 		["SOV_2",1], 
 		["exhaust_hide",1]
 	] call BIS_fnc_initVehicle;
+	_mi24_1 allowDamage false;
 
 	(creategroup east) createVehicleCrew _mi24_1;
 
@@ -47,8 +48,6 @@ skiptime -1.5;
 	[_mi24_1, _data_1] spawn BIS_fnc_unitPlay;
 
 
-	
-
 	private _result = [[9220.49,-43.9566,160.978], _dir, "UK3CB_CW_SOV_O_LATE_Mi_24P", east] call BIS_fnc_spawnVehicle;
 	_result params ["_mi24_2", "_crew", "_group"];
 	[
@@ -56,7 +55,7 @@ skiptime -1.5;
 		["SOV",1], 
 		["exhaust_hide",1]
 	] call BIS_fnc_initVehicle;
-
+	_mi24_2 allowDamage false;
 	(creategroup east) createVehicleCrew _mi24_2;
 
 	grad_intro_mi24_2 = _mi24_2;
@@ -65,7 +64,7 @@ skiptime -1.5;
 	private _data_2 = call compile loadFile ("USER\intro\fn_mi24_data_2.sqf");
 	[_mi24_2, _data_2] spawn BIS_fnc_unitPlay;
 
-}, [], 50] call CBA_fnc_waitAndExecute;
+}, [], 45] call CBA_fnc_waitAndExecute;
 
 
 [{

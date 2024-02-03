@@ -12,8 +12,9 @@ private _vectorDir = vectorDir introMarker_4_1;
 private _vectorUp = vectorUp introMarker_4_1;
 _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
-
-_camera camPreparePos (getPos _butterfly);
+private _northOfButterfly = _butterfly getPos [5, 0];
+_northOfButterfly set [2, getPos _butterfly select 2];
+_camera camPreparePos (_northOfButterfly);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
