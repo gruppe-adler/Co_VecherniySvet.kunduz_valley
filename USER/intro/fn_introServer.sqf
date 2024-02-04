@@ -48,16 +48,10 @@ skiptime -1.5;
 	grad_intro_mi24_1 = _mi24_1;
 	publicVariable "grad_intro_mi24_1";
 
-	private _data_1 = call compile loadFile ("USER\intro\fn_mi24_data_1.sqf");
+	private _data_1 = call compile loadFile ("USER\intro\fn_mi24_data_3.sqf");
 	[_mi24_1, _data_1] spawn BIS_fnc_unitPlay;
 
 
-	[] spawn {
-		while {!isNull grad_intro_mi24_1} do {
-			grad_intro_mi24_1 action ['LandGearUp', grad_intro_mi24_1];
-			sleep 0.1;
-		};
-	};
 
 
 	private _result = [[9220.49,-43.9566,160.978], _dir, "UK3CB_CW_SOV_O_LATE_Mi_24P", east] call BIS_fnc_spawnVehicle;
@@ -76,10 +70,11 @@ skiptime -1.5;
 	private _data_2 = call compile loadFile ("USER\intro\fn_mi24_data_2.sqf");
 	[_mi24_2, _data_2] spawn BIS_fnc_unitPlay;
 
-}, [], 31] call CBA_fnc_waitAndExecute;
+}, [], 28] call CBA_fnc_waitAndExecute;
 
 
 [{
 	setTimeMultiplier 1;
+	[getPos introButterfly_2, [8801.01,5346.75,0]] call grad_intro_fnc_spawnRabbits;
 }, [], 60] call CBA_Fnc_waitAndExecute;
 

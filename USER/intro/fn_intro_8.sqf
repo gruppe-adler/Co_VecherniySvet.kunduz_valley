@@ -6,19 +6,19 @@
 
 */
 
-params ["_camera", "_yaw"];
+params ["_camera"];
 
 private _duration = 1;
 
-private _pitch = 180; 
-private _roll = 180;
-private _vectorDir = [sin _yaw * cos _pitch, cos _yaw * cos _pitch, sin _pitch];
-private _vectorUp = [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] call BIS_fnc_rotateVector2D;
-
-
+private _vectorDir = vectorDir introMarker_4_3;
+private _vectorUp = vectorUp introMarker_4_3;
 // [_camera, 0.01, 2] spawn grad_intro_fnc_camShake; // does not work
+_camera camPreparePos (getPos introMarker_4_3);
+// _camera camPrepareTarget (intro_tractor);
+_camera camCommitPrepared _duration;
 
-[_camera, [_vectorDir, _vectorUp], _duration, _duration] call GRAD_INTRO_fnc_camTilt;
+[_camera, [_vectorDir, _vectorUp], _duration, 1] call GRAD_INTRO_fnc_camTilt;
+
 
 [{
     params ["_camera"];

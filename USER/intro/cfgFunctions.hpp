@@ -24,6 +24,7 @@ class grad_intro {
         class camTilt;
         class camTiltDynamic;
         class camTiltFromTo;
+        class spawnRabbits;
 
     };
 };
