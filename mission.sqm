@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8755.4854,36.781651,5329.2104};
-		dir[]={-0.81443137,-0.57342416,0.088839419};
-		up[]={-0.57004452,0.8192578,0.062181082};
-		aside[]={0.10843866,-4.8930815e-008,0.99410659};
+		pos[]={8748.4502,36.781651,5340.5249};
+		dir[]={-0.85297358,-0.52079058,-0.034985058};
+		up[]={-0.52035594,0.85368294,-0.021342851};
+		aside[]={-0.040981211,-5.2650648e-008,0.99916548};
 	};
 };
 binarizationWanted=0;
@@ -6436,7 +6436,7 @@ class Mission
 				position[]={7563.9443,16.740295,1829.7236};
 			};
 			id=3604;
-			atlOffset=2.2323046;
+			atlOffset=1.2981348;
 		};
 		class Item80
 		{
@@ -6446,7 +6446,7 @@ class Mission
 				position[]={7641.9209,19.293882,1885.1454};
 			};
 			id=3605;
-			atlOffset=1.8400402;
+			atlOffset=1.4931774;
 		};
 		class Item81
 		{
@@ -6516,7 +6516,7 @@ class Mission
 				position[]={7744.8213,19.340076,1843.5469};
 			};
 			id=3612;
-			atlOffset=1.8604355;
+			atlOffset=1.5151005;
 		};
 		class Item88
 		{
@@ -12256,7 +12256,6 @@ class Mission
 			class Attributes
 			{
 				name="introButterfly_4";
-				disableSimulation=1;
 			};
 			id=4054;
 			type="Sign_Arrow_Direction_Pink_F";
@@ -12338,8 +12337,6 @@ class Mission
 			class Attributes
 			{
 				name="introMarker_5_1";
-				disableSimulation=1;
-				dynamicSimulation=1;
 			};
 			id=4074;
 			type="Sign_Arrow_Direction_Cyan_F";
@@ -12387,7 +12384,6 @@ class Mission
 			class Attributes
 			{
 				name="introMarker_5_2";
-				disableSimulation=1;
 			};
 			id=4075;
 			type="Sign_Arrow_Direction_Cyan_F";
