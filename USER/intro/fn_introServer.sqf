@@ -75,6 +75,6 @@ skiptime -1.5;
 
 [{
 	setTimeMultiplier 1;
-	[getPos introButterfly_2, [8801.01,5346.75,0]] call grad_intro_fnc_spawnRabbits;
+	[] call grad_intro_fnc_spawnRabbits;
 }, [], 60] call CBA_Fnc_waitAndExecute;
 

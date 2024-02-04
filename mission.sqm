@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=4096;
+		nextID=4098;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8876.5762,72.944481,5309.1001};
-		dir[]={0.1263379,-0.58941716,0.79789716};
-		up[]={0.092179023,0.80782926,0.58216351};
-		aside[]={0.9877004,-1.6207196e-007,-0.15639068};
+		pos[]={8755.4854,36.781651,5329.2104};
+		dir[]={-0.81443137,-0.57342416,0.088839419};
+		up[]={-0.57004452,0.8192578,0.062181082};
+		aside[]={0.10843866,-4.8930815e-008,0.99410659};
 	};
 };
 binarizationWanted=0;
@@ -4738,7 +4738,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=268;
+		items=270;
 		class Item0
 		{
 			dataType="Layer";
@@ -6436,7 +6436,7 @@ class Mission
 				position[]={7563.9443,16.740295,1829.7236};
 			};
 			id=3604;
-			atlOffset=1.2981348;
+			atlOffset=2.2323046;
 		};
 		class Item80
 		{
@@ -6446,7 +6446,7 @@ class Mission
 				position[]={7641.9209,19.293882,1885.1454};
 			};
 			id=3605;
-			atlOffset=1.4931774;
+			atlOffset=1.8400402;
 		};
 		class Item81
 		{
@@ -6516,7 +6516,7 @@ class Mission
 				position[]={7744.8213,19.340076,1843.5469};
 			};
 			id=3612;
-			atlOffset=1.5151005;
+			atlOffset=1.8604355;
 		};
 		class Item88
 		{
@@ -12644,6 +12644,74 @@ class Mission
 			id=4095;
 			type="Sign_Arrow_Direction_F";
 			atlOffset=36.924541;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item268
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8717.2998,15.615968,5327.1597};
+				angles[]={0,1.6893042,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="introRabbits_1";
+			};
+			id=4096;
+			type="Sign_Arrow_Direction_Yellow_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item269
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8764.541,16.084789,5343.2446};
+				angles[]={0,1.6893042,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="introRabbits_2";
+			};
+			id=4097;
+			type="Sign_Arrow_Direction_Yellow_F";
+			atlOffset=0.15110397;
 			class CustomAttributes
 			{
 				class Attribute0
