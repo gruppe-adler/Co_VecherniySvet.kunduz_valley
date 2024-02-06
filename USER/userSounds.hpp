@@ -7,7 +7,15 @@
 #define DISTANCE 15
 
 
-
+class impact_bird
+{
+    // how the sound is referred to in the editor (e.g. trigger effects)
+    name = "impact_bird";
+    // filename, volume, pitch, distance (optional)
+    sound[] = { "USER\sounds\impact_bird.ogg", VOLUME, 1, DISTANCE };
+    // subtitle delay in seconds, subtitle text
+    titles[] = {  };
+};
 
 class rocksFalling_1
 {

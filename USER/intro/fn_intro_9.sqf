@@ -1,43 +1,81 @@
 params ["_camera"];
 
-private _duration = 3;
+private _duration = 4;
 private _startTime = CBA_missionTime;
 
-private _butterflyWindscreen = createSimpleObject ["GRAD_butterfly", [0,0,0], true];
+fnc_SetPitchBankYaw = {
+	private ["_object", "_rotations", "_aroundX", "_aroundY", "_aroundZ", "_dirX", "_dirY",
+	"_dirZ", "_upX", "_upY", "_upZ", "_dir", "_up", "_dirXTemp", "_upXTemp"];
+	_object = _this select 0;
+	_rotations = _this select 1;
+	_aroundX = _rotations select 0;
+	_aroundY = _rotations select 1;
+	_aroundZ = (360 - (_rotations select 2)) - 360;
+	_dirX = 0;
+	_dirY = 1;
+	_dirZ = 0;
+	_upX = 0;
+	_upY = 0;
+	_upZ = 1;
+	if (_aroundX != 0) then {
+		_dirY = cos _aroundX;
+		_dirZ = sin _aroundX;
+		_upY = -sin _aroundX;
+		_upZ = cos _aroundX;
+	};
+	if (_aroundY != 0) then {
+		_dirX = _dirZ * sin _aroundY;
+		_dirZ = _dirZ * cos _aroundY;
+		_upX = _upZ * sin _aroundY;
+		_upZ = _upZ * cos _aroundY;
+	};
+	if (_aroundZ != 0) then {
+		_dirXTemp = _dirX;
+		_dirX = (_dirXTemp* cos _aroundZ) - (_dirY * sin _aroundZ);
+		_dirY = (_dirY * cos _aroundZ) + (_dirXTemp * sin _aroundZ);
+		_upXTemp = _upX;
+		_upX = (_upXTemp * cos _aroundZ) - (_upY * sin _aroundZ);
+		_upY = (_upY * cos _aroundZ) + (_upXTemp * sin _aroundZ);
+	};
+	_dir = [_dirX,_dirY,_dirZ];
+	_up = [_upX,_upY,_upZ];
+	_object setVectorDirAndUp [_dir,_up];
+};
 
-[{
-    params ["_args", "_handle"];
-    _args params ["_camera", "_butterflyWindscreen", "_duration", "_startTime"];
+_camera cameraEffect ["terminate","back"];
+camDestroy _camera;
+(driver grad_intro_mi24_1) switchCamera "INTERNAL";
 
-    if (CBA_missionTime > (_startTime + _duration)) exitWith {
-        [_handle] call CBA_fnc_removePerFrameHandler;
-        _camera camSetTarget objNull;
-        _camera camCommit 0;
-    };
-
-    // _butterflyWindscreen attachTo [grad_intro_mi24_1, [0.155234,6.53915,-0.563475]];
-    _butterflyWindscreen setPosASL (grad_intro_mi24_1 modelToWorldVisualWorld [0.155234,6.53915,-0.063475]);
-    private _vDirUp = [[vectorDir grad_intro_mi24_1, vectorUp grad_intro_mi24_1], 0, 45, 0] call BIS_fnc_transformVectorDirAndUp;
-    _butterflyWindscreen setVectorDirAndUp _vDirUp;
+[] spawn {
     
+    private _eagleWindScreen = createSimpleObject ["\a3\Data_F_Curator\Eagle\eagle.p3d", [0,0,0], true];
 
-    private _pilot = driver grad_intro_mi24_1;
-    private _pilotPos = (_pilot) modelToWorld (_pilot selectionPosition "head");
+    playSound3D ["A3\data_f_curator\sound\cfgNonAiVehicles\eagle_f_1.wss", grad_intro_mi24_1];
+    sleep 0.2;
+        for "_i" from -30 to 0 do {
+            private _position = grad_intro_mi24_1 modelToWorldVisualWorld [-0.0688477,6.3743+_i,-0.63159];
+            _eagleWindScreen setPosASL _position;
+            sleep 0.01;
+        };
+    playSound "impact_bird";
+    // _eagleWindScreen attachTo [grad_intro_mi24_1, [-0.0688477,6.3743,-0.63159]];
 
-    _camera camSetTarget (_butterflyWindscreen);
-    _camera camCommit 0;
-    _camera setPosASL (grad_intro_mi24_1 modelToWorldVisualWorld [0,9,0]);
-    /*
-    _camera setVectorDirAndUp [
-        (vectorDir _camera) vectorFromTo (vectorDir _pilot), 
-        (vectorUp _camera) vectorFromTo (vectorUp _pilot)
-    ];
-    */
+    private _dragEagleAlong = [{
+        params ["_args", "_handle"];
+        _args params ["_eagleWindScreen"];
 
-}, 0, [_camera, _butterflyWindscreen, _duration, _startTime]] call CBA_fnc_addPerFrameHandler;
+        _eagleWindScreen setPosASL (grad_intro_mi24_1 modelToWorldVisualWorld [-0.0688477,6.3743,-0.63159]);
+        [_eagleWindScreen,[-45,0,0]] call fnc_SetPitchBankYaw;
+
+    }, 0, [_eagleWindScreen]] call CBA_fnc_addPerFrameHandler;
+
+    sleep 30;
+    [_dragEagleAlong] call CBA_fnc_removePerFrameHandler;
+    deleteVehicle _eagleWindScreen;
+    
+};
 
 
 [{
-    params ["_camera"];
-    [_camera] call grad_intro_fnc_intro_10;
-}, [_camera], _duration+0.1] call CBA_fnc_waitAndExecute;
+    [] call grad_intro_fnc_intro_10;
+}, [], _duration+0.1] call CBA_fnc_waitAndExecute;

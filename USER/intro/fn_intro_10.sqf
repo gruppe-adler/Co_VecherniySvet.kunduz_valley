@@ -1,6 +1,11 @@
-params ["_camera"];
+private _camera = "camera" camCreate [0, 0, 3];
+_camera cameraEffect ["internal","back"];
+_camera camCommand "inertia on";
+_camera camSetFOV 0.55; // 0.25
+_camera camCommitPrepared 0;
 
 private _duration = 4;
+
 
 _camera camSetTarget objNull;
 _camera camCommit 0;

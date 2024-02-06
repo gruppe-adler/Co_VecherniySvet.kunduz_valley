@@ -13,7 +13,7 @@ params ["_camera"];
 
 private _duration = 20;
 ["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, 3] call grad_intro_fnc_butterfly;
-private _butterfly = ["GRAD_butterfly", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration-5, _duration-5] call grad_intro_fnc_butterfly;
+private _butterfly = ["Eagle_F", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration-5, _duration-5] call grad_intro_fnc_butterfly;
 
 20 fadeSound 0.3;
 

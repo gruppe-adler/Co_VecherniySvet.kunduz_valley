@@ -1,7 +1,8 @@
 private _position1 = getPos introRabbits_1;
 private _position2 = getPos introRabbits_2;
+private _position3 = getPos introRabbits_3;
 
-for "_i" from 1 to 10 do { 
+for "_i" from 1 to 4 do { 
 	
 	private _rabbit = createAgent ["Rabbit_F", _position1, [], 2, "NONE"];
 	_rabbit setVariable ["BIS_fnc_animalBehaviour_disable", true];
@@ -14,3 +15,15 @@ for "_i" from 1 to 10 do {
 	_rabbit moveTo _position2;
 
 };
+
+
+
+private _rabbit = createAgent ["Rabbit_F", _position3, [], 2, "NONE"];
+_rabbit setVariable ["BIS_fnc_animalBehaviour_disable", true];
+_rabbit setDir (60 + random 60);
+_rabbit playmovenow "Rabbit_Hop";
+
+_rabbit setSpeedMode "FULL";
+
+private _position2 = [[[_position2, 5]], []] call BIS_fnc_randomPos;
+_rabbit moveTo _position2;
