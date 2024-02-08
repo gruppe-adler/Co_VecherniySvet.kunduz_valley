@@ -25,6 +25,7 @@ class grad_intro {
         class camTiltDynamic;
         class camTiltFromTo;
         class spawnRabbits;
+        class eagleFeathers;
 
     };
 };

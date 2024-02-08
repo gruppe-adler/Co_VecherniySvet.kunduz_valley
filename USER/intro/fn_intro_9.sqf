@@ -1,6 +1,6 @@
 params ["_camera"];
 
-private _duration = 4;
+private _duration = 5;
 private _startTime = CBA_missionTime;
 
 fnc_SetPitchBankYaw = {
@@ -46,36 +46,36 @@ _camera cameraEffect ["terminate","back"];
 camDestroy _camera;
 (driver grad_intro_mi24_1) switchCamera "INTERNAL";
 
-[] spawn {
-    
-    private _eagleWindScreen = createSimpleObject ["\a3\Data_F_Curator\Eagle\eagle.p3d", [0,0,0], true];
+private _eagleWindScreen = createSimpleObject ["\a3\Data_F_Curator\Eagle\eagle.p3d", [0,0,0], true];
 
-    playSound3D ["A3\data_f_curator\sound\cfgNonAiVehicles\eagle_f_1.wss", grad_intro_mi24_1];
-    sleep 0.2;
-        for "_i" from -30 to 0 do {
-            private _position = grad_intro_mi24_1 modelToWorldVisualWorld [-0.0688477,6.3743+_i,-0.63159];
-            _eagleWindScreen setPosASL _position;
-            sleep 0.01;
-        };
+[_eagleWindScreen] spawn {
+    params ["_eagleWindScreen"];
+    
+	for "_i" from -100 to 0 do {
+		private _position = grad_intro_mi24_1 modelToWorldVisualWorld [0.0688477,6.3743+_i,-0.63159];
+		_eagleWindScreen setPosASL _position;
+		sleep 0.01;
+	};
     playSound "impact_bird";
     // _eagleWindScreen attachTo [grad_intro_mi24_1, [-0.0688477,6.3743,-0.63159]];
 
-    private _dragEagleAlong = [{
-        params ["_args", "_handle"];
-        _args params ["_eagleWindScreen"];
+    for "_i" from 0 to 100 do {
+		private _position = grad_intro_mi24_1 modelToWorldVisualWorld [0.0688477,6.3743+_i,-0.63159-_i*0.02];
+		_eagleWindScreen setPosASL _position;
+		sleep 0.01;
+	};
 
-        _eagleWindScreen setPosASL (grad_intro_mi24_1 modelToWorldVisualWorld [-0.0688477,6.3743,-0.63159]);
-        [_eagleWindScreen,[-45,0,0]] call fnc_SetPitchBankYaw;
+    sleep 1;
+	playSound3D ["A3\data_f_curator\sound\cfgNonAiVehicles\eagle_f_1.wss", grad_intro_mi24_1];
 
-    }, 0, [_eagleWindScreen]] call CBA_fnc_addPerFrameHandler;
-
-    sleep 30;
-    [_dragEagleAlong] call CBA_fnc_removePerFrameHandler;
-    deleteVehicle _eagleWindScreen;
-    
 };
 
 
+
 [{
+	params ["_eagleWindScreen"];
+	
+ 	deleteVehicle _eagleWindScreen;
+
     [] call grad_intro_fnc_intro_10;
-}, [], _duration+0.1] call CBA_fnc_waitAndExecute;
+}, [_eagleWindScreen], _duration+0.1] call CBA_fnc_waitAndExecute;

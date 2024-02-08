@@ -7,7 +7,7 @@ _camera camCommitPrepared 0;
 private _duration = 4;
 
 
-_camera camSetTarget objNull;
+_camera camSetTarget grad_intro_mi24_1;
 _camera camCommit 0;
 _camera camPreparePos (getPos introMarker_5_1);
 _camera camCommitPrepared 0;
@@ -18,11 +18,14 @@ _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 20 fadeSound 0;
 
 
+private _positionRotor = grad_intro_mi24_1 modelToWorldVisualWorld [-0.158203,7.09149,-2.01074];
+[_positionRotor] call grad_intro_fnc_eagleFeathers;
+
 private _spawnPos = getPos introMarker_5_1;
 _spawnPos set [2, 40];
 
 drop [
-/* Sprite */			["\A3\animals_f\butterfly.p3d", 1, 0, 1, 0], // File,Ntieth,Index,Count,Loop
+/* Sprite */			["insects\data\eaglefeather3d.p3d", 1, 0, 1, 0], // File,Ntieth,Index,Count,Loop
 /* Animation */			"",
 /* Type */				"spaceObject",
 /* TimerPer */			0.01,
