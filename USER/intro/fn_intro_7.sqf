@@ -18,12 +18,14 @@ private _vectorDir = [sin _yaw * cos _pitch, cos _yaw * cos _pitch, sin _pitch];
 private _vectorUp = [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] call BIS_fnc_rotateVector2D;
 */
 
+_eagle camPreparePos (getPos introButterfly_5_3);
+_eagle camCommitPrepared 3;
+
 
 // [_camera, [_vectorDir, _vectorUp], _duration, 1.9] call GRAD_INTRO_fnc_camTilt;
-
-_camera camSetTarget _eagle;
-_camera camSetRelPos [0,-3,0.25];
-_camera camCommit 0;
+_camera camPreparePos (getPos introMarker_4_4);
+_camera camCommitPrepared _duration;
+[_camera, [vectorDir introMarker_4_4, vectorUp introMarker_4_4], _duration, 3, 15] call GRAD_INTRO_fnc_camTilt;
 
 [{
      params ["_eagle"];
@@ -31,7 +33,8 @@ _camera camCommit 0;
 },{
     params ["_eagle"];
 
-    [getPos _eagle] call grad_intro_fnc_eagleFeathers;
+    [getPos _eagle, true] call grad_intro_fnc_eagleFeathers;
+    [getPos _eagle, false, grad_intro_mi24_1] call grad_intro_fnc_eagleFeathers;
 
     private _camPos = getPos _eagle;
     private _camVectorDir = vectorDir _eagle;

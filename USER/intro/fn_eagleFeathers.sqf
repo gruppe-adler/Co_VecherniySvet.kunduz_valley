@@ -1,4 +1,4 @@
-params ["_position"];
+params ["_position", ["_fullDestruction", false], ["_object", objNull]];
 
 
 private _particleSource = "#particlesource" createVehicleLocal _position;
@@ -38,10 +38,41 @@ _particleSource setParticleRandom [
 	0
 ];
 
+if (!isNull _object || !_fullDestruction) then {
+	_particleSource setDropInterval 0.01;
+} else {
+	_particleSource setDropInterval 0.0001;
+};
 
-_particleSource setDropInterval 0.0001;
-_particleSource spawn { sleep 0.2; deleteVehicle _this };
 
+if (!isNull _object) then {
+	[_particleSource, _object] spawn { 
+		params ["_particleSource", "_object"];
+		
+		// attachto would reduce particle output due to reduced sim rate i guess
+		[{
+			params ["_args", "_handle"];
+			_args params ["_particleSource", "_object"];
+			
+			if (isNull _particleSource) exitWith {
+				[_handle] call CBA_fnc_removePerFrameHandler;
+			};
+
+			_particleSource setPosWorld getPosWorld _object;
+
+		}, 0, [_particleSource, _object]] call CBA_fnc_addPerFrameHandler;
+
+		sleep 15; deleteVehicle _particleSource;
+	};
+} else {
+	[_particleSource] spawn { 
+		params ["_particleSource"];
+		_particleSource setDropInterval 0.0001;
+		sleep 0.2; deleteVehicle _particleSource;
+	};
+};
+
+if (!_fullDestruction) exitWith {};
 
 private _source = "#particlesource" createVehicleLocal [0, 0, 0]; 
 _source setPos _position; 
