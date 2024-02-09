@@ -28,7 +28,7 @@ _particleSource setParticleParams
 _particleSource setParticleRandom [
 	0,
 	[0,0,0],
-	[2,2,2],
+	[2,2,3],
 	0.01,
 	1,
 	[0,0,0,0],
@@ -39,7 +39,7 @@ _particleSource setParticleRandom [
 ];
 
 
-_particleSource setDropInterval 0.001;
+_particleSource setDropInterval 0.0001;
 _particleSource spawn { sleep 0.2; deleteVehicle _this };
 
 

@@ -23,7 +23,7 @@ _camera camPreparePos (getPos introMarker_3_2);
 // _camera camPrepareTarget (intro_tractor);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_3_2, vectorUp introMarker_3_2], _duration-1] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_3_2, vectorUp introMarker_3_2], _duration-1, 5] call GRAD_INTRO_fnc_camTilt;
 
 ["GRAD_butterfly", getpos introButterfly_1, getPos introButterfly_2, 17] call grad_intro_fnc_butterfly;
 

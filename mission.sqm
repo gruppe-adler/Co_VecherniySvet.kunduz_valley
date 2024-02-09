@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=4124;
+		nextID=4126;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1126;
+		nextID=1170;
 	};
 	class Camera
 	{
-		pos[]={8823.5293,54.364124,5306.7681};
-		dir[]={0.43612492,-0.85782051,-0.27231693};
-		up[]={0.72767001,0.51385486,-0.45435601};
-		aside[]={-0.52968544,-1.2150849e-007,-0.84830588};
+		pos[]={8862.166,64.513817,5302.5537};
+		dir[]={0.82169533,-0.56054455,-0.10298835};
+		up[]={0.55619287,0.82812428,-0.069711231};
+		aside[]={-0.12436341,-3.7252903e-009,-0.99223673};
 	};
 };
 binarizationWanted=0;
@@ -4738,7 +4738,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=282;
+		items=271;
 		class Item0
 		{
 			dataType="Layer";
@@ -5876,7 +5876,7 @@ class Mission
 				position[]={4320.1611,30.001389,4339.6138};
 			};
 			id=3548;
-			atlOffset=1.499155;
+			atlOffset=2.521389;
 		};
 		class Item24
 		{
@@ -6186,7 +6186,7 @@ class Mission
 				position[]={6428.8428,6.6790218,8630.5039};
 			};
 			id=3579;
-			atlOffset=1.4997454;
+			atlOffset=2.459022;
 		};
 		class Item55
 		{
@@ -6206,7 +6206,7 @@ class Mission
 				position[]={7808.0825,13.617105,7758.1738};
 			};
 			id=3581;
-			atlOffset=1.4993858;
+			atlOffset=2.2571049;
 		};
 		class Item57
 		{
@@ -6246,7 +6246,7 @@ class Mission
 				position[]={6122.2563,21.529745,1425.1709};
 			};
 			id=3585;
-			atlOffset=1.3737736;
+			atlOffset=1.598978;
 		};
 		class Item61
 		{
@@ -6286,7 +6286,7 @@ class Mission
 				position[]={7996.9214,13.210832,7702.2422};
 			};
 			id=3589;
-			atlOffset=1.4991159;
+			atlOffset=1.850832;
 		};
 		class Item65
 		{
@@ -6306,7 +6306,7 @@ class Mission
 				position[]={5888.936,21.801008,1328.01};
 			};
 			id=3591;
-			atlOffset=1.5239372;
+			atlOffset=2.2003689;
 		};
 		class Item67
 		{
@@ -6316,7 +6316,7 @@ class Mission
 				position[]={8423.5908,29.755232,3100.7441};
 			};
 			id=3592;
-			atlOffset=1.4998379;
+			atlOffset=2.1752319;
 		};
 		class Item68
 		{
@@ -6436,7 +6436,7 @@ class Mission
 				position[]={7563.9443,16.740295,1829.7236};
 			};
 			id=3604;
-			atlOffset=1.2981348;
+			atlOffset=2.2323046;
 		};
 		class Item80
 		{
@@ -6446,7 +6446,7 @@ class Mission
 				position[]={7641.9209,19.293882,1885.1454};
 			};
 			id=3605;
-			atlOffset=1.4931774;
+			atlOffset=1.8400402;
 		};
 		class Item81
 		{
@@ -6516,7 +6516,7 @@ class Mission
 				position[]={7744.8213,19.340076,1843.5469};
 			};
 			id=3612;
-			atlOffset=1.5151005;
+			atlOffset=1.8604355;
 		};
 		class Item88
 		{
@@ -6586,7 +6586,7 @@ class Mission
 				position[]={7850.6689,10.957544,8645.7305};
 			};
 			id=3619;
-			atlOffset=1.4993763;
+			atlOffset=2.1075439;
 		};
 		class Item95
 		{
@@ -6686,7 +6686,7 @@ class Mission
 				position[]={8275.3994,12.857209,8806.5488};
 			};
 			id=3629;
-			atlOffset=1.4828548;
+			atlOffset=2.27491;
 		};
 		class Item105
 		{
@@ -11966,7 +11966,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8877.0029,67.333939,5314.1655};
+				position[]={8870.8213,55.384415,5301.6357};
 				angles[]={0,1.1941295,0};
 			};
 			side="Empty";
@@ -11976,7 +11976,7 @@ class Mission
 			};
 			id=4029;
 			type="Sign_Arrow_Direction_F";
-			atlOffset=36.974674;
+			atlOffset=31.261644;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12000,7 +12000,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8827.3906,40.14077,5299.438};
+				position[]={8826.0928,39.748405,5299.2354};
 				angles[]={0,5.2511196,0};
 			};
 			side="Empty";
@@ -12011,7 +12011,7 @@ class Mission
 			};
 			id=4030;
 			type="Sign_Arrow_Direction_Yellow_F";
-			atlOffset=19.781998;
+			atlOffset=19.431078;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12048,8 +12048,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8875.5156,66.269005,5315.729};
-				angles[]={0,5.271575,0};
+				position[]={8872.4434,55.38636,5309.3613};
+				angles[]={0,2.892802,0};
 			};
 			side="Empty";
 			class Attributes
@@ -12059,7 +12059,7 @@ class Mission
 			};
 			id=4034;
 			type="Sign_Arrow_Direction_Yellow_F";
-			atlOffset=35.541706;
+			atlOffset=27.876247;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12096,8 +12096,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8883.6396,68.174187,5314.6494};
-				angles[]={0,6.2689261,0};
+				position[]={8875.3613,55.334335,5298.1216};
+				angles[]={0,2.8837824,0};
 			};
 			side="Empty";
 			class Attributes
@@ -12107,7 +12107,7 @@ class Mission
 			};
 			id=4035;
 			type="Sign_Arrow_Direction_Yellow_F";
-			atlOffset=37.702694;
+			atlOffset=29.509512;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12629,7 +12629,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8877.3467,67.299606,5314.8892};
+				position[]={8871.165,55.350082,5302.3594};
 				angles[]={0,6.1456318,0};
 			};
 			side="Empty";
@@ -12639,7 +12639,7 @@ class Mission
 			};
 			id=4095;
 			type="Sign_Arrow_Direction_F";
-			atlOffset=36.924541;
+			atlOffset=30.869295;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12760,982 +12760,16 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item271
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8827.5938,26.583111,5306.2329};
-			};
-			name="intro_animation_timeline_1";
-			id=4111;
-			type="Timeline_F";
-			atlOffset=6.7210007;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Length";
-					expression="_this setVariable ['Length',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=20;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="PlayRate";
-					expression="_this setVariable ['PlayRate',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="EventStarted";
-					expression="_this setVariable ['EventStarted',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="true";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="InterpMode";
-					expression="_this setVariable ['InterpMode',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=4;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="Paused";
-					expression="_this setVariable ['Paused',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="EventLooped";
-					expression="_this setVariable ['EventLooped',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="true";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="Reverse";
-					expression="_this setVariable ['Reverse',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="EventFinished";
-					expression="_this setVariable ['EventFinished',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="true";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="DestroyWhenFinished";
-					expression="_this setVariable ['DestroyWhenFinished',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="PlayFromStart";
-					expression="_this setVariable ['PlayFromStart',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="Loop";
-					expression="_this setVariable ['Loop',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=11;
-			};
-		};
-		class Item272
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8824.3945,19.754761,5305.7358};
-			};
-			name="intro_animation_curve_1";
-			id=4112;
-			type="Curve_F";
-			atlOffset=-1.9073486e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TimeInSeconds";
-					expression="_this setVariable ['TimeInSeconds',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="3DENDrawPrecisionDrag";
-					expression="_this setVariable ['3DENDrawPrecisionDrag',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.25;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="3DENDrawPrecision";
-					expression="_this setVariable ['3DENDrawPrecision',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.25;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="OrientationMode";
-					expression="_this setVariable ['OrientationMode',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="LookAt";
-					expression="_this setVariable ['LookAt',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[-1,<NULL-object>]";
-						};
-					};
-				};
-				nAttributes=5;
-			};
-		};
-		class Item273
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8827.7393,40.94323,5297.2261};
-			};
-			id=4113;
-			type="Key_F";
-			atlOffset=1.0767097;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LeaveTangentWeight";
-					expression="_this setVariable ['LeaveTangentWeight',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=10;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="InterpMode";
-					expression="_this setVariable ['InterpMode',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=2;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ArriveTangent";
-					expression="_this setVariable ['ArriveTangent',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ArriveTangentWeight";
-					expression="_this setVariable ['ArriveTangentWeight',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=10;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="Event";
-					expression="_this setVariable ['Event',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="true";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LeaveTangent";
-					expression="_this setVariable ['LeaveTangent',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LockControlPoints";
-					expression="_this setVariable ['LockControlPoints',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=1;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="Time";
-					expression="_this setVariable ['Time',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="CameraFOV";
-					expression="_this setVariable ['CameraFOV',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.75;
-						};
-					};
-				};
-				nAttributes=9;
-			};
-		};
-		class Item274
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8837.3789,54.589851,5313.3423};
-			};
-			id=4114;
-			type="Key_F";
-			atlOffset=33.259064;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LeaveTangentWeight";
-					expression="_this setVariable ['LeaveTangentWeight',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=10;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="InterpMode";
-					expression="_this setVariable ['InterpMode',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=3;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ArriveTangent";
-					expression="_this setVariable ['ArriveTangent',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ArriveTangentWeight";
-					expression="_this setVariable ['ArriveTangentWeight',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=10;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="Event";
-					expression="_this setVariable ['Event',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="true";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LeaveTangent";
-					expression="_this setVariable ['LeaveTangent',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LockControlPoints";
-					expression="_this setVariable ['LockControlPoints',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=1;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="Time";
-					expression="_this setVariable ['Time',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=20;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="CameraFOV";
-					expression="_this setVariable ['CameraFOV',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.75;
-						};
-					};
-				};
-				nAttributes=9;
-			};
-		};
-		class Item275
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8832.3252,24.727348,5288.6992};
-			};
-			id=4115;
-			type="ControlPoint_F";
-			atlOffset=4.1699944;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TangentType";
-					expression="_this setVariable ['TangentType',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item276
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8822.6328,57.159111,5304.8945};
-			};
-			id=4116;
-			type="ControlPoint_F";
-			atlOffset=37.367996;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TangentType";
-					expression="_this setVariable ['TangentType',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item277
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8819.8652,79.413536,5322.4536};
-			};
-			id=4118;
-			type="ControlPoint_F";
-			atlOffset=61.432289;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TangentType";
-					expression="_this setVariable ['TangentType',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item278
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8854.8926,29.766167,5304.231};
-			};
-			id=4117;
-			type="ControlPoint_F";
-			atlOffset=13.960519;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TangentType";
-					expression="_this setVariable ['TangentType',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item279
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8829.5918,42.06884,5302.9058};
-			};
-			id=4121;
-			type="Key_F";
-			atlOffset=21.857;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="LeaveTangentWeight";
-					expression="_this setVariable ['LeaveTangentWeight',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=20;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="InterpMode";
-					expression="_this setVariable ['InterpMode',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=4;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ArriveTangent";
-					expression="_this setVariable ['ArriveTangent',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ArriveTangentWeight";
-					expression="_this setVariable ['ArriveTangentWeight',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=20;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="Event";
-					expression="_this setVariable ['Event',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="true";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="LeaveTangent";
-					expression="_this setVariable ['LeaveTangent',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=3;
-								class Item0
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-								class Item2
-								{
-									class data
-									{
-										singleType="SCALAR";
-										value=0;
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="LockControlPoints";
-					expression="_this setVariable ['LockControlPoints',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="Time";
-					expression="_this setVariable ['Time',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=10;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="CameraFOV";
-					expression="_this setVariable ['CameraFOV',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.75;
-						};
-					};
-				};
-				nAttributes=9;
-			};
-		};
-		class Item280
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8826.6982,35.897102,5295.3389};
-			};
-			id=4122;
-			type="ControlPoint_F";
-			atlOffset=2.7886658;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TangentType";
-					expression="_this setVariable ['TangentType',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item281
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8829.4287,48.803761,5307.3315};
-			};
-			id=4123;
-			type="ControlPoint_F";
-			atlOffset=28.929396;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TangentType";
-					expression="_this setVariable ['TangentType',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=18;
+			nextID=8;
 		};
 		class Links
 		{
-			items=18;
+			items=8;
 			class Item0
 			{
 				linkID=0;
@@ -13811,106 +12845,6 @@ class Mission
 				linkID=7;
 				item0=21;
 				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item8
-			{
-				linkID=8;
-				item0=4112;
-				item1=4111;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item9
-			{
-				linkID=9;
-				item0=4113;
-				item1=4112;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item10
-			{
-				linkID=10;
-				item0=4114;
-				item1=4112;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item11
-			{
-				linkID=11;
-				item0=4115;
-				item1=4113;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item12
-			{
-				linkID=12;
-				item0=4116;
-				item1=4113;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item13
-			{
-				linkID=13;
-				item0=4117;
-				item1=4114;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item14
-			{
-				linkID=14;
-				item0=4118;
-				item1=4114;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item15
-			{
-				linkID=15;
-				item0=4121;
-				item1=4112;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item16
-			{
-				linkID=16;
-				item0=4122;
-				item1=4121;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item17
-			{
-				linkID=17;
-				item0=4123;
-				item1=4121;
 				class CustomData
 				{
 					type="Sync";

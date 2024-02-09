@@ -5,6 +5,9 @@ diag_log format ["startpos %1 - destination %2", _position, _destination];
 // agents / vehicles dont really work for butterflies apparently
 private _butterfly = _type camCreate _position;
 
+private _vectorToDestination = vectorNormalized (_position vectorFromTo _destination);
+_butterfly setVectorDir _vectorToDestination;
+
 private _startTime = diag_tickTime;
 private _path = [];
 

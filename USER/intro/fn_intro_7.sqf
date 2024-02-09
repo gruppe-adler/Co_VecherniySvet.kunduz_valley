@@ -20,25 +20,38 @@ private _vectorUp = [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] ca
 
 
 // [_camera, [_vectorDir, _vectorUp], _duration, 1.9] call GRAD_INTRO_fnc_camTilt;
-_camera cameraEffect ["terminate","back"];
-camDestroy _camera;
-(_eagle) switchCamera "EXTERNAL";
 
-[_eagle] spawn {
+_camera camSetTarget _eagle;
+_camera camSetRelPos [0,-3,0.25];
+_camera camCommit 0;
+
+[{
+     params ["_eagle"];
+     _eagle distance grad_intro_mi24_1 < 5
+},{
     params ["_eagle"];
 
-    for "_i" from 1 to 7 do {
-        _eagle camSetPos (getPos grad_intro_mi24_1);
-        _eagle camCommit 5;
-        sleep 1;
-    };
-    deleteVehicle _eagle;
-    [_positionRotor] call grad_intro_fnc_eagleFeathers;
-};
+    [getPos _eagle] call grad_intro_fnc_eagleFeathers;
 
-/*
-[{
-    params ["_camera"];
+    private _camPos = getPos _eagle;
+    private _camVectorDir = vectorDir _eagle;
+    private _camVectorUp = vectorUp _eagle;
+    
+    _eagle cameraEffect ["terminate","back"];
+    camDestroy _eagle;
+
+    playSound "impact_bird";
+
+    private _camera = "camera" camCreate [0, 0, 3];
+    _camera cameraEffect ["internal","back"];
+    _camera camCommand "inertia on";
+    _camera camPreparePos (_camPos);
+    _camera camSetFOV 0.55; // 0.25
+    _camera camCommitPrepared 0;
+    _camera setVectorDirAndUp [_camVectorDir, _camVectorUp];
     [_camera] call grad_intro_fnc_intro_8;
-}, [_camera], _duration] call CBA_fnc_waitAndExecute;
-*/
+
+}, [_eagle]] call CBA_fnc_waitUntilAndExecute;
+   
+
+

@@ -1,6 +1,6 @@
 params ["_camera"];
 
-private _duration = 5;
+private _duration = 3;
 private _startTime = CBA_missionTime;
 
 fnc_SetPitchBankYaw = {
@@ -42,6 +42,7 @@ fnc_SetPitchBankYaw = {
 	_object setVectorDirAndUp [_dir,_up];
 };
 
+/*
 _camera cameraEffect ["terminate","back"];
 camDestroy _camera;
 (driver grad_intro_mi24_1) switchCamera "INTERNAL";
@@ -56,7 +57,7 @@ private _eagleWindScreen = createSimpleObject ["\a3\Data_F_Curator\Eagle\eagle.p
 		_eagleWindScreen setPosASL _position;
 		sleep 0.01;
 	};
-    playSound "impact_bird";
+    
     // _eagleWindScreen attachTo [grad_intro_mi24_1, [-0.0688477,6.3743,-0.63159]];
 
     for "_i" from 0 to 100 do {
@@ -69,9 +70,13 @@ private _eagleWindScreen = createSimpleObject ["\a3\Data_F_Curator\Eagle\eagle.p
 	playSound3D ["A3\data_f_curator\sound\cfgNonAiVehicles\eagle_f_1.wss", grad_intro_mi24_1];
 
 };
+*/
 
+[{
+    [] call grad_intro_fnc_intro_10;
+}, [], _duration+0.1] call CBA_fnc_waitAndExecute;
 
-
+/*
 [{
 	params ["_eagleWindScreen"];
 	
@@ -79,3 +84,4 @@ private _eagleWindScreen = createSimpleObject ["\a3\Data_F_Curator\Eagle\eagle.p
 
     [] call grad_intro_fnc_intro_10;
 }, [_eagleWindScreen], _duration+0.1] call CBA_fnc_waitAndExecute;
+*/
