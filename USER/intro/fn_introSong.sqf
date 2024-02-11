@@ -30,6 +30,28 @@ If I must fight, I'll fight
 To make this land our own
 Until I die, this land is mine
 
-Acts_carFixingWheel
+Acts_carFixingWheel  // kneel doing stuff 
 
 gm_tank_hatch_01_getout_01
+
+HubBriefing_stretch
+HubSittingChairC_move1
+
+gm_teleraetman_sleeping_idle // sleeping on wall
+
+gm_uaz469_cargo_02_in_wuna_to_in_wpstsras
+gm_uaz469_cargo_03_in_wpstsras_to_in_wuna
+
+gm_uaz469_cargo_04_in_wuna_to_in_wpstsras
+gm_uaz469_cargo_05_in_wpstsras_to_in_wuna
+
+ace_dragging_rifle_limpB // drag sheep
+
+
+AmovPercMstpSnonWnonDnon_AinvPercMstpSnonWnonDnon_Putdown
+vehicle_passenger_stand_1_Aim_Launcher_FromBinoc_End
+vehicle_passenger_stand_1_Aim_FromBinoc
+
+MountSideProne // kneel doing stuff 
+
+LHD_krajPaluby // watching for helis
