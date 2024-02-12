@@ -26,6 +26,7 @@ class grad_intro {
         class camTiltFromTo;
         class spawnRabbits;
         class eagleFeathers;
+        class abuseSheep2;
 
     };
 };

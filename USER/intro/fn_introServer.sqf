@@ -73,6 +73,8 @@ skiptime -1.5;
 }, [], 28] call CBA_fnc_waitAndExecute;
 
 
+[intro_butcher] call grad_intro_fnc_abuseSheep2;
+
 [{
 	setTimeMultiplier 1;
 	[] call grad_intro_fnc_spawnRabbits;

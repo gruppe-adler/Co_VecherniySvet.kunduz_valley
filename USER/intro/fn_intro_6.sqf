@@ -10,7 +10,7 @@
 params ["_camera"];
 
 
-private _duration = 19;
+private _duration = 21;
 private _butterfly = ["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, 3] call grad_intro_fnc_butterfly;
 private _eagle = ["GRAD_Eagle_F", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration] call grad_intro_fnc_butterfly;
 

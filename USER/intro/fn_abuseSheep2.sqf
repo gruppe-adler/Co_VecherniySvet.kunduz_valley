@@ -1,6 +1,12 @@
+params ["_unit"];
 
+private _sheep = createAgent ["Sheep_Random_F", getpos _unit, [], 0, "NONE"];
+_unit addEventHandler ["AnimDone",{
+	params ["_unit"];
 
-private _sheep = createAgent ["Sheep_Random_F", getpos player, [], 0, "NONE"];
+	_unit switchMove "MountSideProne";
+}];
+
 
 {
 	_x params ["_classname", "_offset", "_yawPitchRoll"];
@@ -14,6 +20,7 @@ private _sheep = createAgent ["Sheep_Random_F", getpos player, [], 0, "NONE"];
 	[sin _yaw * cos _pitch, cos _yaw * cos _pitch, sin _pitch],
 	[[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] call BIS_fnc_rotateVector2D
 ];
+
 } forEach 
 [
 	["gm_shell_122mm_he_of462_static",
@@ -33,7 +40,9 @@ private _sheep = createAgent ["Sheep_Random_F", getpos player, [], 0, "NONE"];
 _sheep switchMove "Sheep_Stop";
 _sheep disableAI "FSM";
 
+/*
 [{
 	{ deleteVehicle _x } forEach (attachedObjects _this);
 	deleteVehicle _this;
 }, _sheep, 7] call CBA_fnc_waitAndExecute;
+*/

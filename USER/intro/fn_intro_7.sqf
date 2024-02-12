@@ -8,7 +8,7 @@
 
 params ["_camera", "_eagle"];
 
-private _duration = 3;
+private _duration = 1;
 /*
 private _yaw = getDir grad_intro_mi24_1 - 180; // look at mi24
 private _yawFuture = getDir grad_intro_mi24_1;
