@@ -17,8 +17,6 @@ _camera setVectorDirAndUp [_vectorDir, _vectorUp];
 
 20 fadeSound 0;
 
-private _spawnPos = getPos introMarker_5_1;
-_spawnPos set [2, 40];
 
 
 

@@ -15,6 +15,7 @@ class grad_intro {
         class intro_11;
         class intro_12;
         class intro_13;
+        class intro_14;
         class intro_99;
         class intro_end;
         class intro_start;
@@ -28,6 +29,8 @@ class grad_intro {
         class eagleFeathers;
         class abuseSheep2;
         class flyFly;
+        class abuseSheepManBehind;
+        class abuseSheepManNext;
 
     };
 };

@@ -10,7 +10,7 @@
 params ["_camera"];
 
 
-private _duration = 20;
+private _duration = 21;
 private _butterfly = ["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, 3] call grad_intro_fnc_butterfly;
 private _eagle = ["GRAD_Eagle_F", getPos introButterfly_5_1, getPos introButterfly_5_2, _duration] call grad_intro_fnc_butterfly;
 
@@ -29,6 +29,12 @@ _camera camCommitPrepared _duration;
 [_camera, [vectorDir introMarker_4_2, vectorUp introMarker_4_2], _duration-1, 2] call GRAD_INTRO_fnc_camTilt;
 
 
+
+[{
+    params ["_eagle"];
+    _eagle camPreparePos (getPos introButterfly_5_3);
+    _eagle camCommitPrepared 7;
+}, [_eagle], _duration-6] call CBA_fnc_waitAndExecute;
 
 
 [{
