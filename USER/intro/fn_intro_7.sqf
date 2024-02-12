@@ -8,7 +8,7 @@
 
 params ["_camera", "_eagle"];
 
-private _duration = 1;
+private _duration = 2;
 /*
 private _yaw = getDir grad_intro_mi24_1 - 180; // look at mi24
 private _yawFuture = getDir grad_intro_mi24_1;
@@ -19,7 +19,7 @@ private _vectorUp = [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] ca
 */
 
 _eagle camPreparePos (getPos introButterfly_5_3);
-_eagle camCommitPrepared 3;
+_eagle camCommitPrepared _duration;
 
 
 // [_camera, [_vectorDir, _vectorUp], _duration, 1.9] call GRAD_INTRO_fnc_camTilt;

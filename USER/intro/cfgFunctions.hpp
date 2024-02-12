@@ -27,6 +27,7 @@ class grad_intro {
         class spawnRabbits;
         class eagleFeathers;
         class abuseSheep2;
+        class flyFly;
 
     };
 };

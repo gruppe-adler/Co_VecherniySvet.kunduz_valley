@@ -51,7 +51,18 @@ skiptime -1.5;
 	private _data_1 = call compile loadFile ("USER\intro\fn_mi24_data_3.sqf");
 	[_mi24_1, _data_1] spawn BIS_fnc_unitPlay;
 
+	/*
 
+		// debug path
+		_mi24_1 spawn {
+		
+		while {alive _this} do {
+			createSimpleObject["Sign_sphere10cm_EP1", getPosASL _this, true];
+			sleep 0.1;
+			};
+	
+		};
+	*/
 
 
 	private _result = [[9220.49,-43.9566,160.978], _dir, "UK3CB_CW_SOV_O_LATE_Mi_24P", east] call BIS_fnc_spawnVehicle;
@@ -72,8 +83,10 @@ skiptime -1.5;
 
 }, [], 28] call CBA_fnc_waitAndExecute;
 
+private _pos = getPos intro_sheep;
+private _dir = getDir intro_sheep;
 
-[intro_butcher] call grad_intro_fnc_abuseSheep2;
+[intro_butcher, _pos, _dir] call grad_intro_fnc_abuseSheep2;
 
 [{
 	setTimeMultiplier 1;
