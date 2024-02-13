@@ -10,12 +10,16 @@ _unit addEventHandler ["AnimDone",{
 }];
 
 
+
+
 private _sheep = createAgent ["Sheep_Random_F", getpos _unit, [], 0, "CAN_COLLIDE"];
 _sheep setVariable ["BIS_fnc_animalBehaviour_disable", true];
 _sheep setDir 180;
 _sheep setPos _pos;
 _sheep setDir _dir;
 _sheep disableAI "ALL";// [_sheep, "Sheep_Stop"] remoteExec ["switchmove"];
+
+_unit setDir (_unit getDir _sheep);
 
 // [_unit, ""] remoteExec ["switchmove"];
 

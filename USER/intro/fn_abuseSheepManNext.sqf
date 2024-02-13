@@ -9,3 +9,4 @@ _unit addEventhandler ["AnimDone", {
 }];  
 
 _unit disableAI "AUTOCOMBAT";
+

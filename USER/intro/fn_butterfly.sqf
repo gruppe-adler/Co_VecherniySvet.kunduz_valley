@@ -25,6 +25,9 @@ diag_log format ["_path %1", _path];
 
     private _varAlias = "grad_butterfly_path_index" + str(_handle);
 
+    if (diag_tickTime > _startTime + _killSwitchDuration) exitWith {
+        [_handle] call CBA_fnc_removePerFrameHandler;
+    };
 
     if (diag_tickTime > _startTime + _duration) exitWith {
         player setVariable [_varAlias, 0];
@@ -33,10 +36,7 @@ diag_log format ["_path %1", _path];
         _butterfly camCommit 1;
     };
 
-    if (diag_tickTime > _startTime + _killSwitchDuration) exitWith {
-        [_handle] call CBA_fnc_removePerFrameHandler;
-    };
-
+  
     private _index = player getVariable [_varAlias, 0];
 
     private _position = (_path select _index);
