@@ -46,7 +46,7 @@ diag_log format ["_path %1", _path];
     _butterfly camSetPos _position;
     _butterfly camCommit 1;
 
-    diag_log format ["_position %1, _index %2", _position, _index];
+    // diag_log format ["_position %1, _index %2", _position, _index];
 
     // private _debug = "Sign_Sphere10cm_F" createVehicleLocal [0,0,0];
     // _debug setPos getPos _butterfly;
