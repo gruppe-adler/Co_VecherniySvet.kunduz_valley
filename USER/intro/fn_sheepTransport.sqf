@@ -56,7 +56,8 @@ for "_i" from 0 to 29 do {
 
 
 [{
-	intro_sheepTransport distance introConvoy1 < 10
+	intro_sheepTransport distance introConvoy1 < 10 &&
+	!isNil "sheepTransportGo"
 },{
 	introConvoy1 setdamage 1;
 	intro_sheepTransport setdamage 1;

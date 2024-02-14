@@ -54,9 +54,10 @@ for "_i" from 1 to 30 do {
 
 	}, 0, [_vehicles]] call CBA_fnc_addPerFrameHandler;
 	
+	[{
+		sheepTransportGo = true;
+	}, [], 10] call CBA_fnc_waitAndExecute;
+
 }, [_path]] call CBA_fnc_waitUntilAndExecute;
 
 
-[{
-	sheepTransportGo = true;
-}, [], 10] call CBA_fnc_waitAndExecute;
