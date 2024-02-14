@@ -6,6 +6,16 @@
 #define VOLUME 4
 #define DISTANCE 15
 
+class drill
+{
+    // how the sound is referred to in the editor (e.g. trigger effects)
+    name = "drill";
+    // filename, volume, pitch, distance (optional)
+    sound[] = { "USER\sounds\drill.ogg", VOLUME, 1, DISTANCE };
+    // subtitle delay in seconds, subtitle text
+    titles[] = {  };
+};
+
 
 class impact_bird
 {

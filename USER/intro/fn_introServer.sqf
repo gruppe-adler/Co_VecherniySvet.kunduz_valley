@@ -86,7 +86,7 @@ skiptime -1.5;
 private _pos = getPos intro_sheep;
 private _dir = getDir intro_sheep;
 
-[intro_butcher, _pos, _dir] call grad_intro_fnc_abuseSheep2;
+[intro_butcher, intro_butcher2, _pos, _dir] call grad_intro_fnc_abuseSheep2;
 
 [{
 	setTimeMultiplier 1;

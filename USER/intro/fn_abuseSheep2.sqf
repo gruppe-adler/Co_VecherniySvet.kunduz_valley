@@ -1,27 +1,48 @@
-params ["_unit", "_pos", "_dir"];
+params ["_unitNext", "_unitBehind", "_pos", "_dir"];
 
+/* unit next animation */
+[_unitNext, "Acts_carFixingWheel"] remoteExec ["switchmove"];
+_unitNext addEventHandler ["AnimDone",{
+	params ["_unitNext"];
 
-
-[_unit, "MountSideProne"] remoteExec ["switchmove"];
-_unit addEventHandler ["AnimDone",{
-	params ["_unit"];
-
-	[_unit, "MountSideProne"] remoteExec ["switchmove"];
+	[_unitNext, "Acts_carFixingWheel"] remoteExec ["switchmove"];
 }];
+_unitNext disableAI "AUTOCOMBAT";
+
+/* unit behind animation */
+[_unitBehind,"ace_dragging_static"] remoteExec ["switchMove"];
+_unitBehind addEventhandler ["AnimDone", {
+	[(_this select 0),"ace_dragging_static"] remoteExec ["switchMove"];
+}];  
 
 
+private _drill = createSimpleObject ["Land_DrillAku_F", getPosASL _unitBehind, false];
+_drill attachTo [_unitBehind, [-0.08,0,0], "righthand", true];
+
+private _yaw = 0; private _pitch = -90; private _roll = 0;
+_drill setVectorDirAndUp [ 
+ [sin _yaw * cos _pitch, cos _yaw * cos _pitch, sin _pitch], 
+ [[sin _roll, -sin _pitch, cos _roll * cos _pitch], -_yaw] call BIS_fnc_rotateVector2D 
+];
 
 
-private _sheep = createAgent ["Sheep_Random_F", getpos _unit, [], 0, "CAN_COLLIDE"];
+_unitBehind disableAI "AUTOCOMBAT";
+
+
+private _dir = 180;
+private _sheep = createAgent ["Sheep_Random_F", getpos _unitNext, [], 0, "CAN_COLLIDE"];
 _sheep setVariable ["BIS_fnc_animalBehaviour_disable", true];
-_sheep setDir 180;
-_sheep setPos _pos;
 _sheep setDir _dir;
+_sheep setPos _pos;
 _sheep disableAI "ALL";// [_sheep, "Sheep_Stop"] remoteExec ["switchmove"];
 
-_unit setDir (_unit getDir _sheep);
+_unitBehind setPos (_sheep getPos [0.2, _dir + 90]);
+_unitBehind setDir (_unitBehind getDir _sheep);
 
-// [_unit, ""] remoteExec ["switchmove"];
+_unitNext setPos (_sheep getPos [0.2, _dir - 90]);
+_unitNext setDir ((_unitNext getDir _sheep));
+
+// [_unitNext, ""] remoteExec ["switchmove"];
 
 {
 	_x params ["_classname", "_offset", "_yawPitchRoll"];

@@ -2,7 +2,11 @@ introDisabled = false;
 
 if (isServer) then {
     if (!isMultiplayer && introDisabled) exitWith {};
-    
+
+    // only spawns and prepares
+    [] call grad_intro_fnc_sheepTransport;
+    [] call grad_intro_fnc_convoy;    
+
     [{
         
         [] call grad_intro_fnc_introServer;

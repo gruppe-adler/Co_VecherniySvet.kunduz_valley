@@ -32,6 +32,10 @@ class grad_intro {
         class abuseSheepManBehind;
         class abuseSheepManNext;
 
+        class setObjectScaleSafe;
+
+        class sheepTransport;
+        class convoy;
     };
 };
 

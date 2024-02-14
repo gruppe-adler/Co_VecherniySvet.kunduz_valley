@@ -62,3 +62,12 @@ Acts_AidlPercMstpSnonWnonDnon_warmup_2_loop // football kneel
 Acts_Ambient_Facepalm_2 // fly swatting
 
 Acts_listeningToRadio_Loop
+Acts_Helping_Wake_Up_2
+
+
+Para_Pilot // hanging on sth
+
+ Helper_SwitchToCarrynon // alternative to drag
+ Helper_SwitchToCarryRfl // alternative to drag high hand
+
+ InBaseMoves_assemblingVehicleErc // 
