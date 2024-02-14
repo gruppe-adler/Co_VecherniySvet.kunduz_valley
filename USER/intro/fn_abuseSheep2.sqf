@@ -29,19 +29,22 @@ _drill setVectorDirAndUp [
 _unitBehind disableAI "AUTOCOMBAT";
 
 
-private _dir = 180;
-private _sheep = createAgent ["Sheep_Random_F", getpos _unitNext, [], 0, "CAN_COLLIDE"];
+private _dir = 90;
+private _sheep = createAgent ["Sheep_Random_F", _pos, [], 0, "CAN_COLLIDE"];
 _sheep setVariable ["BIS_fnc_animalBehaviour_disable", true];
-_sheep setDir _dir;
 _sheep setPos _pos;
+_sheep setDir _dir;
 _sheep disableAI "ALL";// [_sheep, "Sheep_Stop"] remoteExec ["switchmove"];
 
-_unitBehind setPos (_sheep getPos [0.2, _dir + 90]);
+_unitBehind setPos (_pos getPos [0.3, _dir + 90]);
 _unitBehind setDir (_unitBehind getDir _sheep);
+_unitBehind setFormDir ((_unitNext getDir _sheep));
+_unitBehind disableAI "FSM";
 
-_unitNext setPos (_sheep getPos [0.2, _dir - 90]);
+_unitNext setPos (_pos getPos [0.3, _dir - 90]);
 _unitNext setDir ((_unitNext getDir _sheep));
-
+_unitNext setFormDir ((_unitNext getDir _sheep));
+_unitNext disableAI "FSM";
 // [_unitNext, ""] remoteExec ["switchmove"];
 
 {
