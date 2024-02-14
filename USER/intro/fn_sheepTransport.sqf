@@ -53,3 +53,11 @@ for "_i" from 0 to 29 do {
 	intro_sheepTransport setDriveOnPath _path;
 	intro_sheepTransport forceSpeed 60;
 }, [_path]] call CBA_fnc_waitUntilAndExecute;
+
+
+[{
+	intro_sheepTransport distance introConvoy1 < 10
+},{
+	introConvoy1 setdamage 1;
+	intro_sheepTransport setdamage 1;
+}] call CBA_fnc_waitUntilAndExecute;

@@ -22,8 +22,8 @@ for "_i" from 1 to 30 do {
 
 	{
 		_x setDriveOnPath _path;
-		_x forceSpeed 30;
-		_x setConvoySeparation 10;
+		_x forceSpeed 15;
+		_x limitSpeed 15;
 	} forEach _vehicles;
 
 
@@ -38,8 +38,14 @@ for "_i" from 1 to 30 do {
 		{ 
 			if (_x != introConvoy1) then {
 				private _vehicleAhead = _vehicles select (_forEachIndex-1);
-				if (_vehicleAhead distance _x < 10) then {
-					_x forceSpeed 15;
+				private _distance = _vehicleAhead distance _x;
+
+				if (_distance < 25) then {
+					if (_distance < 15) then {
+						_x forceSpeed 5;
+					} else {
+						_x forceSpeed 15;
+					};
 				} else {
 					_x forceSpeed 30;
 				};
@@ -49,3 +55,8 @@ for "_i" from 1 to 30 do {
 	}, 0, [_vehicles]] call CBA_fnc_addPerFrameHandler;
 	
 }, [_path]] call CBA_fnc_waitUntilAndExecute;
+
+
+[{
+	sheepTransportGo = true;
+}, [], 10] call CBA_fnc_waitAndExecute;

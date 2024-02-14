@@ -9,6 +9,7 @@
 
 params ["_camera"];
 
+intro_texture_3 setobjecttexture [0, ""]; // remove texture
 
 private _duration = 23;
 private _butterfly = ["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, 3] call grad_intro_fnc_butterfly;

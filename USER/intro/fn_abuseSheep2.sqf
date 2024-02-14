@@ -1,7 +1,7 @@
 params ["_unitNext", "_unitBehind", "_pos", "_dir"];
 
 /* unit next animation */
-[_unitNext, "Acts_carFixingWheel"] remoteExec ["switchmove"];
+[_unitNext, ""] remoteExec ["switchmove"];
 _unitNext addEventHandler ["AnimDone",{
 	params ["_unitNext"];
 
@@ -10,7 +10,7 @@ _unitNext addEventHandler ["AnimDone",{
 _unitNext disableAI "AUTOCOMBAT";
 
 /* unit behind animation */
-[_unitBehind,"ace_dragging_static"] remoteExec ["switchMove"];
+[_unitBehind,""] remoteExec ["switchMove"];
 _unitBehind addEventhandler ["AnimDone", {
 	[(_this select 0),"ace_dragging_static"] remoteExec ["switchMove"];
 }];  
@@ -29,22 +29,23 @@ _drill setVectorDirAndUp [
 _unitBehind disableAI "AUTOCOMBAT";
 
 
-private _dir = 90;
 private _sheep = createAgent ["Sheep_Random_F", _pos, [], 0, "CAN_COLLIDE"];
 _sheep setVariable ["BIS_fnc_animalBehaviour_disable", true];
 _sheep setPos _pos;
 _sheep setDir _dir;
 _sheep disableAI "ALL";// [_sheep, "Sheep_Stop"] remoteExec ["switchmove"];
 
-_unitBehind setPos (_pos getPos [0.3, _dir + 90]);
+_unitBehind setPos (_pos getPos [0.4, _dir - 100]);
 _unitBehind setDir (_unitBehind getDir _sheep);
 _unitBehind setFormDir ((_unitNext getDir _sheep));
 _unitBehind disableAI "FSM";
+[_unitBehind, _sheep, true] call BIS_fnc_attachToRelative;
 
-_unitNext setPos (_pos getPos [0.3, _dir - 90]);
+_unitNext setPos (_pos getPos [0.4, _dir + 80]);
 _unitNext setDir ((_unitNext getDir _sheep));
 _unitNext setFormDir ((_unitNext getDir _sheep));
 _unitNext disableAI "FSM";
+[_unitNext, _sheep, true] call BIS_fnc_attachToRelative;
 // [_unitNext, ""] remoteExec ["switchmove"];
 
 {
