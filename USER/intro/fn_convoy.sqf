@@ -47,8 +47,12 @@ for "_i" from 1 to 30 do {
 	}, 0, [_vehicles]] call CBA_fnc_addPerFrameHandler;
 	
 	[{
-		sheepTransportGo = true;
-	}, [], 10] call CBA_fnc_waitAndExecute;
+		sheepConvoyGo = true;
+		// private _data_1 = call compile loadFile ("USER\intro\fn_sheepTransportPath.sqf");
+		// intro_sheepTransport engineOn true;
+		// intro_sheepTransport disableBrakes true; 
+		// [intro_sheepTransport, _data_1, [], true, nil, nil, 10] spawn BIS_fnc_unitPlay;
+	}, [], 40] call CBA_fnc_waitAndExecute;
 
 }, [_path]] call CBA_fnc_waitUntilAndExecute;
 

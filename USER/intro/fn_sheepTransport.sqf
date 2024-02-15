@@ -1,7 +1,7 @@
 
 /* intro sheepTransport that is seen by players end of intro */
 private _sheeps = [];
-for "_i" from 1 to 25 do {
+for "_i" from 1 to 3 do {
 	private _singleSheep = createAgent["Sheep_Random_F", [0,0,0], [], 0, "CAN_COLLIDE"];
 	_sheeps pushback _singleSheep;
 	_singleSheep setVariable ["BIS_fnc_animalBehaviour_disable", true];
@@ -14,7 +14,7 @@ for "_i" from 1 to 25 do {
 
 /* intro sheepTransport that is first seen in intro */
 private _sheeps2 = [];
-for "_i" from 1 to 24 do {
+for "_i" from 1 to 2 do {
 	private _singleSheep = createAgent["Sheep_Random_F", [0,0,0], [], 0, "CAN_COLLIDE"];
 	_sheeps2 pushback _singleSheep;
 	_singleSheep setVariable ["BIS_fnc_animalBehaviour_disable", true];

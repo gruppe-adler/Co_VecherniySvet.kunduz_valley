@@ -49,7 +49,7 @@ private _tiltPFH = [{
 	_camera setPosASL _interpolatedPos;
 
 
-	createSimpleObject ["Sign_sphere100cm_EP1", _interpolatedPos, true];
+	// createSimpleObject ["Sign_sphere100cm_EP1", _interpolatedPos, true];
 	
 	private _vectorDirActual = _progress bezierInterpolation _markersDir;
 	private _vectorUpActual = _progress bezierInterpolation _markersUp;

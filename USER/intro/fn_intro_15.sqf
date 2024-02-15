@@ -14,7 +14,7 @@ _camera setVectorDirAndUp [vectorDir introMarker_6_1, vectorUp introMarker_6_1];
 _camera camCommitPrepared 0;
 
 
-private _duration = 23;
+private _duration = 50;
 /*
 _camera camPreparePos (getPos introMarker_6_2);
 _camera camCommitPrepared _duration;
