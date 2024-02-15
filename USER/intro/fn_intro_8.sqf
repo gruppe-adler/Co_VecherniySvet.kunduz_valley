@@ -8,6 +8,9 @@
 
 params ["_camera"];
 
+intro_texture_1 setobjecttexture [0, ""]; // remove texture
+intro_texture_2 setobjecttexture [0, ""]; // remove texture
+
 private _duration = 2;
 
 private _vectorDir = vectorDir introMarker_4_3;

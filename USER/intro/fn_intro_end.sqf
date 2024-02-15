@@ -16,7 +16,5 @@ private _duration = 10;
     5 fadeSound 1;
      "introBlackLoading" cutText ["", "BLACK IN", 5];
      diwako_dui_main_toggled_off = false;
-
-     20 fadeMusic 0;
     
 }, [_camera], _duration] call CBA_fnc_waitAndeXecute;

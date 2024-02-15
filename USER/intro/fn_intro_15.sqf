@@ -19,7 +19,7 @@ private _duration = 50;
 _camera camPreparePos (getPos introMarker_6_2);
 _camera camCommitPrepared _duration;
 */
-
+/*
 private _array = [
 	introMarker_6_1,
 	introMarker_6_2,
@@ -34,10 +34,9 @@ private _array = [
 ];
 
 [_camera, _array, _duration, 1.5] execvm "USER\intro\fn_camTiltMultiple.sqf";
+*/
 
-/*
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_99;
 }, [_camera], _duration] call CBA_fnc_waitAndExecute;
-*/

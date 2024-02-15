@@ -1,14 +1,14 @@
 params ["_camera"];
 
-private _duration = 20;
+private _duration = 3;
 
-convoyTransportGo = true;
-publicVariable "convoyTransportGo";
+/*
 
 _camera camPreparePos (getPos intro_sheepTransport);
 _camera camSetTarget intro_sheepTransport;
 _camera camSetRelPos [0,10,8];
 _camera camCommitPrepared 0;
+*/
 
 [{
     params ["_camera"];

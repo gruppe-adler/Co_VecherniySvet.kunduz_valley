@@ -1,13 +1,5 @@
-params ["_unitNext", "_unitBehind", "_pos", "_dir"];
+params ["_unitBehind", "_pos", "_dir"];
 
-/* unit next animation */
-[_unitNext, ""] remoteExec ["switchmove"];
-_unitNext addEventHandler ["AnimDone",{
-	params ["_unitNext"];
-
-	[_unitNext, "Acts_carFixingWheel"] remoteExec ["switchmove"];
-}];
-_unitNext disableAI "AUTOCOMBAT";
 
 /* unit behind animation */
 [_unitBehind,""] remoteExec ["switchMove"];
@@ -37,16 +29,10 @@ _sheep disableAI "ALL";// [_sheep, "Sheep_Stop"] remoteExec ["switchmove"];
 
 _unitBehind setPos (_pos getPos [0.6, _dir - 20]);
 _unitBehind setDir (_unitBehind getDir _sheep);
-_unitBehind setFormDir ((_unitNext getDir _sheep));
+_unitBehind setFormDir ((_unitBehind getDir _sheep));
 _unitBehind disableAI "FSM";
 [_unitBehind, _sheep, true] call BIS_fnc_attachToRelative;
 
-_unitNext setPos (_pos getPos [0.6, _dir + 20]);
-_unitNext setDir ((_unitNext getDir _sheep));
-_unitNext setFormDir ((_unitNext getDir _sheep));
-_unitNext disableAI "FSM";
-[_unitNext, _sheep, true] call BIS_fnc_attachToRelative;
-// [_unitNext, ""] remoteExec ["switchmove"];
 
 {
 	_x params ["_classname", "_offset", "_yawPitchRoll"];

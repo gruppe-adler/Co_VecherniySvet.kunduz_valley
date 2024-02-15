@@ -1,4 +1,4 @@
-params ["_camera"];
+/*params ["_camera"];
 
 private _duration = 7;
 
@@ -17,3 +17,4 @@ _camera camCommitPrepared _duration;
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_14;
 }, [_camera], _duration] call CBA_fnc_waitAndExecute;
+*/

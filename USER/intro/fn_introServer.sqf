@@ -86,10 +86,39 @@ skiptime -1.5;
 private _pos = getPos intro_sheep;
 private _dir = getDir intro_sheep;
 
-[intro_butcher, intro_butcher2, _pos, _dir] call grad_intro_fnc_abuseSheep2;
+[intro_butcher2, _pos, _dir] call grad_intro_fnc_abuseSheep2;
 
 [{
 	setTimeMultiplier 1;
 	[] call grad_intro_fnc_spawnRabbits;
 }, [], 60] call CBA_Fnc_waitAndExecute;
 
+
+[{
+	{
+		_x params ["_vehicle", "_arrow"];
+		_vehicle setpos getpos _arrow;
+		_vehicle setdir getDir _arrow;
+	} forEach [
+		[introConvoy1, intro_convoystart_1],
+		[introConvoy2, intro_convoystart_2],
+		[introConvoy3, intro_convoystart_3],
+		[introConvoy4, intro_convoystart_4]
+	]; 
+	
+}, [], 20] call CBA_Fnc_waitAndExecute;
+
+
+[{
+	
+	convoyTransportGo = true;
+	publicVariable "convoyTransportGo";
+	
+}, [], 90] call CBA_fnc_waitAndExecute;
+
+[{
+	
+	sheepTransportGo = true;
+	publicVariable "sheepTransportGo";
+	
+}, [], 170] call CBA_fnc_waitAndExecute;

@@ -15,6 +15,8 @@ private _duration = 23;
 private _butterfly = ["GRAD_butterfly", getPos introButterfly_3, getPos introButterfly_4, 3] call grad_intro_fnc_butterfly;
 private _eagle = ["GRAD_Eagle_F", getPos introButterfly_5_1, getPos introButterfly_5_3, _duration+3] call grad_intro_fnc_butterfly;
 
+intro_texture_1 setobjecttexture [0, "data\svet.paa"]; // add texture
+intro_texture_2 setobjecttexture [0, "data\vecherniy2.paa"]; // add texture
 
 20 fadeSound 0.3;
 
