@@ -24,13 +24,20 @@ private _array = [
 	introMarker_6_1,
 	introMarker_6_2,
 	introMarker_6_3,
-	introMarker_6_4	
+	introMarker_6_4,
+	introMarker_6_5,
+	introMarker_6_6,
+	introMarker_6_7,
+	introMarker_6_8,
+	introMarker_6_9,
+	introMarker_6_10
 ];
 
 [_camera, _array, _duration, 1.5] execvm "USER\intro\fn_camTiltMultiple.sqf";
 
-
+/*
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_99;
 }, [_camera], _duration] call CBA_fnc_waitAndExecute;
+*/

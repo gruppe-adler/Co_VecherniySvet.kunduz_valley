@@ -40,11 +40,18 @@ private _tiltPFH = [{
 	// vectorLinearConversion
 	// vectorLinearConversion [rangeFrom, rangeTo, rangeValue, vectorFrom, vectorTo, clip]
 	systemChat str _segmentProgress;
-	private _interpolatedPos = vectorLinearConversion [0, 1, _segmentProgress, _startPos, _endPos, true];
+	private _markersPositions = _markers apply { getPosASL _x };
+	private _markersDir = _markers apply { vectorDir _x };
+	private _markersUp = _markers apply { vectorUp _x };
+	
+	systemchat str _markersPositions;
+	private _interpolatedPos = _progress bezierInterpolation _markersPositions; // vectorLinearConversion [0, 1, _segmentProgress, _startPos, _endPos, true];
 	_camera setPosASL _interpolatedPos;
 
-	private _vectorDirActual = [_startVector select 0, _endVector select 0, _segmentProgress, _strength] call BIS_fnc_interpolateVectorConstant;
-	private _vectorUpActual = [_startVector select 1, _endVector select 1, _segmentProgress, _strength] call BIS_fnc_interpolateVectorConstant;
+	
+	
+	private _vectorDirActual = _progress bezierInterpolation _markersDir;
+	private _vectorUpActual = _progress bezierInterpolation _markersUp;
 
 	private _roll = if (_segmentProgress < 0.5) then {
 		linearConversion [0, 0.5, _segmentProgress, 0, _maxRoll, true]
@@ -54,6 +61,7 @@ private _tiltPFH = [{
 
 	private _vectorTilt = [[_vectorDirActual, _vectorUpActual], 0, 0, _roll] call BIS_fnc_transformVectorDirAndUp;
 	_vectorTilt params ["_vectorDirFinal", "_vectorUpFinal"];
+	
 
 	_camera setVectorDir _vectorDirFinal;
 	_camera setVectorUp _vectorUpFinal;
