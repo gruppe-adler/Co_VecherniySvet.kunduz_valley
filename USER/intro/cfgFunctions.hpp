@@ -16,6 +16,9 @@ class grad_intro {
         class intro_12;
         class intro_13;
         class intro_14;
+        class intro_15;
+        class intro_16;
+        class intro_17;
         class intro_99;
         class intro_end;
         class intro_start;
@@ -23,6 +26,7 @@ class grad_intro {
         class postInit { postInit = 1; };
         class introServer;
         class camTilt;
+        class camTiltMultiple;
         class camTiltDynamic;
         class camTiltFromTo;
         class spawnRabbits;

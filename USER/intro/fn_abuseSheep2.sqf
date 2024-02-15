@@ -35,13 +35,13 @@ _sheep setPos _pos;
 _sheep setDir _dir;
 _sheep disableAI "ALL";// [_sheep, "Sheep_Stop"] remoteExec ["switchmove"];
 
-_unitBehind setPos (_pos getPos [0.6, _dir - 110]);
+_unitBehind setPos (_pos getPos [0.6, _dir - 20]);
 _unitBehind setDir (_unitBehind getDir _sheep);
 _unitBehind setFormDir ((_unitNext getDir _sheep));
 _unitBehind disableAI "FSM";
 [_unitBehind, _sheep, true] call BIS_fnc_attachToRelative;
 
-_unitNext setPos (_pos getPos [0.6, _dir + 110]);
+_unitNext setPos (_pos getPos [0.6, _dir + 20]);
 _unitNext setDir ((_unitNext getDir _sheep));
 _unitNext setFormDir ((_unitNext getDir _sheep));
 _unitNext disableAI "FSM";

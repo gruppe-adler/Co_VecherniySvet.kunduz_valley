@@ -1,0 +1,54 @@
+params ["_camera", "_markers", "_duration", ["_strength", 2], ["_maxRoll", 0]];
+
+private _initTime = CBA_missionTime;
+private _currentIndex = 0;
+
+private _tiltPFH = [{
+	params ["_args", "_handle"];
+	_args params [
+		"_camera",
+		"_markers",
+		"_duration",
+		"_strength",
+		"_maxRoll",
+		"_initTime",
+		"_currentIndex"
+	];
+
+	if (CBA_missionTime > (_initTime + _duration)) exitWith {
+		[_handle] call CBA_fnc_removePerFrameHandler;
+		// [_camera] call grad_intro_fnc_intro_2;
+	};
+
+	private _markerCount = count _markers;
+	private _progress = (CBA_missionTime - _initTime) / _duration;
+	private _currentIndex = floor(_progress * (_markerCount - 1));
+	private _segmentProgress = (_progress * (_markerCount - 1)) - _currentIndex;
+
+	private _startMarker = _markers select _currentIndex;
+	private _endMarker = _markers select (_currentIndex + 1);
+
+	private _startPos = getPosASL _startMarker;
+	private _endPos = getPosASL _endMarker;
+	private _startVector = [vectorDir _startMarker, vectorUp _startMarker];
+	private _endVector = [vectorDir _endMarker, vectorUp _endMarker];
+
+	private _interpolatedPos = [_startPos, _endPos, _segmentProgress, _strength] call BIS_fnc_interpolateVectorConstant;
+	_camera setPosASL _interpolatedPos;
+
+	private _vectorDirActual = [_startVector select 0, _endVector select 0, _segmentProgress, _strength] call BIS_fnc_interpolateVectorConstant;
+	private _vectorUpActual = [_startVector select 1, _endVector select 1, _segmentProgress, _strength] call BIS_fnc_interpolateVectorConstant;
+
+	private _roll = if (_segmentProgress < 0.5) then {
+		linearConversion [0, 0.5, _segmentProgress, 0, _maxRoll, true]
+	} else {
+		linearConversion [0.5, 1, _segmentProgress, _maxRoll, 0, true]
+	};
+
+	private _vectorTilt = [[_vectorDirActual, _vectorUpActual], 0, 0, _roll] call BIS_fnc_transformVectorDirAndUp;
+	_vectorTilt params ["_vectorDirFinal", "_vectorUpFinal"];
+
+	_camera setVectorDir _vectorDirFinal;
+	_camera setVectorUp _vectorUpFinal;
+
+}, 0, [_camera, _markers, _duration, _strength, _maxRoll, _initTime, _currentIndex]] call CBA_fnc_addPerFrameHandler;

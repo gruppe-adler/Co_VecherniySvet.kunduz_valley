@@ -9,5 +9,5 @@ _camera camCommitPrepared _duration;
 
 [{
     params ["_camera"];
-    [_camera] call grad_intro_fnc_intro_99;
+    [_camera] call grad_intro_fnc_intro_15;
 }, [_camera], _duration] call CBA_fnc_waitAndExecute;
