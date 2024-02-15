@@ -1,3 +1,9 @@
+/*
+
+	deprecated / not used
+
+*/
+
 /* _newPosition needs to be code */ 
 params ["_camera", "_newPosition", "_duration", ["_strength", 2], ["_forceVectorUp", false]];
 

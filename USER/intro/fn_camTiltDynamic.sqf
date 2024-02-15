@@ -1,3 +1,9 @@
+/*
+
+	deprecated / not used
+
+*/
+
 params ["_camera", "_newObject", "_duration", ["_strength", 2], ["_forceVectorUp", false]];
 
 private _oldVectorDir = vectorDir _camera;
