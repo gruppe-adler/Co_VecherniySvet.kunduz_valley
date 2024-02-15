@@ -23,7 +23,11 @@ private _tiltPFH = [{
 	private _markerCount = count _markers;
 	private _progress = (CBA_missionTime - _initTime) / _duration;
 	private _currentIndex = floor(_progress * (_markerCount - 1));
-	private _segmentProgress = (_progress * (_markerCount - 1)) - _currentIndex;
+	private _segmentProgress = (_progress * (_markerCount - 1)) - (_currentIndex);
+
+	if (_currentIndex > (_markerCount - 1))  exitWith {
+		[_handle] call CBA_fnc_removePerFrameHandler;
+	};
 
 	private _startMarker = _markers select _currentIndex;
 	private _endMarker = _markers select (_currentIndex + 1);
@@ -33,7 +37,10 @@ private _tiltPFH = [{
 	private _startVector = [vectorDir _startMarker, vectorUp _startMarker];
 	private _endVector = [vectorDir _endMarker, vectorUp _endMarker];
 
-	private _interpolatedPos = [_startPos, _endPos, _segmentProgress, _strength] call BIS_fnc_interpolateVectorConstant;
+	// vectorLinearConversion
+	// vectorLinearConversion [rangeFrom, rangeTo, rangeValue, vectorFrom, vectorTo, clip]
+	systemChat str _segmentProgress;
+	private _interpolatedPos = vectorLinearConversion [0, 1, _segmentProgress, _startPos, _endPos, true];
 	_camera setPosASL _interpolatedPos;
 
 	private _vectorDirActual = [_startVector select 0, _endVector select 0, _segmentProgress, _strength] call BIS_fnc_interpolateVectorConstant;
