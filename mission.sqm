@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4322;
+		nextID=4323;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8933.9668,43.189781,6478.4575};
-		dir[]={0.32807121,-0.47793692,0.81487387};
-		up[]={0.17850545,0.87837625,0.44338056};
-		aside[]={0.92767209,4.4204353e-007,-0.37348211};
+		pos[]={8876.8193,69.990715,5953.6978};
+		dir[]={0.7595852,-0.64186245,-0.10535006};
+		up[]={0.63579148,0.76680773,-0.08817967};
+		aside[]={-0.13738289,-3.5738049e-007,-0.99054527};
 	};
 };
 binarizationWanted=0;
@@ -17081,8 +17081,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8917.0361,28.343657,6004.9614};
-				angles[]={0.23866343,0.13669515,6.2497158};
+				position[]={8908.1572,27.757765,6008.916};
+				angles[]={0.10502097,0.13593729,6.2687697};
 			};
 			side="Empty";
 			class Attributes
@@ -17091,7 +17091,7 @@ class Mission
 			};
 			id=4315;
 			type="Sign_Arrow_Direction_Cyan_F";
-			atlOffset=4.4573421;
+			atlOffset=4.4573326;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17128,8 +17128,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8912.707,28.189375,6054.2271};
-				angles[]={0.186619,0.41397765,6.2001343};
+				position[]={8908.291,27.820242,6016.2764};
+				angles[]={6.2466288,1.9399114,6.1885014};
 			};
 			side="Empty";
 			class Attributes
@@ -17138,7 +17138,7 @@ class Mission
 			};
 			id=4316;
 			type="Sign_Arrow_Direction_Cyan_F";
-			atlOffset=4.4573269;
+			atlOffset=4.4572887;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17175,8 +17175,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8914.4619,28.33885,6124.0859};
-				angles[]={0.18661907,0.16211203,6.2001343};
+				position[]={8916.8672,28.416231,6070.0933};
+				angles[]={0.10009501,5.7858925,0.054540247};
 			};
 			side="Empty";
 			class Attributes
@@ -17185,7 +17185,7 @@ class Mission
 			};
 			id=4317;
 			type="Sign_Arrow_Direction_Cyan_F";
-			atlOffset=4.4573269;
+			atlOffset=4.4573212;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17222,8 +17222,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8922.334,26.682652,6245.0269};
-				angles[]={0.18661936,6.0163479,6.2001343};
+				position[]={8911.542,28.147457,6147.0479};
+				angles[]={0.17914772,0.70367008,6.1289082};
 			};
 			side="Empty";
 			class Attributes
@@ -17232,7 +17232,7 @@ class Mission
 			};
 			id=4318;
 			type="Sign_Arrow_Direction_Cyan_F";
-			atlOffset=4.4573269;
+			atlOffset=4.4573078;
 			class CustomAttributes
 			{
 				class Attribute0

@@ -39,16 +39,17 @@ private _tiltPFH = [{
 
 	// vectorLinearConversion
 	// vectorLinearConversion [rangeFrom, rangeTo, rangeValue, vectorFrom, vectorTo, clip]
-	systemChat str _segmentProgress;
+	// systemChat str _segmentProgress;
 	private _markersPositions = _markers apply { getPosASL _x };
 	private _markersDir = _markers apply { vectorDir _x };
 	private _markersUp = _markers apply { vectorUp _x };
 	
-	systemchat str _markersPositions;
+	// systemchat str _markersPositions;
 	private _interpolatedPos = _progress bezierInterpolation _markersPositions; // vectorLinearConversion [0, 1, _segmentProgress, _startPos, _endPos, true];
 	_camera setPosASL _interpolatedPos;
 
-	
+
+	createSimpleObject ["Sign_sphere100cm_EP1", _interpolatedPos, true];
 	
 	private _vectorDirActual = _progress bezierInterpolation _markersDir;
 	private _vectorUpActual = _progress bezierInterpolation _markersUp;
