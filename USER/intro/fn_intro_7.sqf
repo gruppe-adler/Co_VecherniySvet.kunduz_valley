@@ -27,13 +27,13 @@ _camera camCommitPrepared _duration;
 [_camera, [vectorDir introMarker_4_4, vectorUp introMarker_4_4], _duration, 3, 15] call GRAD_INTRO_fnc_camTilt;
 
 [{
-     params ["_eagle"];
+     params ["_camera", "_eagle"];
      _eagle distance grad_intro_mi24_1 < 5
 },{
-    params ["_eagle"];
+    params ["_camera", "_eagle"];
 
-    [getPos _eagle, true] call grad_intro_fnc_eagleFeathers;
-    [getPos _eagle, false, grad_intro_mi24_1] call grad_intro_fnc_eagleFeathers;
+    [getPos _camera, true] call grad_intro_fnc_eagleFeathers;
+    [getPos _camera, false, grad_intro_mi24_1] call grad_intro_fnc_eagleFeathers;
 
     private _camPos = getPos _eagle;
     private _camVectorDir = vectorDir _eagle;
@@ -53,7 +53,7 @@ _camera camCommitPrepared _duration;
     _camera setVectorDirAndUp [_camVectorDir, _camVectorUp];
     [_camera] call grad_intro_fnc_intro_8;
 
-}, [_eagle]] call CBA_fnc_waitUntilAndExecute;
+}, [_camera, _eagle]] call CBA_fnc_waitUntilAndExecute;
    
 
 

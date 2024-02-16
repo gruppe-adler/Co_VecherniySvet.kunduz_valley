@@ -18,8 +18,8 @@
 */
 
 
-loadoutFactionBlu = "UsMPTd";
-loadoutFactionOpf = "";
+loadoutFactionBlu = "";
+loadoutFactionOpf = "grad_ussr";
 loadoutFactionInd = "";
 
 // Achtung: grad-factions enthält derzeit keine Loadouts, die für Zivilisten funktionieren
@@ -27,6 +27,6 @@ loadoutFactionCiv = "";
 
 
 //#define NIGHTVISION
-#define GUNLIGHTS
+// #define GUNLIGHTS
 //#define LASERS
-//#define SUPPRESSORS
+#define SUPPRESSORS

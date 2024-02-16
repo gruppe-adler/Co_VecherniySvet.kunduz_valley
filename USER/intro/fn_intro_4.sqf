@@ -27,6 +27,9 @@ _camera camCommitPrepared _duration;
 
 ["GRAD_butterfly", getpos introButterfly_1, getPos introButterfly_2, 17] call grad_intro_fnc_butterfly;
 
+
+intro_texture_3 setobjecttexture [0, ""]; // remove texture
+
 [{
     params ["_camera"];
     [_camera] call grad_intro_fnc_intro_5;

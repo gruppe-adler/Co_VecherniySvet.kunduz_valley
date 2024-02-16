@@ -1,6 +1,6 @@
 params ["_camera"];
 
-private _duration = 3;
+private _duration = 2;
 
 /*
 
