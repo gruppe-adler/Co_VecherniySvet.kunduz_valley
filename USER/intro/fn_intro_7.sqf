@@ -32,8 +32,14 @@ _camera camCommitPrepared _duration;
 },{
     params ["_camera", "_eagle"];
 
-    [getPos _camera, true] call grad_intro_fnc_eagleFeathers;
-    [getPos _camera, false, grad_intro_mi24_1] call grad_intro_fnc_eagleFeathers;
+    private _cameraPos = getPos _camera; // Get the position of the camera object
+    private _cameraDir = vectorDir _camera; // Get the direction the camera is facing
+
+    // Calculate the position 1 meter in front of the camera
+    private _newPos = _cameraPos vectorAdd (_cameraDir vectorMultiply 0.5);
+
+    [_newPos, true] call grad_intro_fnc_eagleFeathers;
+    [_newPos, false, grad_intro_mi24_1] call grad_intro_fnc_eagleFeathers;
 
     private _camPos = getPos _eagle;
     private _camVectorDir = vectorDir _eagle;

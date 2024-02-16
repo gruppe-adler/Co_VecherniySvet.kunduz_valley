@@ -26,6 +26,7 @@ for "_i" from 0 to 29 do {
 
 	intro_sheepTransport2 setPos getPos intro_sheeptransport_start;
 	intro_sheepTransport2 setDir getDir intro_sheeptransport_start;
+	intro_sheepTransport2 engineOn true;
 	intro_sheepTransport2 setDriveOnPath _path;
 	intro_sheepTransport2 forceSpeed 60;
 }, [_path]] call CBA_fnc_waitUntilAndExecute;

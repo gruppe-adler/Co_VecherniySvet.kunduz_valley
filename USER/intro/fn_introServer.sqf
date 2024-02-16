@@ -114,7 +114,7 @@ private _dir = getDir intro_sheep;
 	convoyTransportGo = true;
 	publicVariable "convoyTransportGo";
 	
-}, [], 90] call CBA_fnc_waitAndExecute;
+}, [], 75] call CBA_fnc_waitAndExecute;
 
 [{
 	

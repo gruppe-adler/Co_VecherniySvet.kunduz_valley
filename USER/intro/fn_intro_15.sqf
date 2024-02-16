@@ -1,11 +1,11 @@
 params ["_camera"];
 
-private _duration = 4;
+private _duration = 5;
 
 _camera camPreparePos (getPos introMarker_5_5);
 _camera camCommitPrepared _duration;
 
-[_camera, [vectorDir introMarker_5_5, vectorUp introMarker_5_5], _duration, 1.5, 0] call GRAD_INTRO_fnc_camTilt;
+[_camera, [vectorDir introMarker_5_5, vectorUp introMarker_5_5], _duration, 1] call GRAD_INTRO_fnc_camTilt;
 
 [{
     params ["_camera"];
