@@ -1,4 +1,4 @@
-introDisabled = true;
+introDisabled = false;
 
 if (isServer) then {
     if (!isMultiplayer && introDisabled) exitWith {};
