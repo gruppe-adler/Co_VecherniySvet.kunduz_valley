@@ -20,7 +20,7 @@
 params ["_healer", "_target"];
 (_healer getVariable [QGVAR(currentTreatment), [-1]]) params ["_finishTime", "_treatmentTarget", "_treatmentEvent", "_treatmentArgs", "_treatmentItem"];
 
-systemChat format ["_finishTime: %1", _finishTime];
+// systemChat format ["_finishTime: %1", _finishTime];
 
 // Treatment in progress, check if finished and apply
 if (_finishTime > 0) exitWith {
@@ -143,16 +143,18 @@ switch (true) do {
 _healer setVariable [QGVAR(currentTreatment), [CBA_missionTime + _treatmentTime, _target, _treatmentEvent, _treatmentArgs, _treatmentItem]];
 
 // Play animation
+/*
 if ((_treatmentEvent select [0,1]) != "#") then {
     private _treatmentClassname = _treatmentArgs select 2;
     if (_treatmentEvent == QEGVAR(medical_treatment,splintLocal)) then { _treatmentClassname = "Splint" };
     [_healer, _treatmentClassname, (_healer == _target)] call FUNC(playTreatmentAnim);
 };
+*/
 
-// #ifdef DEBUG_MODE_FULL
+#ifdef DEBUG_MODE_FULL
 TRACE_4("treatment started",_treatmentTime,_target,_treatmentEvent,_treatmentArgs);
 systemChat format ["Treatment [%1->%2]: %3", _healer, _target, _treatmentEvent];
-// #endif
+#endif
 
 
 
