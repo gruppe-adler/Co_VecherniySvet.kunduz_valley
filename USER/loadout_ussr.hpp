@@ -228,6 +228,19 @@ class grad_ussr: RUFlora {
             headgear = "rhs_6b26_bala";
         };
 
+        //Helicrew
+        class helicrew_F: Soldier_F {
+            primaryWeapon = "rhs_weap_aks74";
+            vest = "rhs_lifchik";
+            uniform = "UK3CB_CW_SOV_O_LATE_U_H_Pilot_Uniform_01_TTSKO";
+            headgear = "rhs_zsh7a_mike";
+        };
+
+         //HeliPilot
+        class helipilot_F: helicrew_F {
+            headgear = "rhs_zsh7a_mike_alt";
+        };
+
         //Sniper
         class Sniper_F: Soldier_F {
             primaryWeapon = "rhs_weap_t5000";

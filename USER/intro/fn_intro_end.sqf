@@ -6,6 +6,7 @@ private _duration = 10;
     "introBlackLoading" cutText ["", "BLACK OUT", 5];
 }, [], 4] call CBA_fnc_waitAndeXecute;
 
+intro_texture_4 setobjecttexture [0, ""]; // remove texture
 
 [{
     params ["_camera"];
