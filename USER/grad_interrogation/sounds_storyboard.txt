@@ -1,0 +1,15 @@
+GRAD_INTERROGATION_SOUNDS_DONTKNOW = [
+	["I dont know", ""],
+	["Leave me alone, I know nothing", ""],
+	["Dear God, I know nothing, I swear to god", ""],
+	["You are asking the wrong person", ""],
+	["Dont ask me, so god will", ""]
+];
+
+GRAD_INTERROGATION_SOUNDS_STOPHURTING = [
+	["", ""],
+	["", ""],
+	["", ""],
+	["", ""],
+	["", ""]
+];

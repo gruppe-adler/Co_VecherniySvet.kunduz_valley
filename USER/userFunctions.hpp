@@ -10,6 +10,7 @@
 #include "zeusmodules\cfgFunctions.hpp"
 #include "ambient\cfgFunctions.hpp"
 #include "healingMechanism\cfgFunctions.hpp"
+#include "grad_interrogation\cfgFunctions.hpp"
 
 class GRAD_SilentRain {
 	tag = "grad_SR";
