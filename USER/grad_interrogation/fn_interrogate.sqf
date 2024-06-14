@@ -8,7 +8,14 @@ if (_injured) then {
 	_chanceOfReveal*3;
 };
 
-private _gender = if (_unit isKindOf "") then { "FEMALE" } else { "MALE" };
+private _gender = if (typeOf _target in [
+                "Max_Tak_woman1",
+                "Max_Tak_woman2",
+                "Max_Tak_woman3",
+                "Max_Tak_woman4",
+                "Max_Tak_woman5",
+                "Max_Tak_woman6"
+            ]) then { "female" } else { "male" };
 private _willReveal = random 1 > _chanceOfReveal;
 private _hasRevealed = _unit getVariable ["grad_interrogation_hasRevealed", false];
 
