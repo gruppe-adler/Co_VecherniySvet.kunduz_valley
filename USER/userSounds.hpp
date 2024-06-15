@@ -6,6 +6,8 @@
 #define VOLUME 4
 #define DISTANCE 15
 
+#include "grad_interrogation\cfgSounds.hpp"
+
 class drill
 {
     // how the sound is referred to in the editor (e.g. trigger effects)

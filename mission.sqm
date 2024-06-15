@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4888;
+		nextID=4891;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1420;
+		nextID=1468;
 	};
 	class Camera
 	{
-		pos[]={9082.6328,46.047455,3089.4631};
-		dir[]={0.40946144,-0.62386185,0.66568601};
-		up[]={0.32685351,0.78153461,0.53138536};
-		aside[]={0.85176766,0,-0.5239197};
+		pos[]={8802.2734,23.23917,6395.8384};
+		dir[]={-0.21589483,-0.68479252,-0.69602352};
+		up[]={-0.20287558,0.72873807,-0.65405071};
+		aside[]={-0.95510787,0,0.29625845};
 	};
 };
 binarizationWanted=0;
@@ -131,7 +131,8 @@ addons[]=
 	"A3_Props_F_Orange_Items_Tools",
 	"A3_Structures_F_Mark_Training",
 	"A3_Structures_F_Bootcamp_Civ_SportsGrounds",
-	"A3_Structures_F_Argo_Decals_Horizontal"
+	"A3_Structures_F_Argo_Decals_Horizontal",
+	"A3_Props_F_Enoch_Items_Documents"
 };
 class AddonsMetaData
 {
@@ -5059,7 +5060,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=397;
+		items=398;
 		class Item0
 		{
 			dataType="Layer";
@@ -21101,6 +21102,22 @@ class Mission
 				};
 			};
 			id=4887;
+		};
+		class Item397
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8801.5928,21.535576,6394.2891};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call grad_interrogation_fnc_addLearnAction;";
+			};
+			id=4890;
+			type="Book_02_F";
 		};
 	};
 	class Connections

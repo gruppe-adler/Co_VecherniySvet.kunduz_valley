@@ -14,6 +14,7 @@ if (player getvariable ["grad_interrogation_isTranslator", false]) then {
 // make lips move
 _unit setRandomLip true;
 
+diag_log format ["_unit %1 saying %2", _unit, _sound];
 
 // interrupt sound if unit is dead or uncon
 private _handle = [{

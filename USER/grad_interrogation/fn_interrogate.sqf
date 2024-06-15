@@ -33,7 +33,12 @@ if (_hasIntel) then {
 		};
 	};
 } else {
-	private _answer = [_unit, "dontknow", _gender] call grad_interrogation_fnc_getAnswer;
-	[_unit, _answer] remoteExec ["grad_interrogation_fnc_answer"];
+	if (_injured) then {
+		private _answer = [_unit, "stophurting", _gender] call grad_interrogation_fnc_getAnswer;
+		[_unit, _answer] remoteExec ["grad_interrogation_fnc_answer"];
+	} else {
+		private _answer = [_unit, "dontknow", _gender] call grad_interrogation_fnc_getAnswer;
+		[_unit, _answer] remoteExec ["grad_interrogation_fnc_answer"];
+	};
 };
 

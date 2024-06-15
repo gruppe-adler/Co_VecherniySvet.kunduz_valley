@@ -2,6 +2,8 @@ params ["_book"];
 
 // needs to be in init on object all clients
 
+_book setObjectTexture [0, "data\paperback_co.paa"];
+
 // adds the action to every client and JIP, but also adds it when it was already removed. E.g., Laptop has already been hacked by a player
 [
 	_book,														// Object the action is attached to

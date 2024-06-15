@@ -1,7 +1,7 @@
 introDisabled = true;
 
 if (isServer) then {
-    if (!isMultiplayer && introDisabled) exitWith {};
+    if (introDisabled) exitWith {};
 
     // only spawns and prepares
     [] call grad_intro_fnc_sheepTransport;
@@ -17,7 +17,7 @@ if (isServer) then {
 
 
 if (hasInterface && !didJIP) then {
-    if (!isMultiplayer && introDisabled) exitWith {};
+    if (introDisabled) exitWith {};
     "introBlackLoading" cutText ["", "BLACK FADED", 999999];
     0 fadeSound 0;
 };
