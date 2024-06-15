@@ -47,7 +47,7 @@ _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget",		// condition
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -77,7 +77,7 @@ _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget",		// condition
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -107,7 +107,7 @@ _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget",		// condition
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -137,7 +137,7 @@ _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget",		// condition
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -167,7 +167,7 @@ _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget",		// condition
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -197,7 +197,7 @@ _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget",		// condition
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
@@ -227,7 +227,7 @@ _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget",		// condition
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
