@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8969.6631,47.105579,6557.7485};
-		dir[]={0.43943486,-0.61703247,0.65281415};
-		up[]={0.34461796,0.78622276,0.51195192};
-		aside[]={0.82973015,-1.7499551e-06,-0.55851477};
+		pos[]={9067.3818,58.688343,6591.5698};
+		dir[]={0.52159262,-0.57325453,0.63191873};
+		up[]={0.36492059,0.81935817,0.44210804};
+		aside[]={0.77122331,-2.3271423e-07,-0.63657594};
 	};
 };
 binarizationWanted=0;
@@ -21189,7 +21189,7 @@ class Mission
 			};
 			id=4890;
 			type="Book_02_F";
-			atlOffset=0.0062427521;
+			atlOffset=0.0062446594;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21244,14 +21244,14 @@ class Mission
 			dataType="Layer";
 			name="Bunker Tower (Light) #O";
 			id=5052;
-			atlOffset=-0.0022602081;
+			atlOffset=-140.23;
 		};
 		class Item401
 		{
 			dataType="Layer";
 			name="Mortar Pit #O";
 			id=5110;
-			atlOffset=-0.058961868;
+			atlOffset=-140.23;
 		};
 		class Item402
 		{
@@ -21630,7 +21630,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9042.25,25.640015,6011.6533};
-			angle=4.7193089;
+			angle=4.7193084;
 			class Attributes
 			{
 				sizeA=2000;
@@ -21685,7 +21685,7 @@ class Mission
 			fillName="Cross";
 			a=35;
 			b=30;
-			angle=148.33098;
+			angle=148.33096;
 			id=5145;
 			atlOffset=-0.00019454956;
 		};
@@ -22059,6 +22059,7 @@ class Mission
 			};
 			id=5170;
 			type="land_gm_euro_furniture_table_03";
+			atlOffset=0.00012779236;
 		};
 		class Item450
 		{
@@ -22075,6 +22076,7 @@ class Mission
 			};
 			id=5171;
 			type="land_gm_euro_furniture_table_06";
+			atlOffset=0.00082969666;
 		};
 		class Item451
 		{
@@ -22091,6 +22093,7 @@ class Mission
 			};
 			id=5176;
 			type="vn_gurney_mi2";
+			atlOffset=-0.00025177002;
 		};
 		class Item452
 		{
@@ -22107,7 +22110,6 @@ class Mission
 			};
 			id=5177;
 			type="vn_b_prop_typewriter_01";
-			atlOffset=1.9073486e-06;
 		};
 		class Item453
 		{
@@ -22124,6 +22126,7 @@ class Mission
 			};
 			id=5181;
 			type="vn_b_prop_riflerack_06";
+			atlOffset=-2.6702881e-05;
 		};
 		class Item454
 		{
@@ -22156,6 +22159,7 @@ class Mission
 			};
 			id=5183;
 			type="vn_bar_01_lawnchair_01";
+			atlOffset=0.0002746582;
 		};
 		class Item456
 		{
@@ -22189,6 +22193,7 @@ class Mission
 			};
 			id=5185;
 			type="vn_bar_01_lawnchair_01";
+			atlOffset=0.00029182434;
 		};
 		class Item458
 		{
@@ -22205,6 +22210,7 @@ class Mission
 			};
 			id=5186;
 			type="vn_b_prop_cabinet_01_01";
+			atlOffset=0.0048542023;
 		};
 		class Item459
 		{
@@ -22221,6 +22227,7 @@ class Mission
 			};
 			id=5187;
 			type="vn_b_prop_cabinet_02_01";
+			atlOffset=0.0019416809;
 		};
 		class Item460
 		{
@@ -22236,7 +22243,7 @@ class Mission
 			};
 			id=5188;
 			type="Land_vn_b_prop_fan_desk_01";
-			atlOffset=0.84251785;
+			atlOffset=0.84168053;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22434,6 +22441,7 @@ class Mission
 			};
 			id=5209;
 			type="UK3CB_TKM_O_MTLB_PKT";
+			atlOffset=-5.7220459e-06;
 		};
 		class Item472
 		{
@@ -22632,6 +22640,7 @@ class Mission
 			};
 			id=5217;
 			type="UK3CB_TKM_O_TT650";
+			atlOffset=0.057285309;
 		};
 		class Item477
 		{
@@ -22641,12 +22650,13 @@ class Mission
 				position[]={9098.8115,32.630219,6690.0708};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 			};
 			id=5225;
 			type="Flag_AFG_Pres";
+			atlOffset=3.4534664;
 		};
 		class Item478
 		{
@@ -22662,6 +22672,7 @@ class Mission
 			};
 			id=5226;
 			type="Flag_AFG_Pres";
+			atlOffset=1.9073486e-06;
 		};
 		class Item479
 		{
@@ -22773,6 +22784,7 @@ class Mission
 			};
 			id=5240;
 			type="Land_Rug_01_Traditional_F";
+			atlOffset=3.8146973e-06;
 		};
 		class Item486
 		{
@@ -22869,7 +22881,7 @@ class Mission
 			};
 			id=5248;
 			type="Flag_AFG_Pres";
-			atlOffset=22.493237;
+			atlOffset=22.49324;
 		};
 	};
 	class Connections

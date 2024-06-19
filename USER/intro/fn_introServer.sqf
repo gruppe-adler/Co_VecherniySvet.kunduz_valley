@@ -4,7 +4,7 @@ private _duration = 120;
 setTimeMultiplier 1;
 skiptime -1.5;
 
-[_duration] remoteExec ["grad_intro_fnc_intro_start", 0, true];
+[_duration] remoteExec ["grad_intro_fnc_intro_start", 0, false];
 
 
 

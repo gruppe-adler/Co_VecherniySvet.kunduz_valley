@@ -1,6 +1,8 @@
+/*
 if (didJIP) exitWith {
     "introBlackLoading" cutText ["", "BLACK IN", 5];
 };
+*/
 
 [{
     "introBlackLoading" cutText ["", "BLACK IN", 5];

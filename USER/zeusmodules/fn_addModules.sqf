@@ -55,6 +55,17 @@
   } forEach allCurators;
 };
 
+
+["Co Vecherniny Svet", "Start Intro", {
+     params ["_position", "_object"];
+     
+     [] remoteExec ["grad_intro_fnc_introServer", 2];
+     missionNameSpace setVariable ["grad_missionControl_introStarted", true, true];
+     
+}] call zen_custom_modules_fnc_register;
+
+
+
 ["Evening Light - Enemies Cloaked", "Reinforcements Squad", {
      params ["_position", "_object"];
      
@@ -130,47 +141,6 @@
 ] call zen_custom_modules_fnc_register;
 
 
-["Evening Light - Hooker", "Spawn Hooker", {
-          params ["_modulePosition"]; 
-          private _position = ASLtoAGL _modulePosition;
-          
-          [_position] remoteExec ["grad_SR_fnc_hooker_spawn", 2];
-     }
-] call zen_custom_modules_fnc_register;
-
-["Evening Light - Abu Ben Zeen", "Spawn Abu", {
-          params ["_modulePosition"]; 
-          private _position = ASLtoAGL _modulePosition;
-          
-          [_position] remoteExec ["grad_zeusmodules_fnc_createAbuBenZeen", 2];
-     }
-] call zen_custom_modules_fnc_register;
-
-["Evening Light - Objectivemarker", "Show Objective 2 (Taliban FOB)", {
-          params ["_modulePosition"]; 
-          private _position = ASLtoAGL _modulePosition;
-          
-          mrk_objective3_active = true;
-          publicVariable "mrk_objective3_active";
-     }
-] call zen_custom_modules_fnc_register;
-
-["Evening Light - Objectivemarker", "Show Objective 3 (Ben Zeen)", {
-          params ["_modulePosition"]; 
-          private _position = ASLtoAGL _modulePosition;
-          
-          mrk_objective4_active = true;
-          publicVariable "mrk_objective4_active";
-     }
-] call zen_custom_modules_fnc_register;
-
-["Evening Light - IED Workshop", "Spawn IED Truck", {
-          params ["_modulePosition"]; 
-          private _position = ASLtoAGL _modulePosition;
-          
-          [_position] remoteExec ["grad_zeusmodules_fnc_spawnIEDtruck", 2];
-     }
-] call zen_custom_modules_fnc_register;
 
 ["Evening Light - IED Workshop", "Spawn Defender Group", {
           params ["_modulePosition"]; 
@@ -180,23 +150,6 @@
 ] call zen_custom_modules_fnc_register;
 
 
-
-
-["Evening Light - Captive", "Start Screaming", {
-     params ["_position", "_object"];
-     
-     call grad_captive_fnc_yellStuff;
-     
-}] call zen_custom_modules_fnc_register;
-
-["Evening Light - Captive", "Stop Screaming", {
-     params ["_position", "_object"];
-     
-     if (!isNull captive_compound2) then {
-          captive_compound2 setVariable ['EL_yelling', true, true];
-     };
-     
-}] call zen_custom_modules_fnc_register;
 
 
 
