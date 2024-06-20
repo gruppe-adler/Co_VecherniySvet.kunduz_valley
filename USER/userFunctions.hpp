@@ -16,6 +16,7 @@ class GRAD_SilentRain {
 	tag = "grad_SR";
 	
 	#include "functions\hooker\cfgFunctions.hpp"
+	#include "functions\eventHandlers\cfgFunctions.hpp"
 	#include "functions\custominteractions\CfgFunctions.hpp"
 	#include "functions\defuseStickHandling\CfgFunctions.hpp"
 	#include "functions\powerline\cfgFunctions.hpp"
