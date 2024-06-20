@@ -59,8 +59,11 @@
 ["Co Vecherniny Svet", "Start Intro", {
      params ["_position", "_object"];
      
-     [] remoteExec ["grad_intro_fnc_introServer", 2];
-     missionNameSpace setVariable ["grad_missionControl_introStarted", true, true];
+     [] remoteExec ["grad_intro_fnc_intro_init", 0];
+     // missionNameSpace setVariable ["grad_missionControl_introStarted", true, true];
+     [{
+          [[1983,7,26,4,20]] remoteExec ["setDate", 0];
+     }, [], 6] call CBA_fnc_waitAndExecute;
      
 }] call zen_custom_modules_fnc_register;
 

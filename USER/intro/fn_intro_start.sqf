@@ -14,7 +14,8 @@ if (didJIP) exitWith {
 
 
 diwako_dui_main_toggled_off = true;
-0 fadeSound 0; 
+0 fadeSound 0;
+0 fadeMusic 1;
 
 intro_texture_1 setobjecttexture [0, ""]; // remove texture
 intro_texture_2 setobjecttexture [0, ""]; // remove texture

@@ -22,8 +22,10 @@ class grad_intro {
         class intro_99;
         class intro_end;
         class intro_start;
+        class intro_init;
         class butterfly;
-        class postInit { postInit = 1; };
+        // class postInit { postInit = 1; };
+        class postInit { };
         class introServer;
         class camTilt;
         class camTiltMultiple;

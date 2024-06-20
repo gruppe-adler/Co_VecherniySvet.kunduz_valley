@@ -1,6 +1,6 @@
 private _path = [];
 
-for "_i" from 0 to 29 do {
+for "_i" from 0 to 20 do {
 
 	private _name = ("intro_sheeptransport_path_" + str _i);
 	private _object = missionNamespace getVariable _name;
@@ -33,9 +33,27 @@ for "_i" from 0 to 29 do {
 
 
 [{
-	intro_sheepTransport2 distance introConvoy1 < 10 &&
+	intro_sheepTransport2 distance introConvoy1 < 12 &&
 	!isNil "sheepTransportGo"
 },{
-	introConvoy1 setdamage 1;
-	intro_sheepTransport2 setdamage 1;
+	private _pos1 = getPos intro_sheepTransport2;
+	private _scriptedCharge = "Bo_GBU12_LGB" createVehicle _pos1;
+	_scriptedCharge setPos _pos1;
+	_scriptedCharge setDamage 1;
+	intro_sheepTransport2 setDamage 1;
+	[{
+		private _pos = getPos introConvoy1;
+		private _scriptedCharge = "DemoCharge_Remote_Ammo_Scripted" createVehicle _pos;
+		_scriptedCharge setPos _pos;
+		_scriptedCharge setDamage 1;
+		introConvoy1 setDamage 1;
+	}, [], 0.25] call CBA_fnc_waitAndExecute;
+
+	// start Ambush
+	[{
+		{
+			_x enableAI "ALL";
+			_x setUnitPos "AUTO";
+		} forEach ((units GRAD_AmbushGrp_1) + (units GRAD_AmbushGrp_2));
+	}, [], 20] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_waitUntilAndExecute;

@@ -2,10 +2,9 @@ private _duration = 120;
 
 // skiptime 3;
 setTimeMultiplier 1;
-skiptime -1.5;
+// skiptime -1.5;
 
 [_duration] remoteExec ["grad_intro_fnc_intro_start", 0, false];
-
 
 
 [{
@@ -121,4 +120,4 @@ private _dir = getDir intro_sheep;
 	sheepTransportGo = true;
 	publicVariable "sheepTransportGo";
 	
-}, [], 170] call CBA_fnc_waitAndExecute;
+}, [], 174] call CBA_fnc_waitAndExecute;
