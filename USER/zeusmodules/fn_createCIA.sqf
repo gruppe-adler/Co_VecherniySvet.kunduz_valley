@@ -110,3 +110,5 @@ private _loadout =
 	];
 
 _unit setUnitLoadout _loadout;
+
+[_unit, _face] remoteExec ["setFace", 0, _unit];
