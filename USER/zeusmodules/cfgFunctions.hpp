@@ -12,5 +12,6 @@ class grad_zeusmodules {
         class getPosInCircle;
         class spawnIEDtruck;
         class createGroupIEDworkshop;
+        class createCIA;
     };
 };

@@ -67,6 +67,13 @@
      
 }] call zen_custom_modules_fnc_register;
 
+["Co Vecherniny Svet", "Create CIA Agent", {
+     params ["_position", "_object"];
+     
+     [ASLToAGL _position] call grad_zeusmodules_fnc_createCIA;
+     
+}] call zen_custom_modules_fnc_register;
+
 
 
 ["Evening Light - Enemies Cloaked", "Reinforcements Squad", {
