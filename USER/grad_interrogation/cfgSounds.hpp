@@ -1,5 +1,20 @@
 /* MALE */
 
+// INTEL
+class intel_objective2_en
+{
+    name = "intel_objective2_en";
+    sound[] = {"USER\grad_interrogation\sounds\intel_objective2_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class intel_objective2_arab
+{
+    name = "intel_objective2_arab";
+    sound[] = {"USER\grad_interrogation\sounds\intel_objective2_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
+
 // ZEUS CONTROLLED SPEECH
 // EN
 class male_salamalaikum_en

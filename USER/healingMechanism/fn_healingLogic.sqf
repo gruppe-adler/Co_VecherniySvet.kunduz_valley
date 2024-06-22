@@ -43,20 +43,18 @@ if (_finishTime > 0) exitWith {
     };
 };
 
-private _isMedic = [_healer] call EFUNC(medical_treatment,isMedic);
 private _heartRate = GET_HEART_RATE(_target);
 private _fractures = GET_FRACTURES(_target);
 
 private _treatmentEvent = "#none";
 private _treatmentArgs = [];
 
-private _treatmentTimeMultiplier = 0.1;
+private _treatmentTimeMultiplier = 0.01;
 private _treatmentTime = 6*_treatmentTimeMultiplier;
 
 private _treatmentItem = "";
 switch (true) do {
-    case ((GET_WOUND_BLEEDING(_target) > 0)
-    && {([_healer, "@bandage"] call FUNC(itemCheck)) # 0}): {
+    case (GET_WOUND_BLEEDING(_target) > 0): {
         // Select first bleeding wound and bandage it
         private _selection = "?";
         {
@@ -76,8 +74,7 @@ switch (true) do {
         _treatmentArgs = [_healer, _target];
         _treatmentTime = 15*_treatmentTimeMultiplier;
     };
-    case (_isMedic && {GET_BLOOD_VOLUME(_target) < MINIMUM_BLOOD_FOR_STABLE_VITALS}
-    && {([_healer, "@iv"] call FUNC(itemCheck)) # 0}): {
+    case {GET_BLOOD_VOLUME(_target) < MINIMUM_BLOOD_FOR_STABLE_VITALS}: {
         // Check if patient's blood volume + remaining IV volume is enough to allow the patient to wake up
         private _totalIvVolume = 0; //in ml
         {
@@ -96,22 +93,19 @@ switch (true) do {
     case ((count (_target getVariable [VAR_MEDICATIONS, []])) >= 6): {
         _treatmentEvent = "#tooManyMeds";
     };
-    case (((_fractures select 4) == 1)
-    && {([_healer, "splint"] call FUNC(itemCheck)) # 0}): {
+    case ((_fractures select 4) == 1): {
         _treatmentEvent = QEGVAR(medical_treatment,splintLocal);
         _treatmentTime = 6*_treatmentTimeMultiplier;
         _treatmentArgs = [_healer, _target, "leftleg"];
         _treatmentItem = "splint";
     };
-    case (((_fractures select 5) == 1)
-    && {([_healer, "splint"] call FUNC(itemCheck)) # 0}): {
+    case ((_fractures select 5) == 1): {
         _treatmentEvent = QEGVAR(medical_treatment,splintLocal);
         _treatmentTime = 6*_treatmentTimeMultiplier;
         _treatmentArgs = [_healer, _target, "rightleg"];
         _treatmentItem = "splint";
     };
-    case ((IS_UNCONSCIOUS(_target) || {_heartRate <= 50})
-    && {([_healer, "epinephrine"] call FUNC(itemCheck)) # 0}): {
+    case (IS_UNCONSCIOUS(_target) || {_heartRate <= 50}): {
         if (CBA_missionTime < (_target getVariable [QGVAR(nextEpinephrine), -1])) exitWith {
             _treatmentEvent = "#waitForEpinephrineToTakeEffect";
         };

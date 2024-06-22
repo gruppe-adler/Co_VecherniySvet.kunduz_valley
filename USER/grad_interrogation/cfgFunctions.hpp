@@ -3,6 +3,7 @@ class grad_interrogation{
         file = USER\grad_interrogation;
         
         class addActions;
+        class addCassetteIntel;
         class addIntel;
         class addLearnAction;
         class answer;
@@ -11,5 +12,6 @@ class grad_interrogation{
         class init { postInit = 1; };
         
         class interrogate;
+        class playCassetteSoundLocalised;
     };
 };
