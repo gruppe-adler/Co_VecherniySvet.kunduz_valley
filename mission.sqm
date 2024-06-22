@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1579;
+		nextID=1605;
 	};
 	class Camera
 	{
-		pos[]={9066.1133,68.081314,6705.6128};
-		dir[]={-0.22428523,-0.5139935,-0.82795352};
-		up[]={-0.13439955,0.85770911,-0.49613878};
-		aside[]={-0.96524113,2.8678915e-07,0.26147175};
+		pos[]={5432.9063,23.066051,8192.1211};
+		dir[]={0.091707818,-0.58497113,-0.80585241};
+		up[]={0.066144973,0.81102228,-0.58122849};
+		aside[]={-0.99359369,3.2743992e-07,-0.11307321};
 	};
 };
 binarizationWanted=0;
@@ -816,7 +816,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -846,7 +846,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=127;
+									items=370;
 									class Item0
 									{
 										class data
@@ -1863,6 +1863,1950 @@ class CustomAttributes
 											value="ace_medical_treatment_cprsuccesschancemax";
 										};
 									};
+									class Item127
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_aaf_b";
+										};
+									};
+									class Item128
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_aaf_i";
+										};
+									};
+									class Item129
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_aaf_o";
+										};
+									};
+									class Item130
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ana_b";
+										};
+									};
+									class Item131
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_anp_b";
+										};
+									};
+									class Item132
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ada_b";
+										};
+									};
+									class Item133
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ada_i";
+										};
+									};
+									class Item134
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ada_o";
+										};
+									};
+									class Item135
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_adr_b";
+										};
+									};
+									class Item136
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_adr_i";
+										};
+									};
+									class Item137
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_adr_o";
+										};
+									};
+									class Item138
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_adg_b";
+										};
+									};
+									class Item139
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_adg_i";
+										};
+									};
+									class Item140
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_adg_o";
+										};
+									};
+									class Item141
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_adc_b";
+										};
+									};
+									class Item142
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_3_uk3cb_adc_c";
+										};
+									};
+									class Item143
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_adc_i";
+										};
+									};
+									class Item144
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_adc_o";
+										};
+									};
+									class Item145
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ade_i";
+										};
+									};
+									class Item146
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ade_o";
+										};
+									};
+									class Item147
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_adm_b";
+										};
+									};
+									class Item148
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_adm_i";
+										};
+									};
+									class Item149
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_adm_o";
+										};
+									};
+									class Item150
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_adp_b";
+										};
+									};
+									class Item151
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_adp_i";
+										};
+									};
+									class Item152
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_adp_o";
+										};
+									};
+									class Item153
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_apd_b";
+										};
+									};
+									class Item154
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_apd_i";
+										};
+									};
+									class Item155
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_apd_o";
+										};
+									};
+									class Item156
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ard_b";
+										};
+									};
+									class Item157
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ard_i";
+										};
+									};
+									class Item158
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ard_o";
+										};
+									};
+									class Item159
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_chd_o_groups";
+										};
+									};
+									class Item160
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_chd_o";
+										};
+									};
+									class Item161
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_chd_w_o_groups";
+										};
+									};
+									class Item162
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_chd_w_o";
+										};
+									};
+									class Item163
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_chd_b_groups";
+										};
+									};
+									class Item164
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_chd_b";
+										};
+									};
+									class Item165
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_chd_w_b_groups";
+										};
+									};
+									class Item166
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_chd_w_b";
+										};
+									};
+									class Item167
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_chd_i_groups";
+										};
+									};
+									class Item168
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_chd_i";
+										};
+									};
+									class Item169
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_chd_w_i_groups";
+										};
+									};
+									class Item170
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_chd_w_i";
+										};
+									};
+									class Item171
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_chc_b";
+										};
+									};
+									class Item172
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_3_uk3cb_chc_c";
+										};
+									};
+									class Item173
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_chc_i";
+										};
+									};
+									class Item174
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_chc_o";
+										};
+									};
+									class Item175
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ccm_o";
+										};
+									};
+									class Item176
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ccm_b";
+										};
+									};
+									class Item177
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ccm_i";
+										};
+									};
+									class Item178
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_cpd_b";
+										};
+									};
+									class Item179
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_cpd_i";
+										};
+									};
+									class Item180
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_cpd_o";
+										};
+									};
+									class Item181
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_cw_us_b_early";
+										};
+									};
+									class Item182
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_cw_us_b_late";
+										};
+									};
+									class Item183
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_cw_sov_o_late";
+										};
+									};
+									class Item184
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_a_o_groups";
+										};
+									};
+									class Item185
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_w_o_groups";
+										};
+									};
+									class Item186
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_m_o_groups";
+										};
+									};
+									class Item187
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_b_o_groups";
+										};
+									};
+									class Item188
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_f_o_groups";
+										};
+									};
+									class Item189
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_n_o_groups";
+										};
+									};
+									class Item190
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_g_o_groups";
+										};
+									};
+									class Item191
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_u_o_groups";
+										};
+									};
+									class Item192
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_s_o_groups";
+										};
+									};
+									class Item193
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_a_o";
+										};
+									};
+									class Item194
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_w_o";
+										};
+									};
+									class Item195
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_m_o";
+										};
+									};
+									class Item196
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_b_o";
+										};
+									};
+									class Item197
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_f_o";
+										};
+									};
+									class Item198
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_n_o";
+										};
+									};
+									class Item199
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_g_o";
+										};
+									};
+									class Item200
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_u_o";
+										};
+									};
+									class Item201
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_csat_s_o";
+										};
+									};
+									class Item202
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_fia_b";
+										};
+									};
+									class Item203
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_fia_i";
+										};
+									};
+									class Item204
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_fia_o";
+										};
+									};
+									class Item205
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_gaf_b";
+										};
+									};
+									class Item206
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_gaf_i";
+										};
+									};
+									class Item207
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_gaf_o";
+										};
+									};
+									class Item208
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ion_b_desert";
+										};
+									};
+									class Item209
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ion_i_desert";
+										};
+									};
+									class Item210
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ion_o_desert";
+										};
+									};
+									class Item211
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ion_b_urban";
+										};
+									};
+									class Item212
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ion_i_urban";
+										};
+									};
+									class Item213
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ion_o_urban";
+										};
+									};
+									class Item214
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ion_b_winter";
+										};
+									};
+									class Item215
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ion_i_winter";
+										};
+									};
+									class Item216
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ion_o_winter";
+										};
+									};
+									class Item217
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ion_b_woodland";
+										};
+									};
+									class Item218
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ion_i_woodland";
+										};
+									};
+									class Item219
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ion_o_woodland";
+										};
+									};
+									class Item220
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_krg_b";
+										};
+									};
+									class Item221
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_krg_i";
+										};
+									};
+									class Item222
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_krg_o";
+										};
+									};
+									class Item223
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_kdf_b";
+										};
+									};
+									class Item224
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_kdf_i";
+										};
+									};
+									class Item225
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_kdf_o";
+										};
+									};
+									class Item226
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ldf_b";
+										};
+									};
+									class Item227
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ldf_i";
+										};
+									};
+									class Item228
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ldf_o";
+										};
+									};
+									class Item229
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_lfr_b";
+										};
+									};
+									class Item230
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_lfr_i";
+										};
+									};
+									class Item231
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_lfr_o";
+										};
+									};
+									class Item232
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_lnm_b_groups";
+										};
+									};
+									class Item233
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_lnm_i_groups";
+										};
+									};
+									class Item234
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_lnm_o_groups";
+										};
+									};
+									class Item235
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_lsm_b";
+										};
+									};
+									class Item236
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_lsm_i";
+										};
+									};
+									class Item237
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_lsm_o";
+										};
+									};
+									class Item238
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_ldf_b_groups";
+										};
+									};
+									class Item239
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_ldf_i_groups";
+										};
+									};
+									class Item240
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_ldf_o_groups";
+										};
+									};
+									class Item241
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_lnm_b";
+										};
+									};
+									class Item242
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_lnm_i";
+										};
+									};
+									class Item243
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_lnm_o";
+										};
+									};
+									class Item244
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_mdf_b";
+										};
+									};
+									class Item245
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_mdf_i";
+										};
+									};
+									class Item246
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_mdf_o";
+										};
+									};
+									class Item247
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_mec_b";
+										};
+									};
+									class Item248
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_mec_i";
+										};
+									};
+									class Item249
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_mec_o";
+										};
+									};
+									class Item250
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_mee_i";
+										};
+									};
+									class Item251
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_mee_o";
+										};
+									};
+									class Item252
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_mei_b";
+										};
+									};
+									class Item253
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_mei_o";
+										};
+									};
+									class Item254
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_nap_b_groups";
+										};
+									};
+									class Item255
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_nap_i_groups";
+										};
+									};
+									class Item256
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_nap_o_groups";
+										};
+									};
+									class Item257
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_nap_b";
+										};
+									};
+									class Item258
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_nap_i";
+										};
+									};
+									class Item259
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_nap_o";
+										};
+									};
+									class Item260
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_nfa_b";
+										};
+									};
+									class Item261
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_nfa_i";
+										};
+									};
+									class Item262
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_nfa_o";
+										};
+									};
+									class Item263
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_nfa_b_groups";
+										};
+									};
+									class Item264
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_nfa_i_groups";
+										};
+									};
+									class Item265
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_nfa_o_groups";
+										};
+									};
+									class Item266
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_npd_b";
+										};
+									};
+									class Item267
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_npd_i";
+										};
+									};
+									class Item268
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_npd_o";
+										};
+									};
+									class Item269
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_tkc_b";
+										};
+									};
+									class Item270
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_tkc_i";
+										};
+									};
+									class Item271
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_tkc_o";
+										};
+									};
+									class Item272
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_tkm_o";
+										};
+									};
+									class Item273
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_tka_b";
+										};
+									};
+									class Item274
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_tka_i";
+										};
+									};
+									class Item275
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_tka_o";
+										};
+									};
+									class Item276
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_tkp_b";
+										};
+									};
+									class Item277
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_tkp_i";
+										};
+									};
+									class Item278
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_uk3cb_tkp_o";
+										};
+									};
+									class Item279
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_tkm_b";
+										};
+									};
+									class Item280
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_tkm_i";
+										};
+									};
+									class Item281
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_uk3cb_un_b";
+										};
+									};
+									class Item282
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_uk3cb_un_i";
+										};
+									};
+									class Item283
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_ind_f";
+										};
+									};
+									class Item284
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_ae3_assets";
+										};
+									};
+									class Item285
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_i_arvn";
+										};
+									};
+									class Item286
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_b_aus";
+										};
+									};
+									class Item287
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_cdf_air";
+										};
+									};
+									class Item288
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhsgref_faction_cdf_air_b";
+										};
+									};
+									class Item289
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_cdf_ground";
+										};
+									};
+									class Item290
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhsgref_faction_cdf_ground_b";
+										};
+									};
+									class Item291
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_cdf_ng";
+										};
+									};
+									class Item292
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhsgref_faction_cdf_ng_b";
+										};
+									};
+									class Item293
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_un";
+										};
+									};
+									class Item294
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhsgref_faction_chdkz";
+										};
+									};
+									class Item295
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_chdkz_g";
+										};
+									};
+									class Item296
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_chdkz_g_groups";
+										};
+									};
+									class Item297
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhsgref_faction_chdkz_groups";
+										};
+									};
+									class Item298
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhsgref_faction_cdf_ground_b_groups";
+										};
+									};
+									class Item299
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_cdf_ground_groups";
+										};
+									};
+									class Item300
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_cdf_ng_groups";
+										};
+									};
+									class Item301
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_opf_f";
+										};
+									};
+									class Item302
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_opf_t_f";
+										};
+									};
+									class Item303
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_blu_ctrg_f";
+										};
+									};
+									class Item304
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_gm_fc_dk";
+										};
+									};
+									class Item305
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_gm_dk_army_win";
+										};
+									};
+									class Item306
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_gm_fc_gc";
+										};
+									};
+									class Item307
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_gm_fc_gc_bgs";
+										};
+									};
+									class Item308
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_gm_gc_army_win";
+										};
+									};
+									class Item309
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_i_cam";
+										};
+									};
+									class Item310
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_blu_g_f";
+										};
+									};
+									class Item311
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_ind_g_f";
+										};
+									};
+									class Item312
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_opf_g_f";
+										};
+									};
+									class Item313
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_blu_gen_f";
+										};
+									};
+									class Item314
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_opf_gen_f";
+										};
+									};
+									class Item315
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhsgref_faction_hidf";
+										};
+									};
+									class Item316
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_o_cam";
+										};
+									};
+									class Item317
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_ind_e_f";
+										};
+									};
+									class Item318
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_ind_l_f";
+										};
+									};
+									class Item319
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_3_ind_l_f";
+										};
+									};
+									class Item320
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_b_macv";
+										};
+									};
+									class Item321
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_nationalist";
+										};
+									};
+									class Item322
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_nationalist_groups";
+										};
+									};
+									class Item323
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_blu_f";
+										};
+									};
+									class Item324
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_blu_t_f";
+										};
+									};
+									class Item325
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_blu_w_f";
+										};
+									};
+									class Item326
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_b_nz";
+										};
+									};
+									class Item327
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_o_pl";
+										};
+									};
+									class Item328
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_o_pavn";
+										};
+									};
+									class Item329
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_gm_fc_pl";
+										};
+									};
+									class Item330
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_gm_pl_army_win";
+										};
+									};
+									class Item331
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_redd_vehicles";
+										};
+									};
+									class Item332
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_b_rok";
+										};
+									};
+									class Item333
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_gm_fc_xx";
+										};
+									};
+									class Item334
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_i_lao";
+										};
+									};
+									class Item335
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_msv";
+										};
+									};
+									class Item336
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_rva";
+										};
+									};
+									class Item337
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_tv";
+										};
+									};
+									class Item338
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_vdv";
+										};
+									};
+									class Item339
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_vmf";
+										};
+									};
+									class Item340
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_vpvo";
+										};
+									};
+									class Item341
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_vv";
+										};
+									};
+									class Item342
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_vvs_c";
+										};
+									};
+									class Item343
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhs_faction_vvs";
+										};
+									};
+									class Item344
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhssaf_faction_army";
+										};
+									};
+									class Item345
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhssaf_faction_army_opfor";
+										};
+									};
+									class Item346
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhssaf_faction_airforce";
+										};
+									};
+									class Item347
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhssaf_faction_airforce_opfor";
+										};
+									};
+									class Item348
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhssaf_faction_un";
+										};
+									};
+									class Item349
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_opf_r_f";
+										};
+									};
+									class Item350
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_ind_c_f";
+										};
+									};
+									class Item351
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_gmx_fc_tak";
+										};
+									};
+									class Item352
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_gmx_tak_army";
+										};
+									};
+									class Item353
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_rhsgref_faction_tla";
+										};
+									};
+									class Item354
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_2_rhsgref_faction_tla_g";
+										};
+									};
+									class Item355
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_b_cia";
+										};
+									};
+									class Item356
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_b_medt";
+										};
+									};
+									class Item357
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhs_faction_usarmy_d";
+										};
+									};
+									class Item358
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhs_faction_usarmy_wd";
+										};
+									};
+									class Item359
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhs_faction_usn";
+										};
+									};
+									class Item360
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhs_faction_socom";
+										};
+									};
+									class Item361
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhs_faction_usaf";
+										};
+									};
+									class Item362
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhs_faction_usmc_d";
+										};
+									};
+									class Item363
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_rhs_faction_usmc_wd";
+										};
+									};
+									class Item364
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_0_o_vc";
+										};
+									};
+									class Item365
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_3_c_viet";
+										};
+									};
+									class Item366
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_gm_fc_ge";
+										};
+									};
+									class Item367
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_gm_fc_ge_bgs";
+										};
+									};
+									class Item368
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_3_gm_fc_ge_civ";
+										};
+									};
+									class Item369
+									{
+										class data
+										{
+											singleType="STRING";
+											value="zen_faction_filter_1_gm_ge_army_win";
+										};
+									};
 								};
 							};
 						};
@@ -1873,7 +3817,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=127;
+									items=370;
 									class Item0
 									{
 										class data
@@ -5290,6 +7234,6567 @@ class CustomAttributes
 													{
 														singleType="SCALAR";
 														value=0.75;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item127
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item128
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item129
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item130
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item131
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item132
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item133
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item134
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item135
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item136
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item137
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item138
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item139
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item140
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item141
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item142
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item143
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item144
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item145
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item146
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item147
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item148
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item149
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item150
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item151
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item152
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item153
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item154
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item155
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item156
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item157
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item158
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item159
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item160
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item161
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item162
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item163
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item164
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item165
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item166
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item167
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item168
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item169
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item170
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item171
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item172
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item173
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item174
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item175
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item176
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item177
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item178
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item179
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item180
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item181
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item182
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item183
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item184
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item185
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item186
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item187
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item188
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item189
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item190
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item191
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item192
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item193
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item194
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item195
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item196
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item197
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item198
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item199
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item200
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item201
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item202
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item203
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item204
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item205
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item206
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item207
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item208
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item209
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item210
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item211
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item212
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item213
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item214
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item215
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item216
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item217
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item218
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item219
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item220
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item221
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item222
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item223
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item224
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item225
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item226
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item227
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item228
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item229
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item230
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item231
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item232
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item233
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item234
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item235
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item236
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item237
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item238
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item239
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item240
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item241
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item242
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item243
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item244
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item245
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item246
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item247
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item248
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item249
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item250
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item251
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item252
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item253
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item254
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item255
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item256
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item257
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item258
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item259
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item260
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item261
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item262
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item263
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item264
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item265
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item266
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item267
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item268
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item269
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item270
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item271
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item272
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item273
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item274
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item275
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item276
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item277
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item278
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item279
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item280
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item281
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item282
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item283
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item284
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item285
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item286
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item287
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item288
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item289
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item290
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item291
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item292
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item293
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item294
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item295
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item296
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item297
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item298
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item299
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item300
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item301
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item302
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item303
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item304
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item305
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item306
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item307
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item308
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item309
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item310
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item311
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item312
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item313
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item314
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item315
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item316
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item317
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item318
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item319
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item320
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item321
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item322
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item323
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item324
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item325
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item326
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item327
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item328
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item329
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item330
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item331
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item332
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item333
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item334
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item335
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item336
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item337
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item338
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item339
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item340
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item341
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item342
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item343
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item344
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item345
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item346
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item347
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item348
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item349
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item350
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item351
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item352
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item353
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item354
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item355
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item356
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item357
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item358
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item359
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item360
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item361
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item362
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item363
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item364
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item365
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item366
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item367
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item368
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item369
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
 													};
 												};
 												class Item1
@@ -23851,6 +32356,7 @@ class Mission
 			};
 			id=5316;
 			type="UK3CB_MEI_I_V3S_Closed";
+			atlOffset=-4.7683716e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23958,7 +32464,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5428.9854,7.5700002,8173.4678};
-				angles[]={-0,0.62863797,0};
+				angles[]={0,0.62863797,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23991,7 +32497,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5428.7314,8.4200001,8173.627};
-				angles[]={0,0.76101279,-0};
+				angles[]={0,0.76101279,0};
 			};
 			side="Empty";
 			flags=4;
@@ -24015,7 +32521,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5426.8853,7.5714388,8181.1499};
-						angles[]={0,2.0124547,-0};
+						angles[]={0,2.0124547,0};
 					};
 					side="Independent";
 					flags=7;
@@ -24144,7 +32650,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5431.3623,7.5714388,8174.7261};
-						angles[]={0,4.5682068,-0};
+						angles[]={0,4.5682068,0};
 					};
 					side="Independent";
 					flags=7;
@@ -24174,7 +32680,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5454.1147,7.5714388,8201.8721};
-						angles[]={0,2.5700619,-0};
+						angles[]={0,2.5700619,0};
 					};
 					side="Independent";
 					flags=7;
@@ -24204,7 +32710,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5417.5142,11.399838,8179.7661};
-						angles[]={0,3.5340865,-0};
+						angles[]={0,3.5340865,0};
 					};
 					side="Independent";
 					flags=7;
@@ -24234,7 +32740,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5409.4492,11.410404,8186.8599};
-						angles[]={0,5.6834183,-0};
+						angles[]={0,5.6834183,0};
 					};
 					side="Independent";
 					flags=3;
@@ -24266,7 +32772,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5433.9697,11.279116,8166.5684};
-						angles[]={0,5.8147507,-0};
+						angles[]={0,5.8147507,0};
 					};
 					side="Independent";
 					flags=7;
@@ -24301,6 +32807,7 @@ class Mission
 			};
 			id=5335;
 			type="UK3CB_MEI_I_V3S_Closed";
+			atlOffset=-4.7683716e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24408,7 +32915,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5409.5117,9.5148697,8196.0352};
-				angles[]={-0,4.8763599,0};
+				angles[]={0,4.8763599,0};
 			};
 			side="Independent";
 			flags=6;
@@ -24619,15 +33126,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5411.5806,9.5163078,8195.0625};
-						angles[]={-0,4.8763599,0};
+						angles[]={0,4.8763599,0};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=5338;
 					type="UK3CB_MEI_I_RIF_1";
+					atlOffset=1.9448695;
 				};
 			};
 			class Attributes
@@ -24673,12 +33181,13 @@ class Mission
 						angles[]={6.2491984,3.8538077,6.1736259};
 					};
 					side="Independent";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=5345;
 					type="UK3CB_MEI_I_RIF_1";
+					atlOffset=2.260551;
 				};
 			};
 			class Attributes
@@ -24707,6 +33216,7 @@ class Mission
 				};
 			};
 			id=5344;
+			atlOffset=-4.7683716e-07;
 		};
 		class Item524
 		{
@@ -24725,6 +33235,7 @@ class Mission
 			};
 			id=5346;
 			type="UK3CB_MEI_I_Pickup_DSHKM";
+			atlOffset=-4.7683716e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24925,7 +33436,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5492.4971,14.5426,8168.2754};
-						angles[]={0,0.86539418,-0};
+						angles[]={0,0.86539418,0};
 					};
 					side="Independent";
 					flags=7;
@@ -24955,7 +33466,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5517.2012,14.467733,8124.04};
-						angles[]={0,1.3385243,-0};
+						angles[]={0,1.3385243,0};
 					};
 					side="Independent";
 					flags=7;
@@ -24985,7 +33496,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5444.9287,7.4773884,7997.542};
-						angles[]={0,3.2971947,-0};
+						angles[]={0,3.2971947,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25017,7 +33528,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5386.1328,7.5714388,8209.9824};
-						angles[]={0,5.8029408,-0};
+						angles[]={0,5.8029408,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25047,7 +33558,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5400.9751,7.5714388,8184.6699};
-						angles[]={0,4.477284,-0};
+						angles[]={0,4.477284,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25065,7 +33576,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5401.1689,7.5714388,8186.9307};
-						angles[]={0,4.477284,-0};
+						angles[]={0,4.477284,0};
 					};
 					side="Independent";
 					flags=5;
@@ -25084,7 +33595,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5400.7031,7.5714388,8188.8755};
-						angles[]={0,4.477284,-0};
+						angles[]={0,4.477284,0};
 					};
 					side="Independent";
 					flags=5;
@@ -25102,7 +33613,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5400.2373,7.5714388,8190.8208};
-						angles[]={0,4.477284,-0};
+						angles[]={0,4.477284,0};
 					};
 					side="Independent";
 					flags=5;
@@ -25220,7 +33731,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5426.5571,7.5714388,8013.4531};
-						angles[]={0,0.90284151,-0};
+						angles[]={0,0.90284151,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25238,7 +33749,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5427.7754,7.5714388,8012.083};
-						angles[]={0,0.90284151,-0};
+						angles[]={0,0.90284151,0};
 					};
 					side="Independent";
 					flags=5;
@@ -25257,7 +33768,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5429.0142,7.5714388,8010.5132};
-						angles[]={0,0.90284151,-0};
+						angles[]={0,0.90284151,0};
 					};
 					side="Independent";
 					flags=5;
@@ -25275,7 +33786,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5430.2529,7.5714388,8008.9429};
-						angles[]={0,0.90284151,-0};
+						angles[]={0,0.90284151,0};
 					};
 					side="Independent";
 					flags=5;
@@ -25490,7 +34001,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5427.6631,7.5714388,8146.7275};
-						angles[]={0,4.1562228,-0};
+						angles[]={0,4.1562228,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25520,7 +34031,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5447.7407,7.5714388,8183.1763};
-						angles[]={0,1.025265,-0};
+						angles[]={0,1.025265,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25550,7 +34061,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5456.6968,7.5714388,8149.3472};
-						angles[]={0,4.1322145,-0};
+						angles[]={0,4.1322145,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25580,7 +34091,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5395.1362,10.541443,8195.3291};
-						angles[]={0,1.2390132,-0};
+						angles[]={0,1.2390132,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25612,7 +34123,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5426.228,14.430841,8159.6855};
-						angles[]={0,4.0875206,-0};
+						angles[]={0,4.0875206,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25673,7 +34184,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5401.2964,7.5714388,8193.8057};
-						angles[]={0,4.1161003,-0};
+						angles[]={0,4.1161003,0};
 					};
 					side="Independent";
 					flags=7;
@@ -25707,6 +34218,7 @@ class Mission
 			};
 			id=5400;
 			type="UK3CB_MEI_I_Offroad";
+			atlOffset=4.7683716e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25731,7 +34243,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5421.7822,9.0763912,8202.3369};
-				angles[]={-0,3.8677571,0};
+				angles[]={0,3.8677571,0};
 			};
 			side="Empty";
 			flags=4;
@@ -25742,6 +34254,7 @@ class Mission
 			};
 			id=5401;
 			type="UK3CB_MEI_I_Hilux_Open";
+			atlOffset=-4.7683716e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25766,7 +34279,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5427.8359,9.0763912,8202.1328};
-				angles[]={-0,3.8677571,0};
+				angles[]={0,3.8677571,0};
 			};
 			side="Empty";
 			flags=4;
@@ -25777,6 +34290,7 @@ class Mission
 			};
 			id=5402;
 			type="UK3CB_MEI_I_Hilux_Open";
+			atlOffset=-4.7683716e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -26088,7 +34602,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9092.2402,43.929722,6665.3818};
-						angles[]={0,3.7617788,-0};
+						angles[]={0,3.7617788,0};
 					};
 					side="Independent";
 					flags=3;
