@@ -54,6 +54,16 @@ private _treatmentTime = 6*_treatmentTimeMultiplier;
 
 private _treatmentItem = "";
 switch (true) do {
+    // stitching wounds
+    case (true in (ALL_BODY_PARTS apply {[_target, _x] call GRAD_HEALINGMECHANISM_fnc_canStitch})): {
+        {
+            private _canStitch = [_target, _x] call GRAD_HEALINGMECHANISM_fnc_canStitch;
+            if (_canStitch) then {
+                [_healer, _target, _x] call GRAD_HEALINGMECHANISM_fnc_surgicalKitProgress;
+                break;
+            };
+        } forEach ALL_BODY_PARTS;
+    };
     case (GET_WOUND_BLEEDING(_target) > 0): {
         // Select first bleeding wound and bandage it
         private _selection = "?";
@@ -68,11 +78,6 @@ switch (true) do {
         _treatmentTime = 5*_treatmentTimeMultiplier;
         _treatmentArgs = [_target, _selection, "FieldDressing"];
         _treatmentItem = "@bandage";
-    };
-    case (IN_CRDC_ARRST(_target) && {EGVAR(medical_treatment,cprSuccessChanceMin) > 0}): {
-        _treatmentEvent = QEGVAR(medical_treatment,cprLocal);
-        _treatmentArgs = [_healer, _target];
-        _treatmentTime = 15*_treatmentTimeMultiplier;
     };
     case {GET_BLOOD_VOLUME(_target) < MINIMUM_BLOOD_FOR_STABLE_VITALS}: {
         // Check if patient's blood volume + remaining IV volume is enough to allow the patient to wake up
@@ -89,6 +94,11 @@ switch (true) do {
         _treatmentTime = 5*_treatmentTimeMultiplier;
         _treatmentArgs = [_target, selectRandom ["leftarm", "rightarm", "leftleg", "rightleg"], "SalineIV"];
         _treatmentItem = "@iv";
+    };
+    case (IN_CRDC_ARRST(_target) && {EGVAR(medical_treatment,cprSuccessChanceMin) > 0}): {
+        _treatmentEvent = QEGVAR(medical_treatment,cprLocal);
+        _treatmentArgs = [_healer, _target];
+        _treatmentTime = 15*_treatmentTimeMultiplier;
     };
     case ((count (_target getVariable [VAR_MEDICATIONS, []])) >= 6): {
         _treatmentEvent = "#tooManyMeds";

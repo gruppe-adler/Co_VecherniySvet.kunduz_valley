@@ -28,7 +28,7 @@ class grad_ussr: RUFlora {
         headgear[] = {"rhs_altyn_novisor", "rhs_altyn_novisor_ess"};
         primaryWeapon = "uk3cb_weap_akm_sup";
         primaryWeaponMagazine = "rhs_30Rnd_545x39_AK";
-        primaryWeaponMuzzle = SUPPRESSORITEM;
+        // primaryWeaponMuzzle = SUPPRESSORITEM;
         primaryWeaponPointer = LLITEM;
         primaryWeaponOptics = "";
         primaryWeaponUnderbarrel = "";
@@ -126,10 +126,10 @@ class grad_ussr: RUFlora {
             };
             class Rank {
                 class PRIVATE {
-                    GRAD_FACTIONS_MEDICITEMS_CFR
+                    GRAD_FACTIONS_MEDICITEMS_PT
                 };
                 class CORPORAL {
-                    GRAD_FACTIONS_MEDICITEMS_SQ
+                    GRAD_FACTIONS_MEDICITEMS_PT
                 };
                 class SERGEANT {
                     GRAD_FACTIONS_MEDICITEMS_PT

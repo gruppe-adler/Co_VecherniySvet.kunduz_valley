@@ -3,5 +3,7 @@ class grad_healingMechanism {
         file = USER\healingMechanism;
         class healUnitLoop;
 		class healingLogic;
+        class canStitch;
+        class surgicalKitProgress;
     };
 };
