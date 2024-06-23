@@ -42,7 +42,7 @@ class grad_ussr: RUFlora {
         compass = "ItemCompass";
         watch = "ItemWatch";
         gps = "ItemGPS";
-        radio = "";
+        radio = "tfar_fadak";
 		goggles[] = {"", "", "", "G_Bandanna_khk", "G_Bandanna_tan", "UK3CB_G_Bandanna_green_check", "UK3CB_G_Bandanna_brown_check", "G_Bandanna_blk"};
         nvgoggles = NVITEM;
     };
@@ -310,6 +310,17 @@ class grad_ussr: RUFlora {
                 "ACE_Tripod",
                 "ACE_SpottingScope"
             };
+        };
+
+        class Officer_F: Soldier_F {
+            uniform = "UK3CB_CW_SOV_O_Early_U_OFFICER_Uniform_01_KHK";
+            headgear = "UK3CB_CW_SOV_O_LATE_H_Officer_Cap";
+            map = "ItemMap";
+            compass = "ItemCompass";
+            watch = "ItemWatch";
+            gps = "itemgps";
+            radio = "tfar_fadak";
+            nvgoggles = "";
         };
 
         //Team Leader

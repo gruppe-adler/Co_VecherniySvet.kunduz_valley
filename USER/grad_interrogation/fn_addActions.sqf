@@ -309,9 +309,9 @@ _unit addAction
                 "Max_Tak_woman6"
             ]) then { "female" } else { "male" };
 		
-		private _answer = _gender + "_ciahideout";
+		private _answer = _gender + "_intel_ciahideout";
 		if (_target getVariable ["grad_interrogation_hasAnswered_ciahideout", false] && random 1 > 0.3) then {
-			_answer = selectRandom [_gender + "_ciahideout_2", _gender + "_ciahideout_3"];
+			_answer = selectRandom [_gender + "_intel_ciahideout_2", _gender + "_intel_ciahideout_3"];
 			_target setVariable ["grad_interrogation_hasAnswered_ciahideout", true, true];
 		};
 		private _answerArray = [_answer + "_en", _answer + "_arab"];
