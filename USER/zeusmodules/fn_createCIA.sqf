@@ -1,6 +1,6 @@
 params ["_position"];
 
-private _unit = (createGroup west) createUnit ["O_Soldier_F", _position, [], 0, "NONE"];
+private _unit = (createGroup west) createUnit ["B_Soldier_F", _position, [], 0, "NONE"];
 
 private _face = selectRandom [
 	"WhiteHead_01",
@@ -112,3 +112,5 @@ private _loadout =
 _unit setUnitLoadout _loadout;
 
 [_unit, _face] remoteExec ["setFace", 0, _unit];
+
+_unit
