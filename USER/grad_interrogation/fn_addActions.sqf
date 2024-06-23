@@ -13,7 +13,7 @@ private _actionId = _unit addAction
 	true,		// showWindow
 	true,		// hideOnUse
 	"",			// shortcut
-	"!(_originalTarget getVariable ['grad_interrogation_answering', false]) && !local _originalTarget",		// condition
+	"_originalTarget distance player < 3 && !(_originalTarget getVariable ['grad_interrogation_answering', false]) && !local _originalTarget",		// condition
 	50,			// radius
 	false,		// unconscious
 	"",			// selection
