@@ -67,7 +67,7 @@
      
 }] call zen_custom_modules_fnc_register;
 
-["Co Vecherniny Svet", "Create CIA Agent", {
+["Co Vecherniny Svet - O3/04", "Create CIA Agent", {
      params ["_position", "_object"];
      
      [ASLToAGL _position] call grad_zeusmodules_fnc_createCIA;
@@ -75,15 +75,56 @@
 }] call zen_custom_modules_fnc_register;
 
 
+["Co Vecherniny Svet - O2", "Send in reinforcements (on vehicle)", {
+     params ["_position", "_object"];
+     
+     if (isNull _object) exitWith { "not a vehicle" call cba_fnc_notify; };
 
-["Evening Light - Enemies Cloaked", "Reinforcements Squad", {
+     [_object] execVM "user\convoy\reinforcement_path.sqf";
+     
+}] call zen_custom_modules_fnc_register;
+
+
+["Co Vecherniny Svet - Ambient", "Music Radio",
+    {
+      // Get all the passed parameters
+      params ["_position", "_object"];
+      _position = ASLToAGL _position;
+
+      private _radio = (selectRandom ["land_gm_euro_furniture_radio_01", "jbad_radio_b", "Land_FMradio_F"]) createVehicle [0,0,0];
+      _radio setPos _position;
+      _radio setDir (random 360);
+
+      private _source = createSoundSource [(selectRandom ["music1", "music2", "arabicsong1", "arabicsong2"]), _position, [], 0];
+      [_source, _radio, false] call grad_ambient_fnc_soundSourceHelper;
+      
+      {
+        _x addCuratorEditableObjects [[_radio], false];
+      } forEach allCurators;
+
+    }] call zen_custom_modules_fnc_register;
+
+
+["Co Vecherniny Svet - Ambient", "Suicide Car Spawn",
+    {
+      params ["_position", "_object"];
+      _position = ASLToAGL _position;
+
+      [_position] remoteExec ["grad_ambient_fnc_suicideCar", 2];
+
+    }] call zen_custom_modules_fnc_register;
+
+
+
+
+["Co Vecherniny Svet - Reinf Cloaked", "Reinforcements Squad", {
      params ["_position", "_object"];
      
      ["squad", true, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
      
 }] call zen_custom_modules_fnc_register;
 
-["Evening Light - Enemies Open", "Reinforcements Squad", {
+["Co Vecherniny Svet - Reinf Open", "Reinforcements Squad", {
      params ["_position", "_object"];
      
      ["squad", false, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
@@ -91,14 +132,14 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["Evening Light - Enemies Cloaked", "Reinforcements Fireteam", {
+["Co Vecherniny Svet - Reinf Cloaked", "Reinforcements Fireteam", {
      params ["_position", "_object"];
      
      ["fireteam", true, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
      
 }] call zen_custom_modules_fnc_register;
 
-["Evening Light - Enemies Open", "Reinforcements Fireteam", {
+["Co Vecherniny Svet - Reinf Open", "Reinforcements Fireteam", {
      params ["_position", "_object"];
      
      ["fireteam", false, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
@@ -106,14 +147,14 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["Evening Light - Enemies Cloaked", "Reinforcements specialteam", {
+["Co Vecherniny Svet - Reinf Cloaked", "Reinforcements specialteam", {
      params ["_position", "_object"];
      
      ["specialteam", true, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
      
 }] call zen_custom_modules_fnc_register;
 
-["Evening Light - Enemies Open", "Reinforcements specialteam", {
+["Co Vecherniny Svet - Reinf Open", "Reinforcements specialteam", {
      params ["_position", "_object"];
      
      ["specialteam", false, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
@@ -121,14 +162,14 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["Evening Light - Enemies Cloaked", "Reinforcements heavy", {
+["Co Vecherniny Svet - Reinf Cloaked", "Reinforcements heavy", {
      params ["_position", "_object"];
      
      ["heavy", true, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
      
 }] call zen_custom_modules_fnc_register;
 
-["Evening Light - Enemies Open", "Reinforcements heavy", {
+["Co Vecherniny Svet - Enemies Open", "Reinforcements heavy", {
      params ["_position", "_object"];
      
      ["heavy", false, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
@@ -163,34 +204,7 @@
 
 
 
-["Evening Light - Ambient", "Music Radio",
-    {
-      // Get all the passed parameters
-      params ["_position", "_object"];
-      _position = ASLToAGL _position;
 
-      private _radio = (selectRandom ["land_gm_euro_furniture_radio_01", "jbad_radio_b", "Land_FMradio_F"]) createVehicle [0,0,0];
-      _radio setPos _position;
-      _radio setDir (random 360);
-
-      private _source = createSoundSource [(selectRandom ["music1", "music2", "arabicsong1", "arabicsong2"]), _position, [], 0];
-      [_source, _radio, false] call grad_ambient_fnc_soundSourceHelper;
-      
-      {
-        _x addCuratorEditableObjects [[_radio], false];
-      } forEach allCurators;
-
-    }] call zen_custom_modules_fnc_register;
-
-
-["Evening Light - Ambient", "Suicide Car Spawn",
-    {
-      params ["_position", "_object"];
-      _position = ASLToAGL _position;
-
-      [_position] remoteExec ["grad_ambient_fnc_suicideCar", 2];
-
-    }] call zen_custom_modules_fnc_register;
 
 
 ["Evening Light - Ambient", "Create Mosque Singer",

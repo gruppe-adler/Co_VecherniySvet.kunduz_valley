@@ -12,7 +12,7 @@ _vehicle setDir _dir;
 
 private _units = [_type] call GRAD_zeusmodules_fnc_getReinforcementUnits;
 
-private _group = createGroup east;
+private _group = createGroup independent;
 
 {
     private _unit = _group createUnit [_x, [0,0,0], [], 0, "NONE"];
