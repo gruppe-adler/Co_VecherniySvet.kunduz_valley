@@ -1,6 +1,6 @@
 private _spawnposition = [3222.22,6914,0];
 
-private _group = createGroup east;
+private _group = createGroup independent;
 private _classnames = [
 	"UK3CB_TKM_O_LAT",
 	"UK3CB_TKM_O_MD",

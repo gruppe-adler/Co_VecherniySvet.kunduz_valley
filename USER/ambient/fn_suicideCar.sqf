@@ -4,7 +4,7 @@ _position set [2,0];
 
 private _type = "UK3CB_MEI_O_Hilux_Open";
 private _car = _type createVehicle [0,0,0];
-private _driver = (createGroup east) createUnit ["UK3CB_TKM_O_ENG", [0,0,0], [], 0, "NONE"];
+private _driver = (createGroup independent) createUnit ["UK3CB_TKM_O_ENG", [0,0,0], [], 0, "NONE"];
 _driver moveInDriver _car;
 
 _car setPos _position;

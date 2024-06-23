@@ -169,7 +169,7 @@
      
 }] call zen_custom_modules_fnc_register;
 
-["Co Vecherniny Svet - Enemies Open", "Reinforcements heavy", {
+["Co Vecherniny Svet - Reinf Open", "Reinforcements heavy", {
      params ["_position", "_object"];
      
      ["heavy", false, ASLtoAGL _position] remoteExec ["grad_zeusmodules_fnc_reinforcements", 2];
@@ -178,59 +178,9 @@
 
 
 
-["Evening Light - GRAD Leavenotes", "Spawn Note", {
-          params ["_modulePosition"]; 
-          private _position = ASLtoAGL _modulePosition;
-
-          ["Example Dialog", [["EDIT", "Your text?", "string ping"]], {
-			   params ["_message", "_position"]; 
-                  // systemchat str _position; 
-                  // systemchat (_message select 0);
-			   [_position, random 360, _message select 0, ["somewhat",["cramped","EtelkaNarrowMediumPro"]]] remoteExec ["GRAD_leaveNotes_fnc_spawnNote", 2, false];
-		  }, { systemchat "cancelled"; }, _position] call zen_dialog_fnc_create;        
-     }
-] call zen_custom_modules_fnc_register;
-
-
-
-["Evening Light - IED Workshop", "Spawn Defender Group", {
-          params ["_modulePosition"]; 
-          
-          [] remoteExec ["grad_zeusmodules_fnc_createGroupIEDworkshop", 2];
-     }
-] call zen_custom_modules_fnc_register;
-
-
-
-
-
-
-
-
-["Evening Light - Ambient", "Create Mosque Singer",
-    {
-      params ["_position", "_object"];
-      _position = ASLToAGL _position;
-
-      [_position] remoteExec ["grad_ambient_fnc_createMosqueSinger", 2];
-
-    }] call zen_custom_modules_fnc_register;
-
-["Evening Light - Ambient", "Shoot Flare",
-    {
-      params ["_position", "_object"];
-      _position = ASLToAGL _position;
-
-       _position set [2, 250]; private _ammo = "rhsusf_40mm_clusterflare_red" createVehicle _position; 
-      _ammo setVelocity [random 1,random 1,1];
-
-    }] call zen_custom_modules_fnc_register;
-
     
 
-    
-
-["Evening Light - End", "Create Chair Circle",
+["Co Vecherniny Svet - End", "Create Chair Circle",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 

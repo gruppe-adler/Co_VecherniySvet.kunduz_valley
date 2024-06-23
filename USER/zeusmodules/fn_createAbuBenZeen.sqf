@@ -1,6 +1,6 @@
 params ["_position"];
 
-private _group = createGroup east;
+private _group = createGroup independent;
 private _unit = _group createUnit ["UK3CB_TKM_O_IED", _position, [], 0, "NONE"];
 _unit setVariable ["lambs_danger_disableAI", true];
 

@@ -1,6 +1,6 @@
 params ["_position"];
 
-private _unit = (createGroup east) createUnit ["O_Soldier_F", _position, [], 0, "NONE"];
+private _unit = (createGroup west) createUnit ["O_Soldier_F", _position, [], 0, "NONE"];
 
 private _face = selectRandom [
 	"WhiteHead_01",

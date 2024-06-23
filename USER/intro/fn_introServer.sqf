@@ -42,7 +42,7 @@ setTimeMultiplier 1;
 	_mi24_1 setBehaviour "CARELESS";
 	_mi24_1 setCombatMode "BLUE";
 
-	(creategroup east) createVehicleCrew _mi24_1;
+	(creategroup independent) createVehicleCrew _mi24_1;
 
 	grad_intro_mi24_1 = _mi24_1;
 	publicVariable "grad_intro_mi24_1";
@@ -72,7 +72,7 @@ setTimeMultiplier 1;
 		["exhaust_hide",1]
 	] call BIS_fnc_initVehicle;
 	_mi24_2 allowDamage false;
-	(creategroup east) createVehicleCrew _mi24_2;
+	(creategroup independent) createVehicleCrew _mi24_2;
 
 	grad_intro_mi24_2 = _mi24_2;
 	publicVariable "grad_intro_mi24_2";
