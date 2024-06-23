@@ -1,7 +1,6 @@
 GRAD_INTERROGATION_SOUNDS_DONTKNOW_MALE = [
 	["male_dontaskmeinshallah_en", "male_dontaskmeinshallah_arab"],
 	["male_dontaskmeinshallah_2_en", "male_dontaskmeinshallah_2_arab"],
-	["male_dontaskmeinshallah_3_en", "male_dontaskmeinshallah_3_arab"],
 	["male_idontknow_en", "male_idontknow_arab"],
 	["male_idontknow_2_en", "male_idontknow_2_arab"],
 	["male_idontknow_3_en", "male_idontknow_3_arab"]
@@ -18,7 +17,6 @@ GRAD_INTERROGATION_SOUNDS_STOPHURTING_MALE = [
 GRAD_INTERROGATION_SOUNDS_DONTKNOW_FEMALE = [
 	["female_dontaskmeinshallah_en", "female_dontaskmeinshallah_arab"],
 	["female_dontaskmeinshallah_2_en", "female_dontaskmeinshallah_2_arab"],
-	["female_dontaskmeinshallah_3_en", "female_dontaskmeinshallah_3_arab"],
 	["female_idontknow_en", "female_idontknow_arab"],
 	["female_idontknow_2_en", "female_idontknow_2_arab"],
 	["female_idontknow_3_en", "female_idontknow_3_arab"]

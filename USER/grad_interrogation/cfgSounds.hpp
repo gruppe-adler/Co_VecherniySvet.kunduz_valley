@@ -407,12 +407,6 @@ class male_dontaskmeinshallah_2_en
     sound[] = {"USER\grad_interrogation\sounds\male_dontaskmeinshallah_2_en.ogg", 1, 1, 50};
     titles[] = {0,""};
 };
-class male_dontaskmeinshallah_3_en
-{
-    name = "male_dontaskmeinshallah_3_en";
-    sound[] = {"USER\grad_interrogation\sounds\male_dontaskmeinshallah_3_en.ogg", 1, 1, 50};
-    titles[] = {0,""};
-};
 
 class male_idontknow_en
 {
@@ -446,12 +440,7 @@ class male_dontaskmeinshallah_2_arab
     sound[] = {"USER\grad_interrogation\sounds\male_dontaskmeinshallah_2_arab.ogg", 1, 1, 50};
     titles[] = {0,""};
 };
-class male_dontaskmeinshallah_3_arab
-{
-    name = "male_dontaskmeinshallah_3_arab";
-    sound[] = {"USER\grad_interrogation\sounds\male_dontaskmeinshallah_3_arab.ogg", 1, 1, 50};
-    titles[] = {0,""};
-};
+
 
 class male_idontknow_arab
 {
@@ -865,12 +854,6 @@ class female_dontaskmeinshallah_2_en
     sound[] = {"USER\grad_interrogation\sounds\female_dontaskmeinshallah_2_en.ogg", 1, 1, 50};
     titles[] = {0,""};
 };
-class female_dontaskmeinshallah_3_en
-{
-    name = "female_dontaskmeinshallah_3_en";
-    sound[] = {"USER\grad_interrogation\sounds\female_dontaskmeinshallah_3_en.ogg", 1, 1, 50};
-    titles[] = {0,""};
-};
 
 class female_idontknow_en
 {
@@ -902,12 +885,6 @@ class female_dontaskmeinshallah_2_arab
 {
     name = "female_dontaskmeinshallah_2_arab";
     sound[] = {"USER\grad_interrogation\sounds\female_dontaskmeinshallah_2_arab.ogg", 1, 1, 50};
-    titles[] = {0,""};
-};
-class female_dontaskmeinshallah_3_arab
-{
-    name = "female_dontaskmeinshallah_3_arab";
-    sound[] = {"USER\grad_interrogation\sounds\female_dontaskmeinshallah_3_arab.ogg", 1, 1, 50};
     titles[] = {0,""};
 };
 
