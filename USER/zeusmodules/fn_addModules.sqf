@@ -52,6 +52,12 @@
 
       }];
 
+     _curator addEventHandler ["CuratorWaypointPlaced", {
+          params ["_curator", "_group", "_waypointID"];
+
+           [(_group), false] remoteExec ["enableDynamicSimulation", 2];
+     }];
+
   } forEach allCurators;
 };
 
@@ -181,7 +187,7 @@
      params ["_position", "_object"];
      
      if (isNull _object) exitWith { "not an object" call cba_fnc_notify; };
-     group _object enableDynamicSimulation false;
+     [(group _object), false] remoteExec ["enableDynamicSimulation", 2];
      
 }] call zen_custom_modules_fnc_register;
 
@@ -189,7 +195,7 @@
      params ["_position", "_object"];
      
      if (isNull _object) exitWith { "not an object" call cba_fnc_notify; };
-     group _object enableDynamicSimulation true;
+     [(group _object), true] remoteExec ["enableDynamicSimulation", 2];
      
 }] call zen_custom_modules_fnc_register;
     
