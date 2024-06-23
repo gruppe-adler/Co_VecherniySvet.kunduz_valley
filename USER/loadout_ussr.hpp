@@ -26,7 +26,7 @@ class grad_ussr: RUFlora {
         vest[] = {"UK3CB_ARD_B_V_6b5_Rifleman_Desert", "UK3CB_ARD_B_V_6b5_Desert"};
         backpack = "";
         headgear[] = {"rhs_altyn_novisor", "rhs_altyn_novisor_ess"};
-        primaryWeapon = "uk3cb_weap_akm_sup";
+        primaryWeapon = "rhs_weap_akm";
         primaryWeaponMagazine = "rhs_30Rnd_545x39_AK";
         // primaryWeaponMuzzle = SUPPRESSORITEM;
         primaryWeaponPointer = LLITEM;

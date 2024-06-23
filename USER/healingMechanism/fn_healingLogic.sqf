@@ -53,6 +53,8 @@ private _treatmentTimeMultiplier = 0.01;
 private _treatmentTime = 6*_treatmentTimeMultiplier;
 
 private _treatmentItem = "";
+
+private _availableLimbs = ["leftarm", "rightarm", "leftleg", "rightleg"] select { !([_target, _x] call ace_medical_treatment_fnc_hasTourniquetAppliedTo) };
 switch (true) do {
     // stitching wounds
     case (true in (ALL_BODY_PARTS apply {[_target, _x] call GRAD_HEALINGMECHANISM_fnc_canStitch})): {
@@ -79,20 +81,22 @@ switch (true) do {
         _treatmentArgs = [_target, _selection, "FieldDressing"];
         _treatmentItem = "@bandage";
     };
-    case {GET_BLOOD_VOLUME(_target) < MINIMUM_BLOOD_FOR_STABLE_VITALS}: {
+    case ((GET_BLOOD_VOLUME(_target) < MINIMUM_BLOOD_FOR_STABLE_VITALS) && !([_target] call GRAD_HEALINGMECHANISM_fnc_isBloodSufficient)): {
         // Check if patient's blood volume + remaining IV volume is enough to allow the patient to wake up
-        private _totalIvVolume = 0; //in ml
+        private _totalIvVolume = 0; //in ml1
         {
             _x params ["_volumeRemaining"];
             _totalIvVolume = _totalIvVolume + _volumeRemaining;
         } forEach (_target getVariable [QEGVAR(medical,ivBags), []]);
 
         if (GET_BLOOD_VOLUME(_target) + (_totalIvVolume / 1000) > MINIMUM_BLOOD_FOR_STABLE_VITALS) exitWith {
+            systemChat QGVAR(ivBagLocal);
             _treatmentEvent = "#waitForBlood";
         };
+        // [QGVAR(ivBagLocal), [_patient, selectRandom ["leftarm", "rightarm", "leftleg", "rightleg"], "BloodIV"], _patient] call CBA_fnc_targetEvent;
         _treatmentEvent = QEGVAR(medical_treatment,ivBagLocal);
         _treatmentTime = 5*_treatmentTimeMultiplier;
-        _treatmentArgs = [_target, selectRandom ["leftarm", "rightarm", "leftleg", "rightleg"], "SalineIV"];
+        _treatmentArgs = [_target, selectRandom _availableLimbs, "SalineIV"];
         _treatmentItem = "@iv";
     };
     case (IN_CRDC_ARRST(_target) && {EGVAR(medical_treatment,cprSuccessChanceMin) > 0}): {
@@ -102,6 +106,18 @@ switch (true) do {
     };
     case ((count (_target getVariable [VAR_MEDICATIONS, []])) >= 6): {
         _treatmentEvent = "#tooManyMeds";
+    };
+    case ((_fractures select 2) == 1): {
+        _treatmentEvent = QEGVAR(medical_treatment,splintLocal);
+        _treatmentTime = 6*_treatmentTimeMultiplier;
+        _treatmentArgs = [_healer, _target, "leftarm"];
+        _treatmentItem = "splint";
+    };
+    case ((_fractures select 3) == 1): {
+        _treatmentEvent = QEGVAR(medical_treatment,splintLocal);
+        _treatmentTime = 6*_treatmentTimeMultiplier;
+        _treatmentArgs = [_healer, _target, "rightarm"];
+        _treatmentItem = "splint";
     };
     case ((_fractures select 4) == 1): {
         _treatmentEvent = QEGVAR(medical_treatment,splintLocal);
@@ -125,7 +141,7 @@ switch (true) do {
         _target setVariable [QGVAR(nextEpinephrine), CBA_missionTime + 10];
         _treatmentEvent = QEGVAR(medical_treatment,medicationLocal);
         _treatmentTime = 2.5*_treatmentTimeMultiplier;
-        _treatmentArgs = [_target, selectRandom ["leftarm", "rightarm", "leftleg", "rightleg"], "Epinephrine"];
+        _treatmentArgs = [_target, selectRandom _availableLimbs, "Epinephrine"];
         _treatmentItem = "epinephrine";
     };
     case (((GET_PAIN_PERCEIVED(_target) > 0.25) || {_heartRate >= 180})
@@ -139,7 +155,7 @@ switch (true) do {
         _target setVariable [QGVAR(nextMorphine), CBA_missionTime + 30];
         _treatmentEvent = QEGVAR(medical_treatment,medicationLocal);
         _treatmentTime = 2.5*_treatmentTimeMultiplier;
-        _treatmentArgs = [_target, selectRandom ["leftarm", "rightarm", "leftleg", "rightleg"], "Morphine"];
+        _treatmentArgs = [_target, selectRandom _availableLimbs, "Morphine"];
         _treatmentItem = "morphine";
     };
 };

@@ -5,5 +5,6 @@ class grad_healingMechanism {
 		class healingLogic;
         class canStitch;
         class surgicalKitProgress;
+        class isBloodSufficient;
     };
 };
