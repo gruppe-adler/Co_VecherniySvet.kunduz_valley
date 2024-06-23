@@ -177,7 +177,21 @@
 }] call zen_custom_modules_fnc_register;
 
 
+["Co Vecherniny Svet - DynSim", "Make unit wake up", {
+     params ["_position", "_object"];
+     
+     if (isNull _object) exitWith { "not an object" call cba_fnc_notify; };
+     group _object enableDynamicSimulation false;
+     
+}] call zen_custom_modules_fnc_register;
 
+["Co Vecherniny Svet - DynSim", "Make unit NOT wake up", {
+     params ["_position", "_object"];
+     
+     if (isNull _object) exitWith { "not an object" call cba_fnc_notify; };
+     group _object enableDynamicSimulation true;
+     
+}] call zen_custom_modules_fnc_register;
     
 
 ["Co Vecherniny Svet - End", "Create Chair Circle",

@@ -14,10 +14,10 @@ private _classname = switch (_type) do {
             ]
         } else {
             selectRandom [
-                    "UK3CB_TKM_O_Ural_Open",
-                    "UK3CB_TKM_O_Ural_Covered",
-                    "UK3CB_TKM_O_V3S_Closed",
-                    "UK3CB_TKM_O_V3S_Open"
+                    "UK3CB_TKM_I_Ural_Open",
+                    "UK3CB_TKM_I_Ural_Covered",
+                    "UK3CB_TKM_I_V3S_Closed",
+                    "UK3CB_TKM_I_V3S_Open"
             ]
         };
     }; 
@@ -33,13 +33,13 @@ private _classname = switch (_type) do {
             ]
         } else {
             selectRandom [
-                    "UK3CB_TKM_O_Datsun_Pkm",
-                    "UK3CB_TKM_O_Hilux_M2",
-                    "UK3CB_TKM_O_Hilux_Mortar",
-                    "UK3CB_TKM_O_Hilux_Pkm",
-                    "UK3CB_TKM_O_Hilux_Spg9",
-                    "UK3CB_TKM_O_Pickup_M2",
-                    "UK3CB_TKM_O_Pickup_DSHKM"
+                    "UK3CB_TKM_I_Datsun_Pkm",
+                    "UK3CB_TKM_I_Hilux_M2",
+                    "UK3CB_TKM_I_Hilux_Mortar",
+                    "UK3CB_TKM_I_Hilux_Pkm",
+                    "UK3CB_TKM_I_Hilux_Spg9",
+                    "UK3CB_TKM_I_Pickup_M2",
+                    "UK3CB_TKM_I_Pickup_DSHKM"
             ]
         };
     }; 
@@ -66,8 +66,8 @@ private _classname = switch (_type) do {
             ]
         } else {
             selectRandom [
-                    "UK3CB_TKM_O_MTLB_PKT",
-                    "UK3CB_TKM_O_BTR60"
+                    "UK3CB_TKM_I_MTLB_PKT",
+                    "UK3CB_TKM_I_BTR60"
             ]
         };
     };
