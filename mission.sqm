@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5749;
+		nextID=5752;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8793.5205,31.501816,5341.6704};
-		dir[]={-0.024709115,-0.68509042,-0.72803938};
-		up[]={-0.023237802,0.72845387,-0.68469679};
-		aside[]={-0.99942523,4.6929927e-09,0.033919353};
+		pos[]={8729.7832,33.821156,5864.6201};
+		dir[]={0.59930187,-0.78891075,-0.135869};
+		up[]={0.76938564,0.61450094,-0.17442918};
+		aside[]={-0.22110179,3.707828e-08,-0.97525126};
 	};
 };
 binarizationWanted=0;
@@ -13875,7 +13875,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=633;
+		items=635;
 		class Item0
 		{
 			dataType="Layer";
@@ -19008,6 +19008,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="uk3cb_enable_loadout";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_loadout; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -19019,7 +19032,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -19032,7 +19045,33 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="lambs_danger_disableAI";
+							expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="uk3cb_enable_randomisation";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_randomize; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -19070,6 +19109,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="uk3cb_enable_loadout";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_loadout; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -19081,7 +19133,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -19094,7 +19146,33 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="lambs_danger_disableAI";
+							expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="uk3cb_enable_randomisation";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_randomize; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -19337,7 +19415,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="lambs_danger_disableAI";
+							expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -19414,7 +19505,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="lambs_danger_disableAI";
+							expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -19592,7 +19696,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8800.5049,20.282478,5285.9756};
+						position[]={8800.5049,20.282097,5285.9756};
 						angles[]={0,1.600083,0};
 					};
 					side="Civilian";
@@ -19603,7 +19707,7 @@ class Mission
 					};
 					id=3994;
 					type="Max_Tak_woman5";
-					atlOffset=-0.011617661;
+					atlOffset=-0.01199913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19632,7 +19736,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="lambs_danger_disableAI";
+							expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -19640,7 +19757,24 @@ class Mission
 			{
 			};
 			id=3993;
-			atlOffset=-0.011617661;
+			atlOffset=-0.01199913;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="lambs_danger_disableGroupAI";
+					expression="if (_value) then { _this setVariable ['lambs_danger_disableGroupAI', _value, true]; }";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item217
 		{
@@ -20836,7 +20970,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="if (isServer) then { this attachto [intro_bottle]; }; this switchmove ""gm_teleraetman_sleeping_idle""; this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""gm_teleraetman_sleeping_idle""; }];";
+						init="if (isServer) then { this attachto [intro_bottle]; [this, ""gm_teleraetman_sleeping_idle""] remoteExec [""switchmove"", 0, this]; };  this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""gm_teleraetman_sleeping_idle""; }];";
 					};
 					id=4142;
 					type="UK3CB_TKC_C_WORKER";
@@ -20858,6 +20992,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="uk3cb_enable_loadout";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_loadout; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -20869,7 +21016,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -20882,7 +21029,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute4
+						{
+							property="uk3cb_enable_randomisation";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_randomize; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -21482,7 +21642,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this setVariable [""lambs_danger_disableAI"", true]; this switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; }];";
+						init="if (isServer) then { [this, ""AidlPsitMstpSnonWnonDnon_ground00""] remoteExec [""switchmove"", 0, this];  }; this setVariable [""lambs_danger_disableAI"", true]; this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; }];";
 					};
 					id=4194;
 					type="UK3CB_TKC_C_CIV";
@@ -21522,6 +21682,23 @@ class Mission
 			{
 			};
 			id=4193;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="lambs_danger_disableGroupAI";
+					expression="if (_value) then { _this setVariable ['lambs_danger_disableGroupAI', _value, true]; }";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item285
 		{
@@ -21542,7 +21719,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this setVariable [""lambs_danger_disableAI"", true]; this switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; }];";
+						init="if (isServer) then { [this, ""AidlPsitMstpSnonWnonDnon_ground00""] remoteExec [""switchmove"", 0, this];  }; this setVariable [""lambs_danger_disableAI"", true]; this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; }];";
 					};
 					id=4196;
 					type="UK3CB_TKC_C_CIV";
@@ -21582,6 +21759,23 @@ class Mission
 			{
 			};
 			id=4195;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="lambs_danger_disableGroupAI";
+					expression="if (_value) then { _this setVariable ['lambs_danger_disableGroupAI', _value, true]; }";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item286
 		{
@@ -21602,7 +21796,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this setVariable [""lambs_danger_disableAI"", true]; this switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; }];";
+						init="if (isServer) then { [this, ""AidlPsitMstpSnonWnonDnon_ground00""] remoteExec [""switchmove"", 0, this];  }; this setVariable [""lambs_danger_disableAI"", true]; this addEventhandler [""AnimDone"", { (_this select 0) switchmove ""AidlPsitMstpSnonWnonDnon_ground00""; }];";
 					};
 					id=4198;
 					type="UK3CB_TKC_C_CIV";
@@ -21642,6 +21836,23 @@ class Mission
 			{
 			};
 			id=4197;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="lambs_danger_disableGroupAI";
+					expression="if (_value) then { _this setVariable ['lambs_danger_disableGroupAI', _value, true]; }";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item287
 		{
@@ -23273,13 +23484,26 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this setVariable [""lambs_danger_disableAI"", true]; [this, ""REPAIR_VEH_STAND"", ""NONE""] call BIS_fnc_ambientAnim;";
+						init="if (isServer) then { this disableAI ""MOVE""; }; this setVariable [""lambs_danger_disableAI"", true]; [this, ""REPAIR_VEH_STAND"", ""NONE""] call BIS_fnc_ambientAnim;";
 					};
 					id=4307;
 					type="UK3CB_TKC_C_WORKER";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="uk3cb_enable_loadout";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_loadout; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -23292,7 +23516,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -23305,7 +23529,33 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="lambs_danger_disableAI";
+							expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="uk3cb_enable_randomisation";
+							expression="if !(_value) then { _this call uk3cb_factions_common_fnc_disable_randomize; };";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};
@@ -41169,6 +41419,72 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item633
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8790.3721,16.915667,5335.8335};
+				angles[]={0.071872659,6.0871844,0.0060039326};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5749;
+			type="vn_steeldrum_bbq_02";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item634
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8790.3027,17.770761,5335.8428};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=5751;
+			type="Land_vn_c_prop_pot_03";
+			atlOffset=0.90699959;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
