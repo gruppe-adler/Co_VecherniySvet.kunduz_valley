@@ -1,3 +1,80 @@
+
+/*MIXED*/
+class male_intel_ciahideout_arab
+{
+    name = "male_intel_ciahideout_arab";
+    sound[] = {"USER\grad_interrogation\sounds\male_intel_ciahideout_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class female_intel_ciahideout_arab
+{
+    name = "female_intel_ciahideout_arab";
+    sound[] = {"USER\grad_interrogation\sounds\female_intel_ciahideout_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class male_intel_ciahideout2_arab
+{
+    name = "male_intel_ciahideout2_arab";
+    sound[] = {"USER\grad_interrogation\sounds\male_intel_ciahideout2_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class female_intel_ciahideout2_arab
+{
+    name = "female_intel_ciahideout2_arab";
+    sound[] = {"USER\grad_interrogation\sounds\female_intel_ciahideout2_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class male_intel_ciahideout3_arab
+{
+    name = "male_intel_ciahideout3_arab";
+    sound[] = {"USER\grad_interrogation\sounds\male_intel_ciahideout3_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class female_intel_ciahideout3_arab
+{
+    name = "female_intel_ciahideout3_arab";
+    sound[] = {"USER\grad_interrogation\sounds\female_intel_ciahideout3_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
+class male_intel_ciahideout_en
+{
+    name = "male_intel_ciahideout_en";
+    sound[] = {"USER\grad_interrogation\sounds\male_intel_ciahideout_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class female_intel_ciahideout_en
+{
+    name = "female_intel_ciahideout_en";
+    sound[] = {"USER\grad_interrogation\sounds\female_intel_ciahideout_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class male_intel_ciahideout2_en
+{
+    name = "male_intel_ciahideout2_en";
+    sound[] = {"USER\grad_interrogation\sounds\male_intel_ciahideout2_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class female_intel_ciahideout2_en
+{
+    name = "female_intel_ciahideout2_en";
+    sound[] = {"USER\grad_interrogation\sounds\female_intel_ciahideout2_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class male_intel_ciahideout3_en
+{
+    name = "male_intel_ciahideout3_en";
+    sound[] = {"USER\grad_interrogation\sounds\male_intel_ciahideout3_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class female_intel_ciahideout3_en
+{
+    name = "female_intel_ciahideout3_en";
+    sound[] = {"USER\grad_interrogation\sounds\female_intel_ciahideout3_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
+
 /* MALE */
 
 // INTEL
@@ -21,8 +98,20 @@ class intel_objective_final
 };
 
 
+
+
+
+
 // ZEUS CONTROLLED SPEECH
 // EN
+
+class male_reinforcements_en
+{
+    name = "male_reinforcements_en";
+    sound[] = {"USER\grad_interrogation\sounds\male_reinforcements_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
 class male_salamalaikum_en
 {
     name = "male_salamalaikum_en";
@@ -145,6 +234,13 @@ class male_hamdullila_2_en
 };
 
 // ARAB
+class male_reinforcements_arab
+{
+    name = "male_reinforcements_arab";
+    sound[] = {"USER\grad_interrogation\sounds\male_reinforcements_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
 class male_salamalaikum_arab
 {
     name = "male_salamalaikum_arab";
@@ -467,6 +563,13 @@ class male_pleasedonthurtme_3_arab
 
 // ZEUS CONTROLLED SPEECH
 // EN
+class female_reinforcements_en
+{
+    name = "female_reinforcements_en";
+    sound[] = {"USER\grad_interrogation\sounds\female_reinforcements_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
 class female_salamalaikum_en
 {
     name = "female_salamalaikum_en";
@@ -589,6 +692,13 @@ class female_hamdullila_2_en
 };
 
 // ARAB
+class female_reinforcements_arab
+{
+    name = "female_reinforcements_arab";
+    sound[] = {"USER\grad_interrogation\sounds\female_reinforcements_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
 class female_salamalaikum_arab
 {
     name = "female_salamalaikum_arab";

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5581;
+		nextID=5606;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4714.0024,31.759111,6027.5107};
-		dir[]={-0.56096584,-0.57415307,0.59637678};
-		up[]={-0.39348397,0.81796521,0.41832092};
-		aside[]={0.7285763,-1.9006256e-07,0.68532407};
+		pos[]={4788.8237,54.823997,6077.519};
+		dir[]={0.44793975,-0.42578578,-0.78616571};
+		up[]={0.21081486,0.90470642,-0.36999503};
+		aside[]={-0.86889076,2.6638736e-07,-0.49507406};
 	};
 };
 binarizationWanted=0;
@@ -13883,7 +13883,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=589;
+		items=610;
 		class Item0
 		{
 			dataType="Layer";
@@ -35292,6 +35292,407 @@ class Mission
 			id=5578;
 			type="vn_b_prop_cassette_01";
 			atlOffset=0.81099987;
+		};
+		class Item589
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4823.4771,13.642058,6085.4731};
+				angles[]={0.013999403,4.5798378,0.013999403};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5584;
+			type="CUP_A2_Road_grav_6konec";
+		};
+		class Item590
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4734.1328,13.607673,6069.7148};
+				angles[]={6.2731848,1.1127199,0.033985451};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5585;
+			type="CUP_A2_Road_grav_6konec";
+			atlOffset=9.5367432e-07;
+		};
+		class Item591
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4739.563,13.735621,6072.1733};
+				angles[]={0.0079935296,4.274147,0.015998369};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5586;
+			type="CUP_A2_Road_grav_6";
+			atlOffset=9.5367432e-07;
+		};
+		class Item592
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4744.8369,13.763696,6074.167};
+				angles[]={0.0060001095,4.4095087,0.0080009829};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5587;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item593
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4750.3394,13.809583,6075.2988};
+				angles[]={0.0019834081,4.5669551,0.029989703};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5588;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item594
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4753.4277,13.900717,6076.0576};
+				angles[]={0.0019834081,4.5669551,0.029989703};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5589;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item595
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4759.439,14.266438,6076.8892};
+				angles[]={6.2172809,4.5669551,0.085788846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5590;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item596
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4765.3989,14.622211,6077.6895};
+				angles[]={6.187479,4.5669551,0.010000871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5591;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item597
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4770.396,14.769299,6078.4346};
+				angles[]={6.1775794,4.5669551,6.2711854};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5592;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item598
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4776.2158,14.712833,6079.2422};
+				angles[]={6.2053428,4.5669551,6.2272439};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5593;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item599
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4781.376,14.447756,6079.9014};
+				angles[]={6.2332273,4.5669551,6.2053428};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5594;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item600
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4786.4004,14.126377,6080.6123};
+				angles[]={6.2172809,4.5669551,6.223258};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5595;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item601
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4792.228,13.860939,6081.1499};
+				angles[]={6.2252507,4.5669551,6.2491999};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5596;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item602
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4797.542,13.699888,6081.833};
+				angles[]={6.2471995,4.5669551,6.2571907};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5597;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item603
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4803.374,13.534469,6082.6831};
+				angles[]={0.013999403,4.5669551,6.2511969};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5598;
+			type="CUP_A2_Road_grav_6";
+			atlOffset=9.5367432e-07;
+		};
+		class Item604
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4808.647,13.477107,6083.436};
+				angles[]={0.02199479,4.5669551,6.2811723};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5599;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item605
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4813.9609,13.513066,6084.1191};
+				angles[]={0.019996032,4.5669551,0.013995145};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5600;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item606
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4819.1187,13.586486,6084.832};
+				angles[]={0.013999403,4.5669551,0.017997233};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5602;
+			type="CUP_A2_Road_grav_6";
+		};
+		class Item607
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4731.9111,15.124981,6074.3682};
+				angles[]={-0,3.6644285,0.023993526};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=5603;
+			type="UK3CB_MEC_C_SUV";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[1]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item608
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4736.3521,15.207186,6066.4521};
+				angles[]={6.2731905,4.3610721,0.031988446};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=5604;
+			type="UK3CB_MEC_C_SUV";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[1]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item609
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4753.7788,13.913722,6076.3208};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=5605;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections

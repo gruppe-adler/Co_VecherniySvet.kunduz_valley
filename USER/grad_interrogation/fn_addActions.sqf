@@ -22,7 +22,35 @@ private _actionId = _unit addAction
 
 _unit setUserActionText [_actionId, "Interrogate", "<img size='2' image='\A3\ui_f\data\IGUI\Cfg\Actions\talk_ca.paa'/>"];
 
+_unit addAction
+[
+	"<t color='#ff0000'>Say Salam Alaikum</t>",	// title
+	{
+		params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
+		private _gender = if (typeOf _target in [
+                "Max_Tak_woman1",
+                "Max_Tak_woman2",
+                "Max_Tak_woman3",
+                "Max_Tak_woman4",
+                "Max_Tak_woman5",
+                "Max_Tak_woman6"
+            ]) then { "female" } else { "male" };
+		private _answer = selectRandom [_gender + "_salamalaikum", _gender + "_salamalaikum_2", _gender + "_salamalaikum_3"];
+		private _answerArray = [_answer + "_en", _answer + "_arab"];
+		[_target, _answerArray] remoteExec ["grad_interrogation_fnc_answer"];
+	},
+	nil,		// arguments
+	1.5,		// priority
+	true,		// showWindow
+	true,		// hideOnUse
+	"",			// shortcut
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
+	50,			// radius
+	false,		// unconscious
+	"",			// selection
+	""			// memoryPoint
+];
 
 _unit addAction
 [
@@ -221,6 +249,73 @@ _unit addAction
             ]) then { "female" } else { "male" };
 		private _answer = selectRandom (call compile ("GRAD_INTERROGATION_SOUNDS_STOPHURTING_" + _gender));
 		[_target, _answer] remoteExec ["grad_interrogation_fnc_answer"];
+	},
+	nil,		// arguments
+	1.5,		// priority
+	true,		// showWindow
+	true,		// hideOnUse
+	"",			// shortcut
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
+	50,			// radius
+	false,		// unconscious
+	"",			// selection
+	""			// memoryPoint
+];
+
+
+_unit addAction
+[
+	"<t color='#0000FF'>Reinforcements</t>",	// title
+	{
+		params ["_target", "_caller", "_actionId", "_arguments"]; // script
+
+		private _gender = if (typeOf _target in [
+                "Max_Tak_woman1",
+                "Max_Tak_woman2",
+                "Max_Tak_woman3",
+                "Max_Tak_woman4",
+                "Max_Tak_woman5",
+                "Max_Tak_woman6"
+            ]) then { "female" } else { "male" };
+		private _answer = _gender + "_reinforcements";
+		private _answerArray = [_answer + "_en", _answer + "_arab"];
+		[_target, _answerArray] remoteExec ["grad_interrogation_fnc_answer"];
+	},
+	nil,		// arguments
+	1.5,		// priority
+	true,		// showWindow
+	true,		// hideOnUse
+	"",			// shortcut
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
+	50,			// radius
+	false,		// unconscious
+	"",			// selection
+	""			// memoryPoint
+];
+
+
+_unit addAction
+[
+	"<t color='#ff0000'>Intel CIA Objective</t>",	// title
+	{
+		params ["_target", "_caller", "_actionId", "_arguments"]; // script
+
+		private _gender = if (typeOf _target in [
+                "Max_Tak_woman1",
+                "Max_Tak_woman2",
+                "Max_Tak_woman3",
+                "Max_Tak_woman4",
+                "Max_Tak_woman5",
+                "Max_Tak_woman6"
+            ]) then { "female" } else { "male" };
+		
+		private _answer = _gender + "_ciahideout";
+		if (_target getVariable ["grad_interrogation_hasAnswered_ciahideout", false] && random 1 > 0.3) then {
+			_answer = selectRandom [_gender + "_ciahideout_2", _gender + "_ciahideout_3"];
+			_target setVariable ["grad_interrogation_hasAnswered_ciahideout", true, true];
+		};
+		private _answerArray = [_answer + "_en", _answer + "_arab"];
+		[_target, _answerArray] remoteExec ["grad_interrogation_fnc_answer"];
 	},
 	nil,		// arguments
 	1.5,		// priority
