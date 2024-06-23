@@ -126,8 +126,8 @@ private _backpack = selectRandom [
 private _loadout = 
 	selectRandom
 	[
-		[["UK3CB_M16_Carbine","","","",["UK3CB_M16_30rnd_556x45",30],[],""],[],[],[_uniform,[["UK3CB_M16_30rnd_556x45",2,30]]],["UK3CB_MDF_B_V_CREW_Vest_TAN",[["UK3CB_M16_30rnd_556x45",3,30]]],[_backpack,[["UK3CB_M16_30rnd_556x45",5,30]]],_headgear,_beard,[],["","","","ItemCompass","gm_watch_kosei_80",""]],
-		[["UK3CB_M16_Carbine","","","",["UK3CB_M16_30rnd_556x45",30],[],""],[],[],[_uniform,[["UK3CB_M16_30rnd_556x45",2,30]]],["gm_ge_bgs_vest_type3_gry",[["UK3CB_M16_30rnd_556x45",1,30]]],[_backpack,[]],_headgear,_beard,[],["","","","ItemCompass","gm_watch_kosei_80",""]]
+		[["UK3CB_M16_Carbine","","","",["UK3CB_M16_30rnd_556x45",30],[],""],[],[],[_uniform,[["UK3CB_M16_30rnd_556x45",2,30]]],["UK3CB_MDF_B_V_CREW_Vest_TAN",[["UK3CB_M16_30rnd_556x45",3,30]]],[],_headgear,_beard,[],["","","","ItemCompass","gm_watch_kosei_80",""]],
+		[["UK3CB_M16_Carbine","","","",["UK3CB_M16_30rnd_556x45",30],[],""],[],[],[_uniform,[["UK3CB_M16_30rnd_556x45",2,30]]],["gm_ge_bgs_vest_type3_gry",[["UK3CB_M16_30rnd_556x45",1,30]]],[],_headgear,_beard,[],["","","","ItemCompass","gm_watch_kosei_80",""]]
 	];
 
 _unit setUnitLoadout _loadout;
