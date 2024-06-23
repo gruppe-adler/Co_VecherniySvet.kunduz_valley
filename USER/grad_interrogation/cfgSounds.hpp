@@ -13,6 +13,12 @@ class intel_objective2_arab
     sound[] = {"USER\grad_interrogation\sounds\intel_objective2_arab.ogg", 1, 1, 50};
     titles[] = {0,""};
 };
+class intel_objective_final
+{
+    name = "intel_objective_final";
+    sound[] = {"USER\grad_interrogation\sounds\intel_objective_final.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
 
 
 // ZEUS CONTROLLED SPEECH
