@@ -27,7 +27,7 @@ class grad_ussr: RUFlora {
         backpack = "";
         headgear[] = {"rhs_altyn_novisor", "rhs_altyn_novisor_ess"};
         primaryWeapon = "rhs_weap_akm";
-        primaryWeaponMagazine = "rhs_30Rnd_545x39_AK";
+        primaryWeaponMagazine = "rhs_30Rnd_762x39mm_bakelite_tracer";
         // primaryWeaponMuzzle = SUPPRESSORITEM;
         primaryWeaponPointer = LLITEM;
         primaryWeaponOptics = "";
@@ -60,7 +60,7 @@ class grad_ussr: RUFlora {
             addItemsToVest[] = {
                 LIST_2("rhs_mag_rgd5"),
                 LIST_2("rhs_mag_rdg2_white"),
-                LIST_7("rhs_30Rnd_545x39_AK")
+                LIST_7("rhs_30Rnd_762x39mm_bakelite_tracer")
             };
         };
 
