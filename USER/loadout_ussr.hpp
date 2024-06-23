@@ -315,6 +315,7 @@ class grad_ussr: RUFlora {
         class Officer_F: Soldier_F {
             uniform = "UK3CB_CW_SOV_O_Early_U_OFFICER_Uniform_01_KHK";
             headgear = "UK3CB_CW_SOV_O_LATE_H_Officer_Cap";
+            vest = "";
             map = "ItemMap";
             compass = "ItemCompass";
             watch = "ItemWatch";

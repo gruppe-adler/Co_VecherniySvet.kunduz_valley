@@ -24,7 +24,7 @@ _unit setUserActionText [_actionId, "Interrogate", "<img size='2' image='\A3\ui_
 
 _unit addAction
 [
-	"<t color='#ff0000'>Say Salam Alaikum</t>",	// title
+	"<t color='#ffffff'>Say Salam Alaikum</t>",	// title
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
@@ -54,7 +54,7 @@ _unit addAction
 
 _unit addAction
 [
-	"<t color='#ff0000'>Say No</t>",	// title
+	"<t color='#ffffff'>Say No</t>",	// title
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
@@ -84,7 +84,7 @@ _unit addAction
 
 _unit addAction
 [
-	"<t color='#00ff00'>Say Yes</t>",	// title
+	"<t color='#ffffff'>Say Yes</t>",	// title
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
@@ -97,6 +97,37 @@ _unit addAction
                 "Max_Tak_woman6"
             ]) then { "female" } else { "male" };
 		private _answer = selectRandom [_gender + "_yes", _gender + "_yes_2", _gender + "_yes_3"];
+		private _answerArray = [_answer + "_en", _answer + "_arab"];
+		[_target, _answerArray] remoteExec ["grad_interrogation_fnc_answer"];
+	},
+	nil,		// arguments
+	1.5,		// priority
+	true,		// showWindow
+	true,		// hideOnUse
+	"",			// shortcut
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
+	50,			// radius
+	false,		// unconscious
+	"",			// selection
+	""			// memoryPoint
+];
+
+
+_unit addAction
+[
+	"<t color='#ff0000'>Say I know a contact</t>",	// title
+	{
+		params ["_target", "_caller", "_actionId", "_arguments"]; // script
+
+		private _gender = if (typeOf _target in [
+                "Max_Tak_woman1",
+                "Max_Tak_woman2",
+                "Max_Tak_woman3",
+                "Max_Tak_woman4",
+                "Max_Tak_woman5",
+                "Max_Tak_woman6"
+            ]) then { "female" } else { "male" };
+		private _answer = selectRandom [_gender + "_comealong", _gender + "_comealong_2"];
 		private _answerArray = [_answer + "_en", _answer + "_arab"];
 		[_target, _answerArray] remoteExec ["grad_interrogation_fnc_answer"];
 	},
@@ -144,7 +175,7 @@ _unit addAction
 
 _unit addAction
 [
-	"<t color='#0000FF'>This is the one</t>",	// title
+	"<t color='#ff0000'>This is the one</t>",	// title
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
@@ -265,7 +296,7 @@ _unit addAction
 
 _unit addAction
 [
-	"<t color='#0000FF'>Reinforcements</t>",	// title
+	"<t color='#ff0000'>Reinforcements</t>",	// title
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
@@ -312,10 +343,10 @@ _unit addAction
 		private _answer = _gender + "_intel_ciahideout";
 		if (_target getVariable ["grad_interrogation_hasAnswered_ciahideout", false] && random 1 > 0.3) then {
 			_answer = selectRandom [_gender + "_intel_ciahideout_2", _gender + "_intel_ciahideout_3"];
-			_target setVariable ["grad_interrogation_hasAnswered_ciahideout", true, true];
 		};
 		private _answerArray = [_answer + "_en", _answer + "_arab"];
 		[_target, _answerArray] remoteExec ["grad_interrogation_fnc_answer"];
+		_target setVariable ["grad_interrogation_hasAnswered_ciahideout", true, true];
 	},
 	nil,		// arguments
 	1.5,		// priority
