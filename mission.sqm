@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5908;
+		nextID=5916;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4679.415,69.925369,5972.9546};
-		dir[]={0.20676708,-0.67025191,0.71274507};
-		up[]={0.18674189,0.74210149,0.64371395};
-		aside[]={0.96041369,1.9418076e-07,-0.2786158};
+		pos[]={4705.4692,10.52061,6073.2451};
+		dir[]={-0.45994645,-0.47573176,-0.74975216};
+		up[]={-0.24878041,0.87949902,-0.40553042};
+		aside[]={-0.85241258,9.7008888e-07,0.52292639};
 	};
 };
 binarizationWanted=0;
@@ -13894,7 +13894,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=710;
+		items=711;
 		class Item0
 		{
 			dataType="Layer";
@@ -43839,63 +43839,67 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4711.1509,9.4032602,6059.0308};
+				position[]={4711.1509,9.088089,6059.0308};
+				angles[]={-0,2.9883668,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir 170; _cia disableAI ""PATH""; deleteVehicle this; };";
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
 			};
-			id=5900;
-			type="Sign_Arrow_F";
+			id=5908;
+			type="Sign_Arrow_Direction_F";
 		};
 		class Item704
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4714.0103,9.4032602,6060.3979};
+				position[]={4714.0103,9.088089,6060.3979};
+				angles[]={-0,3.6872704,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir 170; _cia disableAI ""PATH""; deleteVehicle this; };";
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
 			};
-			id=5901;
-			type="Sign_Arrow_F";
+			id=5909;
+			type="Sign_Arrow_Direction_F";
 		};
 		class Item705
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4708.7275,9.4032602,6063.5713};
+				position[]={4714.2266,9.088089,6063.0508};
+				angles[]={-0,4.4929724,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir 170; _cia disableAI ""PATH""; deleteVehicle this; };";
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
 			};
-			id=5902;
-			type="Sign_Arrow_F";
+			id=5910;
+			type="Sign_Arrow_Direction_F";
 		};
 		class Item706
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4707.4312,9.7095652,6068.6328};
+				position[]={4707.4312,9.3943939,6068.6328};
+				angles[]={0,2.3652031,-0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir 170; _cia disableAI ""PATH""; deleteVehicle this; };";
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
 			};
-			id=5903;
-			type="Sign_Arrow_F";
+			id=5911;
+			type="Sign_Arrow_Direction_F";
 			atlOffset=0.30630493;
 		};
 		class Item707
@@ -43903,48 +43907,68 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4702.3574,9.4032602,6074.9766};
+				position[]={4702.3574,9.088089,6074.9766};
+				angles[]={-0,2.2291882,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir 170; _cia disableAI ""PATH""; deleteVehicle this; };";
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
 			};
-			id=5904;
-			type="Sign_Arrow_F";
+			id=5912;
+			type="Sign_Arrow_Direction_F";
 		};
 		class Item708
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4704.4844,9.4032602,6077.9873};
+				position[]={4704.4844,9.088089,6077.9873};
+				angles[]={-0,2.8694146,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir 170; _cia disableAI ""PATH""; deleteVehicle this; };";
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
 			};
-			id=5905;
-			type="Sign_Arrow_F";
+			id=5913;
+			type="Sign_Arrow_Direction_F";
 		};
 		class Item709
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4710.1836,9.4032602,6069.2354};
+				position[]={4710.1836,9.088089,6069.2354};
+				angles[]={-0,3.3547089,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir 170; _cia disableAI ""PATH""; deleteVehicle this; };";
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
 			};
-			id=5906;
-			type="Sign_Arrow_F";
+			id=5914;
+			type="Sign_Arrow_Direction_F";
+		};
+		class Item710
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4715.6138,9.088089,6058.1563};
+				angles[]={-0,4.7556419,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="if (isServer) then { private _cia = [position this] call grad_zeusmodules_fnc_createCIA; _cia setDir getdir this; _cia disableAI ""PATH""; deleteVehicle this; };";
+			};
+			id=5915;
+			type="Sign_Arrow_Direction_F";
 		};
 	};
 	class Connections

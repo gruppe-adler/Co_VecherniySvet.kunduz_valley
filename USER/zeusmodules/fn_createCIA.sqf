@@ -1,6 +1,7 @@
 params ["_position"];
 
 private _unit = (createGroup west) createUnit ["B_Soldier_F", _position, [], 0, "NONE"];
+_unit enableDynamicSimulation true;
 
 private _face = selectRandom [
 	"WhiteHead_01",
@@ -99,7 +100,27 @@ private _backpack = selectRandom [
 	"vn_b_pack_trp_02",
 	"vn_b_pack_m41_05",
 	"rhs_r148",
-	"UK3CB_B_Backpack_Pocket"
+	"UK3CB_B_Backpack_Pocket",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	""
 ];
 
 private _loadout = 

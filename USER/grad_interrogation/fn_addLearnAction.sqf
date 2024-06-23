@@ -18,12 +18,15 @@ _book setObjectTexture [0, "data\paperback_co.paa"];
 		params ["_target", "_caller", "_actionId", "_arguments"]; // code Completed
 		
 		private _alreadyLearned = _target getVariable ["grad_interrogation_triedToLearn", 0];
+		private _translatorCount = missionNamespace getVariable ["grad_interrogation_translatorCount", 0];
 
 		if (_alreadyLearned < 1) then {
-			if (random 2 > 1) then {
+			if (_translatorCount < 4) then {
 				"This is great, I can understand pashtun now." call CBA_fnc_notify;
 				 _target setVariable ["grad_interrogation_triedToLearn", 2, true];
 				 _target setVariable ["grad_interrogation_isTranslator", true, true];
+				 _translatorCount = _translatorCount + 1;
+				  missionNamespace setVariable ["grad_interrogation_translatorCount", _translatorCount, true];
 			} else {
 				_target setVariable ["grad_interrogation_triedToLearn", 1, true];
 				"I am too dumb to learn pashtun :(" call CBA_fnc_notify;
