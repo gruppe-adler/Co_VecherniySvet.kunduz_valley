@@ -21072,7 +21072,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="if (isServer) then { this attachto [intro_bottle, [0,0,-0.65]]; }; [this, ""gm_teleraetman_sleeping_idle""] call grad_intro_fnc_animationHelper;";
+						init="if (isServer) then { _this setPos [getPos _this#0, getPos _this#1, -0.65]; }; [this, ""gm_teleraetman_sleeping_idle""] call grad_intro_fnc_animationHelper;";
 					};
 					id=4142;
 					type="UK3CB_TKC_C_WORKER";
