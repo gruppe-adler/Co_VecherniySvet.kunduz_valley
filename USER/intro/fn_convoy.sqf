@@ -34,12 +34,12 @@ for "_i" from 1 to 30 do {
 		if (!alive introConvoy1) exitWith {
 			[_handle] call CBA_fnc_removePerFrameHandler;
 			{
-				doStop (driver _x);
+				private _driver = driver _x;
+				doStop _driver;
 				[{
 					params ["_driver"];
 					_driver setDamage 1;
 				}, [_driver], 1] call CBA_fnc_waitAndExecute;
-				(driver _x) setDamage 1;
 			} forEach _vehicles;
 		};
 
