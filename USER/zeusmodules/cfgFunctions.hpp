@@ -13,5 +13,6 @@ class grad_zeusmodules {
         class spawnIEDtruck;
         class createGroupIEDworkshop;
         class createCIA;
+        class markTranslatorForZeus;
     };
 };

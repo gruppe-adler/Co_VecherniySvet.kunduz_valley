@@ -27,6 +27,7 @@ _book setObjectTexture [0, "data\paperback_co.paa"];
 				 _target setVariable ["grad_interrogation_isTranslator", true, true];
 				 _translatorCount = _translatorCount + 1;
 				  missionNamespace setVariable ["grad_interrogation_translatorCount", _translatorCount, true];
+				  [_target] remoteExec ["grad_zeusmodules_fnc_markTranslatorForZeus", 0, _target];
 			} else {
 				_target setVariable ["grad_interrogation_triedToLearn", 1, true];
 				"I am too dumb to learn pashtun :(" call CBA_fnc_notify;
