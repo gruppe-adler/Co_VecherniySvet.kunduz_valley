@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5921;
+		nextID=5930;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2215;
+		nextID=2242;
 	};
 	class Camera
 	{
-		pos[]={9084.1201,46.939953,6659.6372};
-		dir[]={-0.89349902,-0.23992731,-0.37959361};
-		up[]={-0.2208261,0.97078669,-0.093815774};
-		aside[]={-0.39101526,-9.9651515e-08,0.92038512};
+		pos[]={9172.3379,90.550827,6637.2163};
+		dir[]={-0.87517089,-0.42980719,-0.22212787};
+		up[]={-0.41660175,0.90291333,-0.10573735};
+		aside[]={-0.24601188,2.074521e-07,0.96927267};
 	};
 };
 binarizationWanted=0;
@@ -14002,7 +14002,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=710;
+		items=711;
 		class Item0
 		{
 			dataType="Layer";
@@ -36804,13 +36804,14 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=12;
+				items=16;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9182.6641,24.351439,6567.7588};
+						position[]={9181.3887,24.351439,6567.395};
+						angles[]={0,4.464705,-0};
 					};
 					side="Independent";
 					flags=7;
@@ -36822,6 +36823,71 @@ class Mission
 					type="UK3CB_TKM_I_TL";
 				};
 				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9186.8623,24.351439,6569.4888};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=5926;
+					type="UK3CB_TKM_I_TL";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9189.8623,24.351439,6566.4888};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+					};
+					id=5927;
+					type="UK3CB_TKM_I_RIF_2";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9191.8623,24.351439,6566.4888};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=5928;
+					type="UK3CB_TKM_I_LAT";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9193.8623,24.351439,6566.4888};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=5929;
+					type="UK3CB_TKM_I_RIF_1";
+				};
+				class Item5
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36835,7 +36901,7 @@ class Mission
 					id=5410;
 					type="Move";
 				};
-				class Item2
+				class Item6
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36847,7 +36913,7 @@ class Mission
 					id=5411;
 					type="Move";
 				};
-				class Item3
+				class Item7
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36859,7 +36925,7 @@ class Mission
 					id=5412;
 					type="Move";
 				};
-				class Item4
+				class Item8
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36872,7 +36938,7 @@ class Mission
 					type="Move";
 					atlOffset=5.7220459e-06;
 				};
-				class Item5
+				class Item9
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36885,7 +36951,7 @@ class Mission
 					type="Move";
 					atlOffset=9.5367432e-06;
 				};
-				class Item6
+				class Item10
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36898,7 +36964,7 @@ class Mission
 					type="Move";
 					atlOffset=2.0980835e-05;
 				};
-				class Item7
+				class Item11
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36911,7 +36977,7 @@ class Mission
 					type="Move";
 					atlOffset=2.2888184e-05;
 				};
-				class Item8
+				class Item12
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36923,7 +36989,7 @@ class Mission
 					id=5417;
 					type="Move";
 				};
-				class Item9
+				class Item13
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36935,7 +37001,7 @@ class Mission
 					id=5418;
 					type="Move";
 				};
-				class Item10
+				class Item14
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -36947,7 +37013,7 @@ class Mission
 					id=5419;
 					type="Move";
 				};
-				class Item11
+				class Item15
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -42542,7 +42608,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9110.2793,24.84865,6692.0254};
-						angles[]={0,2.5234292,0};
+						angles[]={0,2.523432,0};
 					};
 					side="Independent";
 					flags=7;
@@ -42559,7 +42625,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9106.0957,24.964357,6692.7314};
-						angles[]={0,2.5234292,0};
+						angles[]={0,2.523432,0};
 					};
 					side="Independent";
 					flags=5;
@@ -42577,7 +42643,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9104.4658,24.950352,6691.5728};
-						angles[]={0,2.5234292,0};
+						angles[]={0,2.523432,0};
 					};
 					side="Independent";
 					flags=5;
@@ -42594,7 +42660,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9102.8359,24.943701,6690.4136};
-						angles[]={0,2.5234292,0};
+						angles[]={0,2.523432,0};
 					};
 					side="Independent";
 					flags=5;
@@ -42725,6 +42791,7 @@ class Mission
 			};
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=5756;
 		};
@@ -42734,7 +42801,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -42804,6 +42871,18 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
+					position[]={9071.7578,24.422167,6640.9199};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=5924;
+					type="Hold";
+				};
+				class Item5
+				{
+					dataType="Waypoint";
+					loiterAltitude=-3.4028235e+38;
 					position[]={9068.5195,24.44013,6641.0151};
 					script="\z\lambs\addons\wp\scripts\fnc_wpGarrison.sqf";
 					class Effects
@@ -42826,7 +42905,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -42900,6 +42979,19 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
+					position[]={9093.749,24.362503,6641.5381};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=5921;
+					type="Hold";
+					atlOffset=1.9073486e-06;
+				};
+				class Item5
+				{
+					dataType="Waypoint";
+					loiterAltitude=-3.4028235e+38;
 					position[]={9101.1846,24.435585,6640.292};
 					script="\z\lambs\addons\wp\scripts\fnc_wpGarrison.sqf";
 					class Effects
@@ -42923,7 +43015,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -42990,6 +43082,18 @@ class Mission
 					type="UK3CB_TKM_I_RIF_1";
 				};
 				class Item4
+				{
+					dataType="Waypoint";
+					loiterAltitude=-3.4028235e+38;
+					position[]={9084.6738,24.678505,6668.2129};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=5923;
+					type="Hold";
+				};
+				class Item5
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+38;
@@ -44295,16 +44399,31 @@ class Mission
 			};
 			id=5919;
 		};
+		class Item710
+		{
+			dataType="Trigger";
+			position[]={9090.4238,24.442183,6658.0908};
+			class Attributes
+			{
+				condition="sheepTransportGo";
+				sizeA=0;
+				sizeB=0;
+				type="SWITCH";
+				isServerOnly=1;
+			};
+			id=5922;
+			type="EmptyDetector";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=10;
+			nextID=13;
 		};
 		class Links
 		{
-			items=10;
+			items=13;
 			class Item0
 			{
 				linkID=0;
@@ -44403,6 +44522,36 @@ class Mission
 				class CustomData
 				{
 					type="Sync";
+				};
+			};
+			class Item10
+			{
+				linkID=10;
+				item0=5922;
+				item1=5921;
+				class CustomData
+				{
+					type="WaypointActivation";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=5922;
+				item1=5923;
+				class CustomData
+				{
+					type="WaypointActivation";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=5924;
+				item1=5922;
+				class CustomData
+				{
+					type="WaypointActivation";
 				};
 			};
 		};
