@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2134;
+		nextID=2161;
 	};
 	class Camera
 	{
-		pos[]={8793.5664,42.160328,5363.3765};
-		dir[]={0.271099,-0.31911647,-0.90811288};
-		up[]={0.091288105,0.94769889,-0.3057909};
-		aside[]={-0.95822018,-1.9502477e-07,-0.2860575};
+		pos[]={9086.9814,39.230721,6635.1528};
+		dir[]={0.016965691,-0.63571107,0.7717402};
+		up[]={0.013971947,0.77191865,0.63555855};
+		aside[]={0.9997592,-5.0720701e-08,-0.021978587};
 	};
 };
 binarizationWanted=0;
@@ -881,7 +881,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -33245,6 +33245,7 @@ class Mission
 			};
 			id=5171;
 			type="land_gm_euro_furniture_table_06";
+			atlOffset=1.1444092e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33449,7 +33450,7 @@ class Mission
 			};
 			id=5186;
 			type="vn_b_prop_cabinet_01_01";
-			atlOffset=0.00012779236;
+			atlOffset=6.4849854e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33517,7 +33518,7 @@ class Mission
 			};
 			id=5188;
 			type="Land_vn_b_prop_fan_desk_01";
-			atlOffset=0.84149742;
+			atlOffset=0.84149933;
 			class CustomAttributes
 			{
 				class Attribute0

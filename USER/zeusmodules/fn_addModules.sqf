@@ -103,6 +103,15 @@
 }] call zen_custom_modules_fnc_register;
 
 
+["Co Vecherniny Svet - Translator", "Spawn Translator Book", {
+     params ["_position", "_object"];
+     
+     private _book = "Book_02_F" createVehicle (ASLtoAGL _position);
+     [_book] remoteExec ["grad_interrogation_fnc_addLearnAction", 0, _book];
+     
+}] call zen_custom_modules_fnc_register;
+
+
 
 ["Co Vecherniny Svet - Ambient", "Music Radio",
     {
