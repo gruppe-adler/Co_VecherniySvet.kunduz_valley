@@ -46,6 +46,7 @@ setTimeMultiplier 1;
 
 	grad_intro_mi24_1 = _mi24_1;
 	publicVariable "grad_intro_mi24_1";
+	grad_intro_mi24_1 setCaptive true;
 
 	private _data_1 = call compile loadFile ("USER\intro\fn_mi24_data_3.sqf");
 	[_mi24_1, _data_1] spawn BIS_fnc_unitPlay;
@@ -76,6 +77,7 @@ setTimeMultiplier 1;
 
 	grad_intro_mi24_2 = _mi24_2;
 	publicVariable "grad_intro_mi24_2";
+	grad_intro_mi24_2 setCaptive true;
 
 	private _data_2 = call compile loadFile ("USER\intro\fn_mi24_data_2.sqf");
 	[_mi24_2, _data_2] spawn BIS_fnc_unitPlay;
@@ -119,5 +121,13 @@ private _dir = getDir intro_sheep;
 	
 	sheepTransportGo = true;
 	publicVariable "sheepTransportGo";
+
+	{
+		_x params ["_vehicle"];
+		{
+			deleteVehicle _x;
+		} forEach (units _vehicle);
+		deleteVehicle _vehicle;
+	} forEach [grad_intro_mi24_1, grad_intro_mi24_2];
 	
 }, [], 174] call CBA_fnc_waitAndExecute;
