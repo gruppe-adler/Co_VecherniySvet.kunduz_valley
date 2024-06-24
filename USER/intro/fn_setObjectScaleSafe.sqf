@@ -24,6 +24,6 @@ _helper setObjectTextureGlobal [0,"#(argb,8,8,3)color(1,1,1,0,ca)"];
     	_allObjects pushBackUnique [_object, _scale];
     	missionNamespace setVariable ["GRAD_scaledObjects", _allObjects, true];
 
-	}, [_object, _scale], 1] call CBA_fnc_waitAndExecute;
+	}, [_object, _scale], 3] call CBA_fnc_waitAndExecute;
 
 }, [_object, _scale, _helper]] call CBA_fnc_waitUntilAndExecute;

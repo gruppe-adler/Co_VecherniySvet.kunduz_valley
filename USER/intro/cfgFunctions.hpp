@@ -42,6 +42,8 @@ class grad_intro {
 
         class sheepTransport;
         class convoy;
+
+        class animationHelper;
     };
 };
 

@@ -22,6 +22,14 @@ intro_texture_2 setobjecttexture [0, ""]; // remove texture
 
 
 showCinemaBorder true;
+    
+// double check scaling of textures
+private _allObjects = missionNamespace getVariable ["GRAD_scaledObjects", []];
+{
+	_x params [_object, _scale];
+		_object setObjectScale _scale;
+} forEach _allObjects;
+
 
 private _camera = "camera" camCreate [0, 0, 3];
 _camera cameraEffect ["internal","back"];
