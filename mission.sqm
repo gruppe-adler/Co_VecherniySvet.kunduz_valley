@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1945;
+		nextID=1972;
 	};
 	class Camera
 	{
-		pos[]={9135.4463,55.888283,8632.1152};
-		dir[]={-0.41122669,-0.63753462,-0.65149432};
-		up[]={-0.34029728,0.77040708,-0.53912365};
-		aside[]={-0.84563333,1.2974488e-07,0.53376812};
+		pos[]={8791.9277,19.989496,5342.9033};
+		dir[]={-0.049157836,-0.51772171,-0.85413569};
+		up[]={-0.029747071,0.8555491,-0.51686645};
+		aside[]={-0.998348,0,0.057457644};
 	};
 };
 binarizationWanted=0;
@@ -873,7 +873,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -21066,17 +21066,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8791.8848,16.250252,5336.8896};
+						position[]={8791.8848,16.800251,5336.8896};
 					};
 					side="Civilian";
 					flags=7;
 					class Attributes
 					{
-						init="if (isServer) then { this attachto [intro_bottle]; }; [this, ""gm_teleraetman_sleeping_idle""] call grad_intro_fnc_animationHelper;";
+						init="if (isServer) then { this attachto [intro_bottle, [0,0,-0.65]]; }; [this, ""gm_teleraetman_sleeping_idle""] call grad_intro_fnc_animationHelper;";
 					};
 					id=4142;
 					type="UK3CB_TKC_C_WORKER";
-					atlOffset=-0.54999924;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21152,7 +21151,6 @@ class Mission
 			{
 			};
 			id=4141;
-			atlOffset=-0.54999924;
 			class CustomAttributes
 			{
 				class Attribute0
