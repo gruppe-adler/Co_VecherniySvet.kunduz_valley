@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2080;
+		nextID=2107;
 	};
 	class Camera
 	{
-		pos[]={8791.9277,19.989496,5342.9033};
-		dir[]={0.28141969,-0.34062263,-0.89709496};
-		up[]={0.10195481,0.94020009,-0.32500619};
-		aside[]={-0.95415324,7.4505806e-09,-0.29931894};
+		pos[]={8791.751,19.989496,5343.8276};
+		dir[]={0.14829078,-0.46781141,-0.87129933};
+		up[]={0.078490488,0.88382834,-0.46117982};
+		aside[]={-0.98582423,-7.4505806e-09,-0.16778234};
 	};
 };
 binarizationWanted=0;
@@ -21072,7 +21072,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="if (isServer) then { _this setPos [getPos _this#0, getPos _this#1, -0.65]; }; [this, ""gm_teleraetman_sleeping_idle""] call grad_intro_fnc_animationHelper;";
+						init="if (isServer) then { _this attachTo [intro_bottle]; }; [this, ""gm_teleraetman_sleeping_idle""] call grad_intro_fnc_animationHelper;";
 					};
 					id=4142;
 					type="UK3CB_TKC_C_WORKER";
@@ -21297,7 +21297,6 @@ class Mission
 			class Attributes
 			{
 				name="intro_bottle";
-				disableSimulation=1;
 			};
 			id=4155;
 			type="Land_WaterBottle_01_compressed_F";

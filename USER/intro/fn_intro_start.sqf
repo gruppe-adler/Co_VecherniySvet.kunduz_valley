@@ -12,6 +12,8 @@ if (didJIP) exitWith {
 }, [], 0] call CBA_fnc_waitAndeXecute;
 
 
+grad_intro_voiceVolumeCache = TF_speak_volume_meters;
+TF_speak_volume_meters = 0;
 
 diwako_dui_main_toggled_off = true;
 0 fadeSound 0;

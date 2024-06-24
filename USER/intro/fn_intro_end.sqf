@@ -17,5 +17,7 @@ intro_texture_4 setobjecttexture [0, ""]; // remove texture
     5 fadeSound 1;
      "introBlackLoading" cutText ["", "BLACK IN", 5];
      diwako_dui_main_toggled_off = false;
+
+    TF_speak_volume_meters = grad_intro_voiceVolumeCache;
     
 }, [_camera], _duration] call CBA_fnc_waitAndeXecute;
