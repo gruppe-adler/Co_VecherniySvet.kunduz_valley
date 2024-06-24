@@ -236,6 +236,38 @@ _unit addAction
 
 _unit addAction
 [
+	"<t color='#0000FF'>Die Infidels!</t>",	// title
+	{
+		params ["_target", "_caller", "_actionId", "_arguments"]; // script
+
+		private _gender = if (typeOf _target in [
+                "Max_Tak_woman1",
+                "Max_Tak_woman2",
+                "Max_Tak_woman3",
+                "Max_Tak_woman4",
+                "Max_Tak_woman5",
+                "Max_Tak_woman6"
+            ]) then { "female" } else { "male" };
+		private _answer = _gender + "_dieinfidels";
+		private _answerArray = [_answer + "_en", _answer + "_arab"];
+		[_target, _answerArray] remoteExec ["grad_interrogation_fnc_answer"];
+	},
+	nil,		// arguments
+	1.5,		// priority
+	true,		// showWindow
+	true,		// hideOnUse
+	"",			// shortcut
+	"player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
+	50,			// radius
+	false,		// unconscious
+	"",			// selection
+	""			// memoryPoint
+];
+
+
+
+_unit addAction
+[
 	"<t color='#0000FF'>Dont know</t>",	// title
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"]; // script
