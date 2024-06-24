@@ -62,7 +62,7 @@
 };
 
 
-["Co Vecherniny Svet", "Start Intro", {
+["Co Vecherniny Svet - 00", "Start Intro", {
      params ["_position", "_object"];
      
      [] remoteExec ["grad_intro_fnc_intro_init", 0];
@@ -70,6 +70,15 @@
      [{
           [[1983,7,26,4,20]] remoteExec ["setDate", 0];
      }, [], 6] call CBA_fnc_waitAndExecute;
+     
+}] call zen_custom_modules_fnc_register;
+
+["Co Vecherniny Svet - O2", "Send in reinforcements (on vehicle)", {
+     params ["_position", "_object"];
+     
+     if (isNull _object) exitWith { "not a vehicle" call cba_fnc_notify; };
+
+     [_object] execVM "user\convoy\reinforcement_path.sqf";
      
 }] call zen_custom_modules_fnc_register;
 
@@ -81,14 +90,18 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["Co Vecherniny Svet - O2", "Send in reinforcements (on vehicle)", {
+["Co Vecherniny Svet - Translator", "Mark translators for 15s", {
      params ["_position", "_object"];
      
-     if (isNull _object) exitWith { "not a vehicle" call cba_fnc_notify; };
-
-     [_object] execVM "user\convoy\reinforcement_path.sqf";
+     // only local for this zeus
+     {
+          if (_x getVariable ["grad_interrogation_isTranslator", false]) then {
+               [_x] call grad_zeusmodules_fnc_markTranslatorForZeus;
+          };
+     } forEach allPlayers;
      
 }] call zen_custom_modules_fnc_register;
+
 
 
 ["Co Vecherniny Svet - Ambient", "Music Radio",
