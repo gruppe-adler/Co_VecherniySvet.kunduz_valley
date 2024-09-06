@@ -90,7 +90,7 @@ switch (true) do {
         } forEach (_target getVariable [QEGVAR(medical,ivBags), []]);
 
         if (GET_BLOOD_VOLUME(_target) + (_totalIvVolume / 1000) > MINIMUM_BLOOD_FOR_STABLE_VITALS) exitWith {
-            systemChat QGVAR(ivBagLocal);
+            // systemChat QGVAR(ivBagLocal);
             _treatmentEvent = "#waitForBlood";
         };
         // [QGVAR(ivBagLocal), [_patient, selectRandom ["leftarm", "rightarm", "leftleg", "rightleg"], "BloodIV"], _patient] call CBA_fnc_targetEvent;
