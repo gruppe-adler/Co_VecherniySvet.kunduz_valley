@@ -1,4 +1,4 @@
-introDisabled = false;
+introDisabled = true;
 
 if (isServer) then {
     if (introDisabled) exitWith {};

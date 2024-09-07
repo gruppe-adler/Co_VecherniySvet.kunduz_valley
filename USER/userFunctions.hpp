@@ -11,6 +11,8 @@
 #include "ambient\cfgFunctions.hpp"
 #include "healingMechanism\cfgFunctions.hpp"
 #include "grad_interrogation\cfgFunctions.hpp"
+#include "grad_grasscutter\cfgFunctions.hpp"
+#include "AF_keypad\cfgFunctions.hpp"
 
 class GRAD_SilentRain {
 	tag = "grad_SR";

@@ -13,5 +13,6 @@ class grad_interrogation{
         
         class interrogate;
         class playCassetteSoundLocalised;
+        class playCassetteSoundServer;
     };
 };
