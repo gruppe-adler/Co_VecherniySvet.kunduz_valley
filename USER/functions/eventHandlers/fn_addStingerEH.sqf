@@ -11,12 +11,12 @@ _unit addEventHandler ["Fired", {
 	// disable missile guidance once too close
 	[{
 		params ["_projectile", "_tgt"];
-		(_projectile distance _tgt) < 25
+		(_projectile distance _tgt) < 30
 	},{
 		params ["_projectile", "_tgt"];
 		// disable damage in case the missile hits anyways
 		[_tgt, false] remoteExecCall ["allowDamage", _tgt];
-		_projectile setMissileTarget objNull;
+		[_projectile, [objNull, true]] remoteExecCall ["setMissileTarget", _projectile];
 		
 		// enable damage again, once the missile is destroyed
 		[{
