@@ -15,6 +15,21 @@ class CfgSFX
     sounds[] = {};
 
    
+    class intel_mosque_en
+    {
+        name = "intel_mosque_en";
+        sounds[]={sfxsound};
+        sfxsound[]={"USER\grad_interrogation\sounds\intel_mosque_en.ogg",35,1,150,1,1,1,0};
+        empty[]= {"",0,0,0,0,0,0,0};
+    };
+
+     class intel_mosque_arab
+    {
+        name = "intel_mosque_arab";
+        sounds[]={sfxsound};
+        sfxsound[]={"USER\grad_interrogation\sounds\intel_mosque_arab.ogg",35,1,150,1,1,1,0};
+        empty[]= {"",0,0,0,0,0,0,0};
+    };
         
     class music1
     {
@@ -78,11 +93,15 @@ class CfgVehicles
         sound = "music2"; // reference to CfgSFX class
     };
 
+     class intel_mosque_en // class name to be used with createSoundSource
+    {
+        sound = "intel_mosque_en"; // reference to CfgSFX class
+    };
   
 
-    class prayer2 // class name to be used with createSoundSource
+    class intel_mosque_arab // class name to be used with createSoundSource
     {
-        sound = "prayer2"; // reference to CfgSFX class
+        sound = "intel_mosque_arab"; // reference to CfgSFX class
     };
 
  

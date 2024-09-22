@@ -133,6 +133,7 @@
     }] call zen_custom_modules_fnc_register;
 
 
+
 ["Co Vecherniny Svet - Ambient", "Suicide Car Spawn",
     {
       params ["_position", "_object"];

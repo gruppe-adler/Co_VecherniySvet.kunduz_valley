@@ -1,4 +1,19 @@
 
+/* INTEL */
+
+class intel_mosque_en
+{
+    name = "intel_mosque_en";
+    sound[] = {"USER\grad_interrogation\sounds\intel_mosque_en.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class intel_mosque_arab
+{
+    name = "intel_mosque_arab";
+    sound[] = {"USER\grad_interrogation\sounds\intel_mosque_arab.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
 /*MIXED*/
 class male_intel_ciahideout_arab
 {

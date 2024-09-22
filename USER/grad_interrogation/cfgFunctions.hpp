@@ -8,6 +8,8 @@ class grad_interrogation{
         class addLearnAction;
         class answer;
         class getAnswer;
+
+        class loopRadio;
         
         class init { postInit = 1; };
         

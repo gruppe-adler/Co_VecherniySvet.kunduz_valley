@@ -38,10 +38,14 @@ _keypad addAction
         params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
         if (_target getVariable ["AF_KP_keyPadInUse", false]) then {
-            hint "KeyPad already in use";
+            "KeyPad already in use" call CBA_fnc_notify;
         } else {
-            _target setVariable ["AF_KP_keyPadInUse", true, true];
-            createDialog "AF_Keypad";
+            if (_target getVariable ["AF_KP_destroyed", false]) then {
+                "KeyPad destroyed" call CBA_fnc_notify;
+            } else {
+                _target setVariable ["AF_KP_keyPadInUse", true, true];
+                createDialog "AF_Keypad" call CBA_fnc_notify;
+            };
         };
     },
     nil,        // arguments
@@ -55,3 +59,25 @@ _keypad addAction
     "",         // selection
     ""          // memoryPoint
 ];
+
+
+_keypad addEventhandler ["Hit", {
+	params ["_unit", "_source", "_damage", "_instigator"];
+
+    private _codeToUnlock = _unit getVariable ["AF_KP_codeToUnlock", {}];
+    _unit call compile _codeToUnlock;
+
+    private _light = _keypadAffected getVariable ["AF_KP_light", objNull];
+	private _texture = "#(rgb,8,8,3)color(0,0.5,0,1)";
+	_light setObjectTextureGlobal [0, _texture];
+
+    _unit setVariable ["AF_KP_destroyed", true, true];
+}];
+
+[{
+
+    {
+        private _codeToUnlock = _this getVariable ["AF_KP_keycode", "no code"];
+        [_x, ["\a3\ui_f\data\IGUI\Cfg\Actions\Obsolete\ui_action_deactivate_ca.paa", [1,1,1,1], position _this, 1, 1, 45, _codeToUnlock, 1, 0.05, "TahomaB"], false] call BIS_fnc_addCuratorIcon;
+    } forEach allCurators;
+}, _keypad, 10] call CBA_fnc_waitAndExecute;
