@@ -37,14 +37,21 @@ _keypad addAction
     {
         params ["_target", "_caller", "_actionId", "_arguments"]; // script
 
-        if (_target getVariable ["AF_KP_keyPadInUse", false]) then {
-            "KeyPad already in use" call CBA_fnc_notify;
+        if (_target getVariable ["AF_KP_destroyed", false]) then {
+            "KeyPad destroyed" call CBA_fnc_notify;
         } else {
-            if (_target getVariable ["AF_KP_destroyed", false]) then {
-                "KeyPad destroyed" call CBA_fnc_notify;
+            if (_target getVariable ["AF_KP_keyPadInUse", false]) then {
+                "KeyPad already in use" call CBA_fnc_notify;
             } else {
-                _target setVariable ["AF_KP_keyPadInUse", true, true];
-                createDialog "AF_Keypad" call CBA_fnc_notify;
+                _target setVariable ['AF_KP_keyPadInUse', true, true];
+                createDialog "AF_Keypad";
+
+                [{
+                   !dialog 
+                },{
+                    // systemchat "set not in use";
+                   [_this] call grad_af_keypad_fnc_setNotInUse;
+                }, _target] call CBA_fnc_waitUntilAndExecute;
             };
         };
     },
@@ -63,6 +70,8 @@ _keypad addAction
 
 _keypad addEventhandler ["Hit", {
 	params ["_unit", "_source", "_damage", "_instigator"];
+
+    if (_unit getVariable ["AF_KP_destroyed", false]) exitWith {};
 
     private _codeToUnlock = _unit getVariable ["AF_KP_codeToUnlock", {}];
     _unit call compile _codeToUnlock;

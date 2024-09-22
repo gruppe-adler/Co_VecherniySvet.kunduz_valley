@@ -1,16 +1,39 @@
 
+/* FLESH */
+
+class flesh_hit_1
+{
+    name = "flesh_hit_1";
+    sound[] = {"USER\grad_interrogation\sounds\flesh_hit_1.ogg", 5, 1, 50};
+    titles[] = {0,""};
+};
+
+class flesh_hit_2
+{
+    name = "flesh_hit_2";
+    sound[] = {"USER\grad_interrogation\sounds\flesh_hit_2.ogg", 5, 1, 50};
+    titles[] = {0,""};
+};
+
+class flesh_hit_3
+{
+    name = "flesh_hit_3";
+    sound[] = {"USER\grad_interrogation\sounds\flesh_hit_3.ogg", 5, 1, 50};
+    titles[] = {0,""};
+};
+
 /* INTEL */
 
 class intel_mosque_en
 {
     name = "intel_mosque_en";
-    sound[] = {"USER\grad_interrogation\sounds\intel_mosque_en.ogg", 1, 1, 50};
+    sound[] = {"USER\grad_interrogation\sounds\intel_mosque_en.ogg", 5, 1, 50};
     titles[] = {0,""};
 };
 class intel_mosque_arab
 {
     name = "intel_mosque_arab";
-    sound[] = {"USER\grad_interrogation\sounds\intel_mosque_arab.ogg", 1, 1, 50};
+    sound[] = {"USER\grad_interrogation\sounds\intel_mosque_arab.ogg", 5, 1, 50};
     titles[] = {0,""};
 };
 

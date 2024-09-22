@@ -2,8 +2,6 @@ class AF_KeyPad
 {
 	idd=-1;
 	movingenable=false;
-
-	onUnload = "[this] call grad_af_keypad_fnc_setNotInUse;";
 	class controls 
 	{
 		class AF_KeyPad_Frame: RscFrame

@@ -9,7 +9,10 @@ class grad_interrogation{
         class answer;
         class getAnswer;
 
+        class intelLast;
         class loopRadio;
+        class addQuranAction;
+        class addMosqueAction;
         
         class init { postInit = 1; };
         

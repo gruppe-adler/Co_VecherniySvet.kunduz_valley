@@ -391,3 +391,24 @@ _unit addAction
 	"",			// selection
 	""			// memoryPoint
 ];
+
+
+_unit addAction
+[
+	"<t color='#ff0000'>Flesh Sound</t>",	// title
+	{
+		params ["_target", "_caller", "_actionId", "_arguments"]; // script
+
+		[_target, selectRandom ["flesh_hit_1", "flesh_hit_2", "flesh_hit_3"]] remoteExec ["say3d"];
+	},
+	nil,		// arguments
+	7,		// priority
+	true,		// showWindow
+	true,		// hideOnUse
+	"",			// shortcut
+	"typeOf _target == 'UK3CB_TKC_C_DOC' && player == (_originalTarget getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && local _originalTarget && !(_originalTarget getVariable ['grad_interrogation_answering', false])",		// condition
+	50,			// radius
+	false,		// unconscious
+	"",			// selection
+	""			// memoryPoint
+];

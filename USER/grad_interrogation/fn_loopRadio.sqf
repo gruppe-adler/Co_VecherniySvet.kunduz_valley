@@ -3,9 +3,9 @@ params ["_radio"];
 private _sound = objNull;
 
 if (player getvariable ["grad_interrogation_isTranslator", false]) then {
-	_sound = _radio say3D "intel_mosque_en";
+	_sound = _radio say3D ["intel_mosque_en", 50, 1, 0];
 } else {
-	_sound = _radio say3D "intel_mosque_arab";
+	_sound = _radio say3D ["intel_mosque_arab", 50, 1, 0];
 };
 
 [{
@@ -15,7 +15,7 @@ if (player getvariable ["grad_interrogation_isTranslator", false]) then {
 },{
 	params ["_sound", "_radio"];
 
-	if (_radio getVariable ["grad_isPlaying"]) then {
+	if (_radio getVariable ["grad_isPlaying", true]) then {
 		[_radio] spawn grad_interrogation_fnc_loopRadio;
 	};
 
