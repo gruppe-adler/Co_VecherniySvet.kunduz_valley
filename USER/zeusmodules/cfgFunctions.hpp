@@ -14,5 +14,6 @@ class grad_zeusmodules {
         class createGroupIEDworkshop;
         class createCIA;
         class markTranslatorForZeus;
+        class ringPhone;
     };
 };

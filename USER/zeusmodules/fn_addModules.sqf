@@ -112,6 +112,13 @@
 }] call zen_custom_modules_fnc_register;
 
 
+["Co Vecherniny Svet - Villa Phone", "Ring Villa Phone", {
+     params ["_position", "_object"];
+     
+     [_position] remoteExec ["grad_zeusmodules_fnc_ringPhone"];
+     
+}] call zen_custom_modules_fnc_register;
+
 
 ["Co Vecherniny Svet - Ambient", "Music Radio",
     {
