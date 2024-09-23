@@ -24,7 +24,7 @@ params ["_leaflet"];
 	},							// Code executed on completion
 	{},																// Code executed on interrupted
 	[],																// Arguments passed to the scripts as _this select 3
-	12,																// Action duration in seconds
+	1,																// Action duration in seconds
 	0,																// Priority
 	false,															// Remove on completion
 	false															// Show in unconscious state

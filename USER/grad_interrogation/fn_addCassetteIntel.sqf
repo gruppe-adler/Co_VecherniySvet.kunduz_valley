@@ -24,10 +24,16 @@ _object setVariable ["grad_intelsound", _intelsound];
 		private _sound = _target getVariable ['grad_intelsound', []];
 		[_target, _sound] remoteExec ["grad_interrogation_fnc_playCassetteSoundLocalised", 0];
 
+		_target setVariable ["grad_playing", true, true];
+
+		[{
+			_this setVariable ["grad_playing", false, true];
+		}, _target, 10] call CBA_fnc_waitAndExecute;
+
 	},							// Code executed on completion
 	{},																// Code executed on interrupted
 	[],																// Arguments passed to the scripts as _this select 3
-	0,															// Action duration in seconds
+	1,															// Action duration in seconds
 	0,																// Priority
 	false,															// Remove on completion
 	false															// Show in unconscious state

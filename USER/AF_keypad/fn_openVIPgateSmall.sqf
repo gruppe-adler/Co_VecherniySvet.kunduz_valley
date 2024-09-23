@@ -3,7 +3,7 @@ params ["_keypad"];
 private _gate = nearestObject [position _keypad, "land_vn_embassy_gate_03"];
  
 // model = "vn\structures_f_vietnam_04\civ\embassy\vn_embassy_gate_01.p3d";
-private _gateNew = "land_vn_embassy_gate_01" createVehicle [0,0,0];
+private _gateNew = "land_vn_embassy_gate_03" createVehicle [0,0,0];
 _gateNew setDir getDir _gate;
 
 private _pos = getPosWorld _gate;
